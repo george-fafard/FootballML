@@ -5,101 +5,133 @@ from sportsipy.nfl.boxscore import Boxscores, Boxscore
 import pandas as pd
 import numpy as np
 import os
-import math
+#import math
 
 # sklearn utilities
-from sklearn import datasets
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn import preprocessing
+#from sklearn import datasets
+#from sklearn.metrics import confusion_matrix, classification_report
+#from sklearn import preprocessing
 
 # sklearn models
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.decomposition import PCA
-
-
-# A function to get the data from a certain year and returns a DataFrame
-# @param int year representing the year you wan't to get the data from
-# @return A dataframe containing the data.
-def game_data_from_year(year):
-    returnDF=pd.DataFrame()
-    try: 
-        for week in range(1,22):
-            weekDF=pd.DataFrame()
-            for game in range(len(Boxscores(week,year).games[str(week)+"-"+str(year)])):
-                weekDF=pd.concat([weekDF,Boxscore(Boxscores(week,year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe])
-            weekDF["week"] = [week]*len(Boxscores(week,year).games[str(week)+"-"+str(year)])
-            returnDF=pd.concat([returnDF,weekDF])
-    except:
-        print(week)
-    return returnDF
-
-
-# Gets the data from the 2000's and saves it to files so you don't have to rerun this code in the future
-# because this code takes a while to run
-data2000=game_data_from_year(2000)
-data2000.to_csv("data2000.csv")
-data2001=game_data_from_year(2001)
-data2001.to_csv("data2001.csv")
-data2002=game_data_from_year(2002)
-data2002.to_csv("data2002.csv")
-data2003=game_data_from_year(2003)
-data2003.to_csv("data2003.csv")
-data2004=game_data_from_year(2004)
-data2004.to_csv("data2004.csv")
-data2005=game_data_from_year(2005)
-data2005.to_csv("data2005.csv")
-data2006=game_data_from_year(2006)
-data2006.to_csv("data2006.csv")
-data2007=game_data_from_year(2007)
-data2007.to_csv("data2007.csv")
-data2008=game_data_from_year(2008)
-data2008.to_csv("data2008.csv")
-data2009=game_data_from_year(2009)
-data2009.to_csv("data2009.csv")
-
-
-# Gets the data from the 2010's and saves it to files again
-data2010=game_data_from_year(2010)
-data2010.to_csv("data2010.csv")
-data2011=game_data_from_year(2011)
-data2011.to_csv("data2011.csv")
-data2012=game_data_from_year(2012)
-data2012.to_csv("data2012.csv")
-data2013=game_data_from_year(2013)
-data2013.to_csv("data2013.csv")
-data2014=game_data_from_year(2014)
-data2014.to_csv("data2014.csv")
-data2015=game_data_from_year(2015)
-data2015.to_csv("data2015.csv")
-data2016=game_data_from_year(2016)
-data2016.to_csv("data2016.csv")
-data2017=game_data_from_year(2017)
-data2017.to_csv("data2017.csv")
-data2018=game_data_from_year(2018)
-data2018.to_csv("data2018.csv")
-data2019=game_data_from_year(2019)
-data2019.to_csv("data2019.csv")
-
-
-# Reads in the data from the files for the 2000's and stores it in a list of dataframes
-data200 = []
-for i in range(10):
-    data200.append(pd.read_csv(os.getcwd() + '/data200'+str(i)+'.csv', header=0))
-
-
-# Reads in the data from the files for the 2010's and stores it in a list of dataframes
-data201 = []
-for i in range(10):
-    data201.append(pd.read_csv(os.getcwd() + '/data201'+str(i)+'.csv', header=0))
+#from sklearn.linear_model import LogisticRegression
+#from sklearn.tree import DecisionTreeClassifier
+#from sklearn.svm import SVC
+#from sklearn.ensemble import RandomForestClassifier
+#from sklearn.decomposition import PCA
 
 
 # NFL team abbreviations
-teams = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE', 'PIT', 'ATL', 'OTI', 'RAI', 'NWE', 'CIN', 'HTX',
+TEAMS = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE', 'PIT', 'ATL', 'OTI', 'RAI', 'NWE', 'CIN', 'HTX',
          'CLT', 'JAX', 'DEN', 'NYG', 'CAR', 'CRD', 'RAM', 'SEA', 'SFO', 'GNB', 'PHI', 'WAS', 'DAL', 'RAV', 'NYJ', 
          'KAN', 'SDG']
+
+
+def game_data_from_year(year):
+    """Get the data from a certain year. 
+    
+    Parameters
+    ----------
+    year : int
+        The year to get the data from
+    
+    Returns
+    -------
+    DataFrame
+        A DataFrame containing the data
+    """
+    # Weeks
+    FIRST_WEEK = 1
+    LAST_WEEK  = 22
+
+    # Game data
+    game_data = pd.DataFrame()
+    
+    try: 
+        for week in range(FIRST_WEEK, LAST_WEEK):
+            # Week data
+            week_data = pd.DataFrame()
+
+            # Retrieve data
+            for game in range(len(Boxscores(week, year).games[str(week)+"-"+str(year)])):
+                week_data = pd.concat([
+                            week_data,Boxscore(Boxscores(week, year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe])
+
+            # Extract boxscore stats for each week
+            week_data["week"] = [week]*len(Boxscores(week,year).games[str(week)+"-"+str(year)])
+
+            # Store the game data
+            game_data = pd.concat([game_data, week_data])
+    except:
+        print("ERROR: Data loading failed")
+        return -1
+    else:
+        return game_data
+
+
+def save_game_data_to_files(start_year, end_year):
+    """Save the game data for a range of years to files.
+
+    This helps save time for retrieving game data as it can
+    take a while to run. This way, retreival from the dataset only 
+    has to occur once and then the data can be imported from
+    the files in the future.
+
+    Parameters
+    ----------
+    start_year : int
+        [Included] The start year to be used as the lower bound for the range
+    end_year : int
+        [Included] The end year to be used as the upper bound for the range
+    """
+    # Error codes
+    DATA_ERROR = -1
+
+    for year in range(start_year, end_year + 1):
+        # Game data for next year
+        game_data = game_data_from_year(year)
+
+        # Safety check to ensure data is loaded correctly before writing
+        # to file
+        if game_data == DATA_ERROR:
+            print('ERROR: Loading the data for year {} failed'.format(year))
+        else:
+            # Filename to write
+            data_filename = 'data{}.csv'.format(year)
+
+            # Write data
+            game_data.to_csv(data_filename)
+
+
+def read_game_data_from_files(start_year, end_year):
+    """Read the game data for a range of years from files.
+
+    Parameters
+    ----------
+    start_year : int
+        [Included] The start year to be used as the lower bound for the range
+    end_year : int
+        [Included] The end year to be used as the upper bound for the range
+    """
+    for year in range(start_year, end_year + 1):
+        try:
+            # Game data for next year
+            game_data = []
+
+            # Filename to read
+            year_filename = os.getcwd() + '/data{}.csv'.format(year)
+
+            # Extract game data from file
+            year_file = pd.read_csv(year_filename, header=0)
+            game_data.append(year_file)
+        except FileNotFoundError:
+            print('ERROR: Cannot find file for year {}'.format(year))
+        except:
+            print('ERROR: Other error occurred')
+
+
+##################################
+# TODO: Continue here            #
+##################################
 
 #These are the columns that are produced by clean data: 
 #'attendance','first_downs','fourth_down_attempts','fourth_down_conversions','fumbles','fumbles_lost','interceptions',
@@ -115,7 +147,7 @@ teams = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE', 'PIT', 'ATL', '
 #          team      home vs away    stats for the game for that team
 def cleandata(newdata):
     teamdata = []
-    for team in teams:
+    for team in TEAMS:
         teamdata.append([[],[]])
 
     for game in newdata:
@@ -157,8 +189,8 @@ def cleandata(newdata):
             team1=team1[0:29]+weather1+team1[30:32]
             team2=team2[0:29]+weather2+team2[30:32]
 
-            teamdata[teams.index(g[63])][1].append(team1)
-            teamdata[teams.index(g[53])][0].append(team2)
+            teamdata[TEAMS.index(g[63])][1].append(team1)
+            teamdata[TEAMS.index(g[53])][0].append(team2)
         else:
             
             team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
@@ -199,8 +231,8 @@ def cleandata(newdata):
 
 
 
-            teamdata[teams.index(g[63])][0].append(team2)
-            teamdata[teams.index(g[53])][1].append(team1)
+            teamdata[TEAMS.index(g[63])][0].append(team2)
+            teamdata[TEAMS.index(g[53])][1].append(team1)
     return teamdata
 
 
@@ -235,29 +267,29 @@ def getTraining(data2014,data2015,games):
 
 
 
-        averagesA=[]+data2014[teams.index(awayabbr)][1][-3]
+        averagesA=[]+data2014[TEAMS.index(awayabbr)][1][-3]
         for i in range(len(averagesA)):
-            averagesA[i]+=data2014[teams.index(awayabbr)][1][-2][i]+data2014[teams.index(awayabbr)][1][-1][i]
-        for i in range(counters[teams.index(awayabbr)][1]):
-            for j in range(len(data2015[teams.index(awayabbr)][1][i])):
-                averagesA[i]+=data2015[teams.index(awayabbr)][1][i][j]
+            averagesA[i]+=data2014[TEAMS.index(awayabbr)][1][-2][i]+data2014[TEAMS.index(awayabbr)][1][-1][i]
+        for i in range(counters[TEAMS.index(awayabbr)][1]):
+            for j in range(len(data2015[TEAMS.index(awayabbr)][1][i])):
+                averagesA[i]+=data2015[TEAMS.index(awayabbr)][1][i][j]
         for i in range(len(averagesA)):
-            averagesA[i] = averagesA[i]/float(counters[teams.index(awayabbr)][1]+3)
+            averagesA[i] = averagesA[i]/float(counters[TEAMS.index(awayabbr)][1]+3)
 
 
 
-        averagesH=[]+data2014[teams.index(homeabbr)][0][-3]
+        averagesH=[]+data2014[TEAMS.index(homeabbr)][0][-3]
         for i in range(len(averagesH)):
-            averagesH[i]+=data2014[teams.index(homeabbr)][0][-2][i]+data2014[teams.index(homeabbr)][0][-1][i]
-        for i in range(counters[teams.index(homeabbr)][0]):
-            for j in range(len(data2015[teams.index(homeabbr)][0][i])):
-                averagesH[i]+=data2015[teams.index(homeabbr)][0][i][j]
+            averagesH[i]+=data2014[TEAMS.index(homeabbr)][0][-2][i]+data2014[TEAMS.index(homeabbr)][0][-1][i]
+        for i in range(counters[TEAMS.index(homeabbr)][0]):
+            for j in range(len(data2015[TEAMS.index(homeabbr)][0][i])):
+                averagesH[i]+=data2015[TEAMS.index(homeabbr)][0][i][j]
         for i in range(len(averagesH)):
-            averagesH[i] = averagesH[i]/float(counters[teams.index(homeabbr)][0]+3)
+            averagesH[i] = averagesH[i]/float(counters[TEAMS.index(homeabbr)][0]+3)
 
 
-        Ai=teams.index(awayabbr)
-        Hi=teams.index(homeabbr)
+        Ai=TEAMS.index(awayabbr)
+        Hi=TEAMS.index(homeabbr)
         counters[Ai][1]+=1
         counters[Hi][0]+=1
 
