@@ -2,6 +2,7 @@
 Ensemble Learning classifier to predict the winner of future NFL games given historical game data.
 
 # Dataset
+Sportsipy https://sportsipy.readthedocs.io/en/stable/
 
 # Development
 | Developer          | Model                          |
