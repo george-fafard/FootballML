@@ -17,26 +17,6 @@ import pandas as pd
 from sportsipy.nfl.boxscore import Boxscores, Boxscore
 
 
-############################################################################
-# If everything runs correctly with these commented out, then we can       #
-# remove them                                                              #
-############################################################################
-#import math
-
-# sklearn utilities
-#from sklearn import datasets
-#from sklearn.metrics import confusion_matrix, classification_report
-#from sklearn import preprocessing
-
-# sklearn models
-#from sklearn.linear_model import LogisticRegression
-#from sklearn.tree import DecisionTreeClassifier
-#from sklearn.svm import SVC
-#from sklearn.ensemble import RandomForestClassifier
-#from sklearn.decomposition import PCA                          
-############################################################################
-
-
 # NFL team abbreviations
 TEAMS = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE',
          'PIT', 'ATL', 'OTI', 'RAI', 'NWE', 'CIN', 'HTX', 'CLT',
@@ -217,6 +197,13 @@ def clean_data(game_data):
         A LITTLE CONFUSED ON THE LIST STRUCTURE SO WE CAN EDIT THIS AND MAKE IT MORE ACCURATE/
         DETAILED
     """
+    # Indices
+    ATTENDANCE = 1   # Attendance at the game
+    DURATION   = 28  # Duration of the game
+    ROOF       = 56  # Whether or not the game was played with a roof
+    WEATHER    = 61  # Weather during the game
+    WEEK       = -1  # Week of the game
+
     # Set up team data for home and away games. Each index in the list
     # will represent a team, and for each team, there will be two lists,
     # with the first representing home games, and the second representing
@@ -229,88 +216,100 @@ def clean_data(game_data):
     for game in game_data:
         g=list(game)
 
-    
-        if g[62]=='Away':
-            team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-            team2=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
+        # Winning team for game
+        winner = g[62]
+
+        # If away team won
+        ### FROM HERE ###
+        if winner == 'Away':
+            if not isinstance(g[DURATION], float):
+                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]  
+            else:
+                [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+
+        ### TO HERE ###
+
+                # away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+
+            home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
 
 
 
-            team1[26] = (1 if team1[26]=='Outdoors' else 0)
-            team2[26] = (1 if team2[26]=='Outdoors' else 0)
-            team1[27] = (1 if team1[27]=='Grass' else 0)
-            team2[27] = (1 if team2[27]=='Grass' else 0)
-            team1[28] = (int(team1[28].split(":")[0])+12 if team1[28].split(":")[1][2:4]=="pm" else int(team1[28].split(":")[0])) + float(team1[28].split(":")[1][0:2])/60
-            team2[28]=  (int(team2[28].split(":")[0])+12 if team2[28].split(":")[1][2:4]=="pm" else int(team2[28].split(":")[0])) + float(team2[28].split(":")[1][0:2])/60
+            away_team[26] = (1 if away_team[26]=='Outdoors' else 0)
+            home_team[26] = (1 if home_team[26]=='Outdoors' else 0)
+            away_team[27] = (1 if away_team[27]=='Grass' else 0)
+            home_team[27] = (1 if home_team[27]=='Grass' else 0)
+            away_team[28] = (int(away_team[28].split(":")[0])+12 if away_team[28].split(":")[1][2:4]=="pm" else int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
+            home_team[28]=  (int(home_team[28].split(":")[0])+12 if home_team[28].split(":")[1][2:4]=="pm" else int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
 
             
             
             weather1=[]
-            if isinstance(team1[29],float):
+            if isinstance(away_team[29],float):
                 weather1=[55,0.5,9]
-            elif len(team1[29].split(" "))>6:
-                weather1=[int(team1[29].split(" ")[0]),float(team1[29].split(" ")[4][0:-2])/100, (0 if team1[29].split(" ")[6]=='wind,' or team1[29].split(" ")[6]=='wind' else  int(team1[29].split(" ")[6]))]
+            elif len(away_team[29].split(" "))>6:
+                weather1=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, (0 if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind' else  int(away_team[29].split(" ")[6]))]
             else: 
-                weather1=[int(team1[29].split(" ")[0]),.50, (0 if team1[29].split(" ")[3]=='wind,' or team1[29].split(" ")[3]=='wind' else  int(team1[29].split(" ")[3]))]
+                weather1=[int(away_team[29].split(" ")[0]),.50, (0 if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind' else  int(away_team[29].split(" ")[3]))]
 
 
             weather2=[]
-            if isinstance(team2[29],float):
+            if isinstance(home_team[29],float):
                 weather2=[55,0.5,9]
-            elif len(team2[29].split(" "))>6:
-                weather2=[int(team2[29].split(" ")[0]),float(team2[29].split(" ")[4][0:-2])/100, (0 if team2[29].split(" ")[6]=='wind,' or team2[29].split(" ")[6]=='wind' else  int(team2[29].split(" ")[6]))]
+            elif len(home_team[29].split(" "))>6:
+                weather2=[int(home_team[29].split(" ")[0]),float(home_team[29].split(" ")[4][0:-2])/100, (0 if home_team[29].split(" ")[6]=='wind,' or home_team[29].split(" ")[6]=='wind' else  int(home_team[29].split(" ")[6]))]
             else: 
-                weather2=[int(team2[29].split(" ")[0]),.50, (0 if team2[29].split(" ")[3]=='wind,' or team2[29].split(" ")[3]=='wind' else  int(team2[29].split(" ")[3]))]
+                weather2=[int(home_team[29].split(" ")[0]),.50, (0 if home_team[29].split(" ")[3]=='wind,' or home_team[29].split(" ")[3]=='wind' else  int(home_team[29].split(" ")[3]))]
 
 
 
-            team1=team1[0:29]+weather1+team1[30:32]
-            team2=team2[0:29]+weather2+team2[30:32]
+            away_team=away_team[0:29]+weather1+away_team[30:32]
+            home_team=home_team[0:29]+weather2+home_team[30:32]
 
-            teamdata[TEAMS.index(g[63])][1].append(team1)
-            teamdata[TEAMS.index(g[53])][0].append(team2)
+            teamdata[TEAMS.index(g[63])][1].append(away_team)
+            teamdata[TEAMS.index(g[53])][0].append(home_team)
         else:
             
-            team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
-            team2=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+            away_team=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
+            home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
 
 
 
-            team1[26] = (1 if team1[26]=='Outdoors' else 0)
-            team2[26]=  (1 if team2[26]=='Outdoors' else 0)
-            team1[27]=  (1 if team1[27]=='Grass' else 0)
-            team2[27]=  (1 if team2[27]=='Grass' else 0)
-            team1[28]=  (int(team1[28].split(":")[0])+12 if team1[28].split(":")[1][2:4]=="pm" else int(team1[28].split(":")[0])) + float(team1[28].split(":")[1][0:2])/60
-            team2[28]=  (int(team2[28].split(":")[0])+12 if team2[28].split(":")[1][2:4]=="pm" else int(team2[28].split(":")[0])) + float(team2[28].split(":")[1][0:2])/60
+            away_team[26] = (1 if away_team[26]=='Outdoors' else 0)
+            home_team[26]=  (1 if home_team[26]=='Outdoors' else 0)
+            away_team[27]=  (1 if away_team[27]=='Grass' else 0)
+            home_team[27]=  (1 if home_team[27]=='Grass' else 0)
+            away_team[28]=  (int(away_team[28].split(":")[0])+12 if away_team[28].split(":")[1][2:4]=="pm" else int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
+            home_team[28]=  (int(home_team[28].split(":")[0])+12 if home_team[28].split(":")[1][2:4]=="pm" else int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
 
             
             
             weather1=[]
-            if isinstance(team1[29],float):
+            if isinstance(away_team[29],float):
                 weather1=[55,0.5,9]
-            elif len(team1[29].split(" "))>6:
-                weather1=[int(team1[29].split(" ")[0]),float(team1[29].split(" ")[4][0:-2])/100, (0 if team1[29].split(" ")[6]=='wind,' or team1[29].split(" ")[6]=='wind' else  int(team1[29].split(" ")[6]))]
+            elif len(away_team[29].split(" "))>6:
+                weather1=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, (0 if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind' else  int(away_team[29].split(" ")[6]))]
             else: 
-                weather1=[int(team1[29].split(" ")[0]),.50, (0 if team1[29].split(" ")[3]=='wind,' or team1[29].split(" ")[3]=='wind' else  int(team1[29].split(" ")[3]))]
+                weather1=[int(away_team[29].split(" ")[0]),.50, (0 if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind' else  int(away_team[29].split(" ")[3]))]
 
 
             weather2=[]
-            if isinstance(team2[29],float):
+            if isinstance(home_team[29],float):
                 weather2=[55,0.5,9]
-            elif len(team2[29].split(" "))>6:
-                weather2=[int(team2[29].split(" ")[0]),float(team2[29].split(" ")[4][0:-2])/100, (0 if team2[29].split(" ")[6]=='wind,' or team2[29].split(" ")[6]=='wind' else  int(team2[29].split(" ")[6]))]
+            elif len(home_team[29].split(" "))>6:
+                weather2=[int(home_team[29].split(" ")[0]),float(home_team[29].split(" ")[4][0:-2])/100, (0 if home_team[29].split(" ")[6]=='wind,' or home_team[29].split(" ")[6]=='wind' else  int(home_team[29].split(" ")[6]))]
             else: 
-                weather2=[int(team2[29].split(" ")[0]),.50, (0 if team2[29].split(" ")[3]=='wind,' or team2[29].split(" ")[3]=='wind' else  int(team2[29].split(" ")[3]))]
+                weather2=[int(home_team[29].split(" ")[0]),.50, (0 if home_team[29].split(" ")[3]=='wind,' or home_team[29].split(" ")[3]=='wind' else  int(home_team[29].split(" ")[3]))]
 
     
                 
-            team1=team1[0:29]+weather1+team1[30:32]
-            team2=team2[0:29]+weather2+team2[30:32]
+            away_team=away_team[0:29]+weather1+away_team[30:32]
+            home_team=home_team[0:29]+weather2+home_team[30:32]
 
 
 
-            teamdata[TEAMS.index(g[63])][0].append(team2)
-            teamdata[TEAMS.index(g[53])][1].append(team1)
+            teamdata[TEAMS.index(g[63])][0].append(home_team)
+            teamdata[TEAMS.index(g[53])][1].append(away_team)
     return teamdata
 
 
