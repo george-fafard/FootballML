@@ -1,5 +1,8 @@
 # FootballML
-Ensemble Learning classifier to predict the winner of future NFL games given historical game data.
+Ensemble Learning classifier to predict the winner of future NFL games using historical game data.
+
+# Running The Classifier
+Run the notebook Run_Classifier.ipynb and execute all cells to run the classifier
 
 # Dataset
 Sportsipy https://sportsipy.readthedocs.io/en/stable/
