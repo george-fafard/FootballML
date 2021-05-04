@@ -195,9 +195,6 @@ def clean_data(game_data):
         | humidity        | wind           | week                 | win                     |                       |
         -------------------------------------------------------------------------------------------------------------
 
-    The first column for each team represents home games and the 2nd column represents away
-    games. 
-
     Parameters
     ----------
     game_data : DataFrame 
@@ -206,12 +203,23 @@ def clean_data(game_data):
     Returns
     -------
     list 
-        A list of lists of lists (team, home vs away, stats for the game for that team)
+        A list of lists of lists containing game data for each team, with each team's game
+        data split into home (first column) and away (second column) team data.
+
+        TODO: THIS WAS BASED ON WHAT I INTERPRETED YOU HAD THE RETURN DATA AS BUT I AM STILL
+        A LITTLE CONFUSED ON THE LIST STRUCTURE SO WE CAN EDIT THIS AND MAKE IT MORE ACCURATE/
+        DETAILED
     """
+    # Set up team data for home and away games
     teamdata = []
     for team in TEAMS:
         teamdata.append([[],[]])
 
+    # I have no idea what any of this means lol
+    # What are all these magic numbers?
+    # What are all these crazy uses of ternary operators lol?
+    # It seems there may be some omitted parentheses and stuff that could cause
+    # errors in here so we should really clean it up and refactor it.
     for game in game_data:
         g=list(game)
         if g[62]=='Away':
@@ -220,11 +228,11 @@ def clean_data(game_data):
 
 
 
-            team1[26]=  (1 if team1[26]=='Outdoors' else 0)
-            team2[26]=  (1 if team2[26]=='Outdoors' else 0)
-            team1[27]=  (1 if team1[27]=='Grass' else 0)
-            team2[27]=  (1 if team2[27]=='Grass' else 0)
-            team1[28]=  (int(team1[28].split(":")[0])+12 if team1[28].split(":")[1][2:4]=="pm" else int(team1[28].split(":")[0])) + float(team1[28].split(":")[1][0:2])/60
+            team1[26] = (1 if team1[26]=='Outdoors' else 0)
+            team2[26] = (1 if team2[26]=='Outdoors' else 0)
+            team1[27] = (1 if team1[27]=='Grass' else 0)
+            team2[27] = (1 if team2[27]=='Grass' else 0)
+            team1[28] = (int(team1[28].split(":")[0])+12 if team1[28].split(":")[1][2:4]=="pm" else int(team1[28].split(":")[0])) + float(team1[28].split(":")[1][0:2])/60
             team2[28]=  (int(team2[28].split(":")[0])+12 if team2[28].split(":")[1][2:4]=="pm" else int(team2[28].split(":")[0])) + float(team2[28].split(":")[1][0:2])/60
 
             
