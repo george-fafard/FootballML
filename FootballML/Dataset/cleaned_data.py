@@ -198,11 +198,14 @@ def clean_data(game_data):
         DETAILED
     """
     # Indices
-    ATTENDANCE = 1   # Attendance at the game
-    DURATION   = 28  # Duration of the game
-    ROOF       = 56  # Whether or not the game was played with a roof
-    WEATHER    = 61  # Weather during the game
-    WEEK       = -1  # Week of the game
+    # [1]      attendance
+    # [2:26]   all away team game stats
+    # [28]     duration
+    # [29:53]  ADD HERE
+    # [56]     roof
+    # [58:60]  surface, time
+    # [61]     weather
+    # [-1]     week
 
     # Set up team data for home and away games. Each index in the list
     # will represent a team, and for each team, there will be two lists,
@@ -219,21 +222,31 @@ def clean_data(game_data):
         # Winning team for game
         winner = g[62]
 
-        # If away team won
-        ### FROM HERE ###
+        # If away team won, add a 1 to represent a win to the end of the away
+        # team data and a 0 to represent a loss to the end of the home team data 
         if winner == 'Away':
-            #if not isinstance(g[DURATION], float):
-            #    away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]  
-            #else:
-            #    [3]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-            if not isinstance(g[DURATION], float):
-                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+[int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+            # Base for next calculation. Put here, it doesn't have to be defined
+            # twice. 
+            calculation_base = g[1:20] + [int(g[20][0:2]) + float(g[20][3:5])/60] + g[21:26]
+
+            # Perform conversions if game duration is not a float
+            if not isinstance(g[28], float):
+                # Calculation including float conversion.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
+                conv_part2 = g[58:60] + [g[61]] + [g[-1]] + [1]
+
+                # Add win identifiers
+                away_team =  calculation_base + conv_part1 + conv_part2
             else:
-                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+[3]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-        ### TO HERE ###
+                # Calculation for if game duration is a float.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                float_part = [3] + [g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
 
-                # away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-
+                # Add win identifiers
+                away_team = calculation_base + float_part 
+            
+            # CAN YOU CONVERT THIS?
             home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
 
 
@@ -247,27 +260,25 @@ def clean_data(game_data):
 
             
             
-            weather1=[]
+            weather=[]
             if isinstance(away_team[29],float):
-                weather1=[55,0.5,9]
+                weather=[55,0.5,9]
             elif len(away_team[29].split(" "))>6:
-                weather1=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, (0 if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind' else  int(away_team[29].split(" ")[6]))]
+                if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind':
+                    weather=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, 0]
+                else:
+                    weather=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, int(away_team[29].split(" ")[6])]
             else: 
-                weather1=[int(away_team[29].split(" ")[0]),.50, (0 if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind' else  int(away_team[29].split(" ")[3]))]
-
-
-            weather2=[]
-            if isinstance(home_team[29],float):
-                weather2=[55,0.5,9]
-            elif len(home_team[29].split(" "))>6:
-                weather2=[int(home_team[29].split(" ")[0]),float(home_team[29].split(" ")[4][0:-2])/100, (0 if home_team[29].split(" ")[6]=='wind,' or home_team[29].split(" ")[6]=='wind' else  int(home_team[29].split(" ")[6]))]
-            else: 
-                weather2=[int(home_team[29].split(" ")[0]),.50, (0 if home_team[29].split(" ")[3]=='wind,' or home_team[29].split(" ")[3]=='wind' else  int(home_team[29].split(" ")[3]))]
+                if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind': 
+                    weather=[int(away_team[29].split(" ")[0]),.50, 0]
+                else:
+                    weather=[int(away_team[29].split(" ")[0]),.50, int(away_team[29].split(" ")[3])]
 
 
 
-            away_team=away_team[0:29]+weather1+away_team[30:32]
-            home_team=home_team[0:29]+weather2+home_team[30:32]
+
+            away_team=away_team[0:29]+weather+away_team[30:32]
+            home_team=home_team[0:29]+weather+home_team[30:32]
 
             teamdata[TEAMS.index(g[63])][1].append(away_team)
             teamdata[TEAMS.index(g[53])][0].append(home_team)
