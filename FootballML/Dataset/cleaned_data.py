@@ -222,11 +222,14 @@ def clean_data(game_data):
         # If away team won
         ### FROM HERE ###
         if winner == 'Away':
+            #if not isinstance(g[DURATION], float):
+            #    away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]  
+            #else:
+            #    [3]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
             if not isinstance(g[DURATION], float):
-                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]  
+                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+[int(g[28].split(":")[0])+float(g[28].split(":")[1])/60]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
             else:
-                [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-
+                away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+[3]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
         ### TO HERE ###
 
                 # away_team = g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
