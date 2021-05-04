@@ -55,17 +55,17 @@ def game_data_from_year(year):
     Returns
     -------
     DataFrame
-        A DataFrame containing the data
+        A DataFrame containing data for all the games
     """
     # Weeks
     FIRST_WEEK = 1
-    LAST_WEEK  = 22
+    LAST_WEEK  = 21
 
     # Game data
     game_data = pd.DataFrame()
     
     try: 
-        for week in range(FIRST_WEEK, LAST_WEEK):
+        for week in range(FIRST_WEEK, LAST_WEEK + 1):
             # Week data
             week_data = pd.DataFrame()
 
@@ -89,15 +89,15 @@ def game_data_from_year(year):
 def save_game_data_to_files(start_year, end_year=None):
     """Save the game data for a range of years to files.
 
-    This helps save time for retrieving game data as it can
-    take a while to run. This way, retreival from the dataset only 
-    has to occur once and then the data can be imported from
-    the files in the future.
-
     This method serves as a general purpose method for both saving
     data for years in a range and simply saving data for one year. To 
     save data for just one year, only pass a value for the start year 
     and leave the end year as default.
+
+    This helps save time for retrieving game data as it can
+    take a while to run. This way, retrieval from the dataset only 
+    has to occur once and then the data can be imported from
+    the files in the future.
 
     Parameters
     ----------
@@ -152,6 +152,10 @@ def read_game_data_from_files(start_year, end_year=None):
     end_year : int, optional
         The end year to be used as the upper bound for the range [Included]. 
         If no value is passed, data will be read for just the start year
+
+    Returns
+    -------
+    None
     """
     # If it is desired to read data for only one year,
     # set the end year to the start year so the loop
@@ -177,24 +181,38 @@ def read_game_data_from_files(start_year, end_year=None):
             print('ERROR: Other error occurred')
 
 
-#These are the columns that are produced by clean data: 
-#'attendance','first_downs','fourth_down_attempts','fourth_down_conversions','fumbles','fumbles_lost','interceptions',
-#'net_pass_yards','pass_attempts','pass_completions','pass_touchdowns','pass_yards','penalties','points','rush_attempts',
-#'rush_touchdowns','rush_yards','third_down_attempts','third_down_conversions','time_of_possession','times_sacked',
-#'total_yards','turnovers','yards_from_penalties','yards_lost_from_sacks','duration','roof','surface',
-#'time','temperature','humidity','wind','week','win'
+def clean_data(game_data):
+    """Split the stats for all the games into stats for the away team and home team. 
 
-#splits all the games into stats for the away team and home team and saves them in the list at the index designated for that team
-#with the first column in each team representing home games and the 2nd column representing away
-#@param newdata being a dataframe containing games
-#@return a list of      lists     of lists
-#          team      home vs away    stats for the game for that team
-def cleandata(newdata):
+    These are the columns produced:
+    -----------------------------------------------------------------------------------------------------------------
+        | attendance      | first_downs    | fourth_down_attempts | fourth_down_conversions | fumbles               |         
+        | fumbles_lost    | interceptions  | net_pass_yards       | pass_attempts           | pass_completions      |   
+        | pass_touchdowns | pass_yards     | penalties            | points                  | rush_attempts         |
+        | rush_touchdowns | rush_yards     | third_down_attempts  | third_down_conversions  | time_of_possession    | 
+        | times_sacked    | total_yards    | turnovers            | yards_from_penalties    | yards_lost_from_sacks |
+        | duration        | roof           | surface              | time                    | temperature           |  
+        | humidity        | wind           | week                 | win                     |                       |
+        -------------------------------------------------------------------------------------------------------------
+
+    The first column for each team represents home games and the 2nd column represents away
+    games. 
+
+    Parameters
+    ----------
+    game_data : DataFrame 
+        A DataFrame containing data for the games
+
+    Returns
+    -------
+    list 
+        A list of lists of lists (team, home vs away, stats for the game for that team)
+    """
     teamdata = []
     for team in TEAMS:
         teamdata.append([[],[]])
 
-    for game in newdata:
+    for game in game_data:
         g=list(game)
         if g[62]=='Away':
             team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
@@ -290,8 +308,8 @@ def cleandata(newdata):
 #season+3games from the previous season, taking into account
 #home vs away, and also takes the stats about the game that we could know about the game before it happens like
 #the weather and location
-#@param data2014 data for the previous year, gotten from cleandata
-#@param data2015 data for the year in question, gotten from cleandata
+#@param data2014 data for the previous year, gotten from clean_data
+#@param data2015 data for the year in question, gotten from clean_data
 #@param games The raw data for the year in question
 #@return x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
 def getTraining(data2014,data2015,games):
@@ -373,14 +391,14 @@ aveHome=[]
 columns=[]
 for i in range(1,10):
     try:
-        xtraintemp,ytraintemp=getTraining(cleandata(np.array(data201[i-1])),cleandata(np.array(data201[i])),np.array(data201[i]))
+        xtraintemp,ytraintemp=getTraining(clean_data(np.array(data201[i-1])),clean_data(np.array(data201[i])),np.array(data201[i]))
         xtraining+=xtraintemp
         ytraining+=ytraintemp
     except:
         print(i)
         
     try:
-        xtraintemp,ytraintemp=getTraining(cleandata(np.array(data200[i-1])),cleandata(np.array(data200[i])),np.array(data200[i]))
+        xtraintemp,ytraintemp=getTraining(clean_data(np.array(data200[i-1])),clean_data(np.array(data200[i])),np.array(data200[i]))
         xtraining+=xtraintemp
         ytraining+=ytraintemp
     except:
