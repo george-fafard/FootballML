@@ -55,7 +55,7 @@ def game_data_from_year(year):
     Returns
     -------
     DataFrame
-        A DataFrame containing data for all the games
+        A DataFrame containing data for all the games in the year
     """
     # Weeks
     FIRST_WEEK = 1
@@ -65,19 +65,24 @@ def game_data_from_year(year):
     game_data = pd.DataFrame()
     
     try: 
+        # Retrieve data for each week in the year
         for week in range(FIRST_WEEK, LAST_WEEK + 1):
             # Week data
             week_data = pd.DataFrame()
 
-            # Retrieve data
+            # Retrieve data for each game in the week
             for game in range(len(Boxscores(week, year).games[str(week)+"-"+str(year)])):
-                week_data = pd.concat([
-                            week_data,Boxscore(Boxscores(week, year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe])
+                # Box score stats
+                boxscore = Boxscore(Boxscores(week, year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe
 
-            # Extract boxscore stats for each week
+                # Add box score stats for the game to the data for
+                # the week
+                week_data = pd.concat([week_data, boxscore])
+
+            # NOT SURE WHAT THIS IS FOR
             week_data["week"] = [week]*len(Boxscores(week,year).games[str(week)+"-"+str(year)])
 
-            # Store the game data
+            # Store the game data for the week
             game_data = pd.concat([game_data, week_data])
     except:
         print("ERROR: Data loading failed")
