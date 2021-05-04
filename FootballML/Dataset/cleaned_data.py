@@ -312,15 +312,24 @@ def clean_data(game_data):
 #'roof', 'surface', 'time', 'temperature', 'humidity', 'wind'
 
 
-#takes data from games and calculates the averages for the games before that game for each team in that 
-#season+3games from the previous season, taking into account
-#home vs away, and also takes the stats about the game that we could know about the game before it happens like
-#the weather and location
-#@param data2014 data for the previous year, gotten from clean_data
-#@param data2015 data for the year in question, gotten from clean_data
-#@param games The raw data for the year in question
-#@return x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
 def getTraining(data2014,data2015,games):
+    """Get data
+
+        Takes data from games and calculates the averages for the games before that game for each team in that 
+       season + 3 games from the previous season, taking into account
+        #home vs away, and also takes the stats about the game that we could know about the game before it happens like
+        #the weather and location
+        #@param data2014 data for the previous year, gotten from clean_data
+        #@param data2015 data for the year in question, gotten from clean_data
+        #@param games The raw data for the year in question
+
+        Returns
+        ------- 
+        list, list
+            x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
+
+        TODO: EDIT THIS TO MAKE SURE IT IS ACCURATE
+    """
     counters=[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
     trainingX=[]
     trainingY=[]
