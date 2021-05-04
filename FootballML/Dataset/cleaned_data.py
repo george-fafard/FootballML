@@ -1,10 +1,26 @@
+"""
+    This file contains all necessary methods and data for working with the 
+    dataset.
+
+    If we decide to pre-load the data to files and upload the files to the 
+    repo, we can simply import those files and don't need to use the code to
+    load the dataset below. However, if we would prefer to manually load the
+    data into the notebooks for our individual classifiers, simply import the 
+    required methods into the notebook and run.
+"""
+# Required libraries
+import numpy as np
+import os
+import pandas as pd
+
 # Stats from dataset
 from sportsipy.nfl.boxscore import Boxscores, Boxscore
 
-# Required libraries
-import pandas as pd
-import numpy as np
-import os
+
+############################################################################
+# If everything runs correctly with these commented out, then we can       #
+# remove them                                                              #
+############################################################################
 #import math
 
 # sklearn utilities
@@ -17,17 +33,19 @@ import os
 #from sklearn.tree import DecisionTreeClassifier
 #from sklearn.svm import SVC
 #from sklearn.ensemble import RandomForestClassifier
-#from sklearn.decomposition import PCA
+#from sklearn.decomposition import PCA                          
+############################################################################
 
 
 # NFL team abbreviations
-TEAMS = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE', 'PIT', 'ATL', 'OTI', 'RAI', 'NWE', 'CIN', 'HTX',
-         'CLT', 'JAX', 'DEN', 'NYG', 'CAR', 'CRD', 'RAM', 'SEA', 'SFO', 'GNB', 'PHI', 'WAS', 'DAL', 'RAV', 'NYJ', 
-         'KAN', 'SDG']
+TEAMS = ['NOR', 'MIN', 'CHI', 'DET', 'MIA', 'BUF', 'TAM', 'CLE',
+         'PIT', 'ATL', 'OTI', 'RAI', 'NWE', 'CIN', 'HTX', 'CLT',
+         'JAX', 'DEN', 'NYG', 'CAR', 'CRD', 'RAM', 'SEA', 'SFO',
+         'GNB', 'PHI', 'WAS', 'DAL', 'RAV', 'NYJ', 'KAN', 'SDG']
 
 
 def game_data_from_year(year):
-    """Get the data from a certain year. 
+    """Load the data from a certain year. 
     
     Parameters
     ----------
@@ -68,7 +86,7 @@ def game_data_from_year(year):
         return game_data
 
 
-def save_game_data_to_files(start_year, end_year):
+def save_game_data_to_files(start_year, end_year=None):
     """Save the game data for a range of years to files.
 
     This helps save time for retrieving game data as it can
@@ -76,16 +94,33 @@ def save_game_data_to_files(start_year, end_year):
     has to occur once and then the data can be imported from
     the files in the future.
 
+    This method serves as a general purpose method for both saving
+    data for years in a range and simply saving data for one year. To 
+    save data for just one year, only pass a value for the start year 
+    and leave the end year as default.
+
     Parameters
     ----------
     start_year : int
-        [Included] The start year to be used as the lower bound for the range
-    end_year : int
-        [Included] The end year to be used as the upper bound for the range
+        The start year to be used as the lower bound for the range [Included]
+    end_year : int, optional
+        The end year to be used as the upper bound for the range [Included]. 
+        If no value is passed, data will be saved for just the start year
+
+    Returns
+    ------
+    None
     """
     # Error codes
     DATA_ERROR = -1
 
+    # If it is desired to save data for only one year,
+    # set the end year to the start year so the loop
+    # only runs once
+    if end_year is None:
+        end_year = start_year
+
+    # Save data
     for year in range(start_year, end_year + 1):
         # Game data for next year
         game_data = game_data_from_year(year)
@@ -102,16 +137,29 @@ def save_game_data_to_files(start_year, end_year):
             game_data.to_csv(data_filename)
 
 
-def read_game_data_from_files(start_year, end_year):
+def read_game_data_from_files(start_year, end_year=None):
     """Read the game data for a range of years from files.
+
+    This method serves as a general purpose method for both reading
+    data for years in a range and simply reading data for one year. To 
+    read data for just one year, only pass a value for the start year 
+    and leave the end year as default.
 
     Parameters
     ----------
     start_year : int
-        [Included] The start year to be used as the lower bound for the range
-    end_year : int
-        [Included] The end year to be used as the upper bound for the range
+        The start year to be used as the lower bound for the range [Included]
+    end_year : int, optional
+        The end year to be used as the upper bound for the range [Included]. 
+        If no value is passed, data will be read for just the start year
     """
+    # If it is desired to read data for only one year,
+    # set the end year to the start year so the loop
+    # only runs once
+    if end_year is None:
+        end_year = start_year
+
+    # Read data
     for year in range(start_year, end_year + 1):
         try:
             # Game data for next year
@@ -128,10 +176,6 @@ def read_game_data_from_files(start_year, end_year):
         except:
             print('ERROR: Other error occurred')
 
-
-##################################
-# TODO: Continue here            #
-##################################
 
 #These are the columns that are produced by clean data: 
 #'attendance','first_downs','fourth_down_attempts','fourth_down_conversions','fumbles','fumbles_lost','interceptions',
