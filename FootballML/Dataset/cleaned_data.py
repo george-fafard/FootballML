@@ -73,16 +73,18 @@ def game_data_from_year(year):
             # Retrieve data for each game in the week
             for game in range(len(Boxscores(week, year).games[str(week)+"-"+str(year)])):
                 # Box score stats
-                boxscore = Boxscore(Boxscores(week, year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe
+                box_score = Boxscore(Boxscores(week, year).games[str(week)+"-"+str(year)][game]['boxscore']).dataframe
 
                 # Add box score stats for the game to the data for
                 # the week
-                week_data = pd.concat([week_data, boxscore])
+                week_data = pd.concat([week_data, box_score])
 
-            # NOT SURE WHAT THIS IS FOR
+            # Add a column for week number to the data for the week
+            # and store the number of the current week
             week_data["week"] = [week]*len(Boxscores(week,year).games[str(week)+"-"+str(year)])
 
-            # Store the game data for the week
+            # Add the data for the week to the game data for 
+            # the year
             game_data = pd.concat([game_data, week_data])
     except:
         print("ERROR: Data loading failed")
@@ -215,18 +217,19 @@ def clean_data(game_data):
         A LITTLE CONFUSED ON THE LIST STRUCTURE SO WE CAN EDIT THIS AND MAKE IT MORE ACCURATE/
         DETAILED
     """
-    # Set up team data for home and away games
+    # Set up team data for home and away games. Each index in the list
+    # will represent a team, and for each team, there will be two lists,
+    # with the first representing home games, and the second representing
+    # away games
     teamdata = []
     for team in TEAMS:
         teamdata.append([[],[]])
 
-    # I have no idea what any of this means lol
-    # What are all these magic numbers?
-    # What are all these crazy uses of ternary operators lol?
-    # It seems there may be some omitted parentheses and stuff that could cause
-    # errors in here so we should really clean it up and refactor it.
+    # Iterate through all games in the game data 
     for game in game_data:
         g=list(game)
+
+    
         if g[62]=='Away':
             team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
             team2=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
