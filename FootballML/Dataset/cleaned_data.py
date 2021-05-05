@@ -233,11 +233,15 @@ def clean_data(game_data):
             if not isinstance(g[28], float):
                 # Calculation including float conversion.
                 # Broken up into arbitrary parts to reduce length and improve readability
-                conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
-                conv_part2 = g[58:60] + [g[61]] + [g[-1]] + [1]
+                # Away team 
+                away_conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
+                away_conv_part2 = g[58:60] + [g[61]] + [g[-1]] + [1]
+                
+                # Home team
+                 
 
                 # Add win identifiers
-                away_team =  calculation_base + conv_part1 + conv_part2
+                away_team =  calculation_base + away_conv_part1 + away_conv_part2
             else:
                 # Calculation for if game duration is a float.
                 # Broken up into arbitrary parts to reduce length and improve readability
@@ -246,24 +250,33 @@ def clean_data(game_data):
                 # Add win identifiers
                 away_team = calculation_base + float_part 
             
-            # CAN YOU CONVERT THIS?
+
+    ################################################ START HERE ######################################################
+            # CONVERT THIS
+            # ADD IT TO THE IF ELSE STATEMENT JUST ABOVE THIS
             home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
 
 
-
+            # Convert all strings to ints so the data consists of only numbers
             away_team[26] = (1 if away_team[26]=='Outdoors' else 0)
             home_team[26] = (1 if home_team[26]=='Outdoors' else 0)
             away_team[27] = (1 if away_team[27]=='Grass' else 0)
             home_team[27] = (1 if home_team[27]=='Grass' else 0)
+
+            # CONVERT THIS 
+            # CHANGE THIS TO AN IF ELSE STATEMENT LIKE ABOVE
             away_team[28] = (int(away_team[28].split(":")[0])+12 if away_team[28].split(":")[1][2:4]=="pm" else int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
             home_team[28]=  (int(home_team[28].split(":")[0])+12 if home_team[28].split(":")[1][2:4]=="pm" else int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
 
             
-            
+            # WHAT IS NAN? CLARIFY THIS A LITTLE MORE IF YOU CAN
+            # Break up weather into it's component values, dealing with nan 
+            # by replacing them with averages calculated from some year
             weather=[]
             if isinstance(away_team[29],float):
                 weather=[55,0.5,9]
             elif len(away_team[29].split(" "))>6:
+                # SEE IF YOU CAN REFACTOR THIS SIMILAR TO HOW I DID IT ABOVE
                 if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind':
                     weather=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, 0]
                 else:
@@ -275,10 +288,8 @@ def clean_data(game_data):
                     weather=[int(away_team[29].split(" ")[0]),.50, int(away_team[29].split(" ")[3])]
 
 
-
-
-            away_team=away_team[0:29]+weather+away_team[30:32]
-            home_team=home_team[0:29]+weather+home_team[30:32]
+            away_team = away_team[0:29] + weather + away_team[30:32]
+            home_team = home_team[0:29] + weather + home_team[30:32]
 
             teamdata[TEAMS.index(g[63])][1].append(away_team)
             teamdata[TEAMS.index(g[53])][0].append(home_team)
@@ -327,22 +338,42 @@ def clean_data(game_data):
     return teamdata
 
 
-#These are the columns produced by getTraining
-#'away_average_attendance', 'away_average_first_downs', 'away_average_fourth_down_attempts', 'away_average_fourth_down_conversions', 'away_average_fumbles', 'away_average_fumbles_lost', 'away_average_interceptions', 'away_average_net_pass_yards', 'away_average_pass_attempts', 'away_average_pass_completions', 'away_average_pass_touchdowns', 'away_average_pass_yards', 'away_average_penalties', 'away_average_points', 'away_average_rush_attempts', 'away_average_rush_touchdowns', 'away_average_rush_yards', 'away_average_third_down_attempts', 'away_average_third_down_conversions', 'away_average_time_of_possession', 'away_average_times_sacked', 'away_average_total_yards', 'away_average_turnovers', 'away_average_yards_from_penalties', 'away_average_yards_lost_from_sacks', 'away_average_duration', 'away_average_roof', 'away_average_surface', 'away_average_time', 'away_average_temperature', 'away_average_humidity', 'away_average_wind', 'away_average_week', 'away_average_win'
-#'home_average_attendance', 'home_average_first_downs', 'home_average_fourth_down_attempts', 'home_average_fourth_down_conversions', 'home_average_fumbles', 'home_average_fumbles_lost', 'home_average_interceptions', 'home_average_net_pass_yards', 'home_average_pass_attempts', 'home_average_pass_completions', 'home_average_pass_touchdowns', 'home_average_pass_yards', 'home_average_penalties', 'home_average_points', 'home_average_rush_attempts', 'home_average_rush_touchdowns', 'home_average_rush_yards', 'home_average_third_down_attempts', 'home_average_third_down_conversions', 'home_average_time_of_possession', 'home_average_times_sacked', 'home_average_total_yards', 'home_average_turnovers', 'home_average_yards_from_penalties', 'home_average_yards_lost_from_sacks', 'home_average_duration', 'home_average_roof', 'home_average_surface', 'home_average_time', 'home_average_temperature', 'home_average_humidity', 'home_average_wind', 'home_average_week', 'home_average_win'
-#'roof', 'surface', 'time', 'temperature', 'humidity', 'wind'
 
 
 def getTraining(data2014,data2015,games):
-    """Get data
+    """ADD MAIN DESCRIPTION HERE
+        
+    PUT ANY EXTRA INFORMATION HERE WHERE THIS IS
+    Takes data from games and calculates the averages for the games before that game for each team in that 
+    season + 3 games from the previous season, taking into account
+    #home vs away, and also takes the stats about the game that we could know about the game before it happens like
+    #the weather and location
 
-        Takes data from games and calculates the averages for the games before that game for each team in that 
-       season + 3 games from the previous season, taking into account
-        #home vs away, and also takes the stats about the game that we could know about the game before it happens like
-        #the weather and location
-        #@param data2014 data for the previous year, gotten from clean_data
-        #@param data2015 data for the year in question, gotten from clean_data
-        #@param games The raw data for the year in question
+    These are the columns produced:
+    MAKE SURE TO UPDATE THESE AS WE ARENT TAKING AVERAGES ANYMORE RIGHT?
+    -----------------------------------------------------------------------------------------------------------------
+        | attendance      | first_downs    | fourth_down_attempts | fourth_down_conversions | fumbles               |         
+        | fumbles_lost    | interceptions  | net_pass_yards       | pass_attempts           | pass_completions      |   
+        | pass_touchdowns | pass_yards     | penalties            | points                  | rush_attempts         |
+        | rush_touchdowns | rush_yards     | third_down_attempts  | third_down_conversions  | time_of_possession    | 
+        | times_sacked    | total_yards    | turnovers            | yards_from_penalties    | yards_lost_from_sacks |
+        | duration        | roof           | surface              | time                    | temperature           |  
+        | humidity        | wind           | week                 | win                     |                       |
+        -------------------------------------------------------------------------------------------------------------
+
+        SO ADD ANYTHING FROM THIS THAT ISN'T IN THE TABLE TO THE TABLE ABOVE
+        | away_average_attendance | away_average_first_downs | away_average_fourth_down_attempts | 'away_average_fourth_down_conversions', 'away_average_fumbles', 'away_average_fumbles_lost', 'away_average_interceptions', 'away_average_net_pass_yards', 'away_average_pass_attempts', 'away_average_pass_completions', 'away_average_pass_touchdowns', 'away_average_pass_yards', 'away_average_penalties', 'away_average_points', 'away_average_rush_attempts', 'away_average_rush_touchdowns', 'away_average_rush_yards', 'away_average_third_down_attempts', 'away_average_third_down_conversions', 'away_average_time_of_possession', 'away_average_times_sacked', 'away_average_total_yards', 'away_average_turnovers', 'away_average_yards_from_penalties', 'away_average_yards_lost_from_sacks', 'away_average_duration', 'away_average_roof', 'away_average_surface', 'away_average_time', 'away_average_temperature', 'away_average_humidity', 'away_average_wind', 'away_average_week', 'away_average_win'
+        #'home_average_attendance', 'home_average_first_downs', 'home_average_fourth_down_attempts', 'home_average_fourth_down_conversions', 'home_average_fumbles', 'home_average_fumbles_lost', 'home_average_interceptions', 'home_average_net_pass_yards', 'home_average_pass_attempts', 'home_average_pass_completions', 'home_average_pass_touchdowns', 'home_average_pass_yards', 'home_average_penalties', 'home_average_points', 'home_average_rush_attempts', 'home_average_rush_touchdowns', 'home_average_rush_yards', 'home_average_third_down_attempts', 'home_average_third_down_conversions', 'home_average_time_of_possession', 'home_average_times_sacked', 'home_average_total_yards', 'home_average_turnovers', 'home_average_yards_from_penalties', 'home_average_yards_lost_from_sacks', 'home_average_duration', 'home_average_roof', 'home_average_surface', 'home_average_time', 'home_average_temperature', 'home_average_humidity', 'home_average_wind', 'home_average_week', 'home_average_win'
+        #'roof', 'surface', 'time', 'temperature', 'humidity', 'wind'
+
+        Parameters
+        ----------
+        data2014 : CHANGE_DATATYPE
+            data for the previous year, gotten from clean_data
+        data2015 : CHANGE_DATATYPE
+            data for the year in question, gotten from clean_data
+        games : CHANGE_DATATYPE
+            The raw data for the year in question
 
         Returns
         ------- 
@@ -350,6 +381,8 @@ def getTraining(data2014,data2015,games):
             x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
 
         TODO: EDIT THIS TO MAKE SURE IT IS ACCURATE
+              PUT ALL THE COMMENT STUFF ABOUT THE COLUMNS PRODUCED IN HERE TOO SIMILAR
+              TO HOW I DID IT ABOVE
     """
     counters=[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
     trainingX=[]
@@ -420,7 +453,13 @@ def getTraining(data2014,data2015,games):
     return trainingX,trainingY
 
 
-#getting the data that we might train models on.
+
+# I CAN'T TELL IF THIS IS AN EXAMPLE FOR LOADING THE DATA OR
+# IF THIS CODE SHOULD BE IMPORTED INTO THE CLASSIFIERS. IF IT
+# IS JUST AN EXAMPLE, LEAVE IT IN THE DOCSTRINGS. IF IT SHOULD
+# BE IMPORTED, CREATE A METHOD LIKE I DID ABOVE
+"""
+Example for loading the data:
 
 xtraining=[]
 ytraining=[]
@@ -441,3 +480,5 @@ for i in range(1,10):
         ytraining+=ytraintemp
     except:
         print(i)
+"""
+############################################## END HERE ################################################################
