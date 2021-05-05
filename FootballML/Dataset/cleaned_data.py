@@ -497,26 +497,41 @@ def getTraining(previous_year,current_year,games,year):
             Hi = TEAMS.index(homeabbr)
 
 
-            #get the sum of the three games from the end of the last season, keeping attention to home vs away
-            totals_A = [] + previous_year[Ai][1][-3]
-            for i in range(len(totals_A)):
-                totals_A[i] += previous_year[Ai][1][-2][i] + previous_year[Ai][1][-1][i]
-
-            #add the totals for this season up to this game, keeping attention to home vs away
-            #this is where the counter play in since they keep us from going to the current game info and future game infos
-            for i in range(counters[Ai][1]):
-                for j in range(len(current_year[Ai][1][i])):
-                    totals_A[i] += current_year[Ai][1][i][j]
-
-
-
-            ##same for the home team
-            totals_H = [] + previous_year[Hi][0][-3]
-            for i in range(len(totals_H)):
-                totals_H[i] += previous_year[Hi][0][-2][i] + previous_year[Hi][0][-1][i]
-            for i in range(counters[Hi][0]):
-                for j in range(len(current_year[Hi][0][i])):
-                    totals_H[i] += current_year[Hi][0][i][j]
+            #get the averages of the three games from the end of the last season, keeping attention to home vs away
+            if counters[Ai][1] <= 3:
+                averages_away = previous_year[Ai][1][-1]
+                for i in range(counters[Ai][1]-3,-1):
+                    for j in range(len(previous_year[Ai][1][i])):
+                        averages_away[j] += previous_year[Ai][1][i][j]
+                for i in range(counters[Ai][1]):
+                    for j in range(len(current_year[Ai][1][i])):
+                        averages_away[j] += current_year[Ai][1][i][j]
+            else:
+                averages_away = current_year[Ai][1][counters[Ai][1]-3]
+                for i in range(counters[Ai][1]-2,counters[Ai][1]):
+                    for j in range(len(current_year[Ai][1][i])):
+                        averages_away[j] += current_year[Ai][1][i][j]
+            
+            for i in range(len(averages_away)):
+                averages_away[i]=averages_away[i]/3
+                
+                
+            if counters[Hi][0] <= 3:
+                averages_home = previous_year[Hi][0][-1]
+                for i in range(counters[Hi][0]-3,-1):
+                    for j in range(len(previous_year[Hi][0][i])):
+                        averages_home[j] += previous_year[Hi][0][i][j]
+                for i in range(counters[Hi][0]):
+                    for j in range(len(current_year[Hi][0][i])):
+                        averages_home[j] += current_year[Hi][0][i][j]
+            else:
+                averages_home = current_year[Hi][0][counters[Hi][0]-3]
+                for i in range(counters[Hi][0]-2,counters[Hi][0]):
+                    for j in range(len(current_year[Hi][0][i])):
+                        averages_home[j] += current_year[Hi][0][i][j]
+            
+            for i in range(len(averages_home)):
+                averages_home[i]=averages_home[i]/3
 
             #update counters for these teams
             counters[Ai][1] += 1
@@ -593,7 +608,7 @@ def getTraining(previous_year,current_year,games,year):
             weather = [temp, humidity, wind]
 
             #Add everything to the list of training datas
-            trainingX.append(totals_H + [counters[Hi][0]] + [made_playoffs[Hi]] + totals_A + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year])
+            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year])
             trainingY.append(win)
 
     #return results
