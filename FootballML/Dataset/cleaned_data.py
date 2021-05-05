@@ -1,12 +1,17 @@
 """
     This file contains all necessary methods and data for working with the 
-    dataset.
+    dataset. 
 
-    If we decide to pre-load the data to files and upload the files to the 
-    repo, we can simply import those files and don't need to use the code to
-    load the dataset below. However, if we would prefer to manually load the
-    data into the notebooks for our individual classifiers, simply import the 
-    required methods into the notebook and run.
+    The methods to load the data and save it to files will be used with the
+    raw data from the dataset. We can pre-load the raw data and save them to 
+    files and upload them to the repo so we just have to clean the data and prepare
+    it for training, instead of loading the raw data for every year every time which 
+    can be time consuming. 
+
+    To clean the data and prepare it for training, see the clean_data and
+    get_training methods below. 
+
+    Also, see the example at the bottom for loading the data and preparing it for training.
 """
 # Required libraries
 import numpy as np
@@ -193,9 +198,7 @@ def clean_data(game_data):
         A list of lists of lists containing game data for each team, with each team's game
         data split into home (first column) and away (second column) team data.
 
-        TODO: THIS WAS BASED ON WHAT I INTERPRETED YOU HAD THE RETURN DATA AS BUT I AM STILL
-        A LITTLE CONFUSED ON THE LIST STRUCTURE SO WE CAN EDIT THIS AND MAKE IT MORE ACCURATE/
-        DETAILED
+        
     """
     # Indices
     # [1]      attendance
@@ -227,110 +230,177 @@ def clean_data(game_data):
         if winner == 'Away':
             # Base for next calculation. Put here, it doesn't have to be defined
             # twice. 
-            calculation_base = g[1:20] + [int(g[20][0:2]) + float(g[20][3:5])/60] + g[21:26]
+            away_calculation_base = g[1:20] + [int(g[20][0:2]) + float(g[20][3:5])/60] + g[21:26]
+            home_calculation_base = [g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]
 
             # Perform conversions if game duration is not a float
             if not isinstance(g[28], float):
                 # Calculation including float conversion.
                 # Broken up into arbitrary parts to reduce length and improve readability
-                # Away team 
-                away_conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
-                away_conv_part2 = g[58:60] + [g[61]] + [g[-1]] + [1]
-                
-                # Home team
-                 
+                conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
+                conv_part2 = g[58:60] + [g[61]] + [g[-1]]
 
+                # Win identifiers
+                away_win = [1]
+                home_win = [0]
+                
                 # Add win identifiers
-                away_team =  calculation_base + away_conv_part1 + away_conv_part2
+                home_team = home_calculation_base + conv_part1 + conv_part2 + home_win
+                away_team = away_calculation_base + conv_part1 + conv_part2 + away_win
+                
             else:
                 # Calculation for if game duration is a float.
                 # Broken up into arbitrary parts to reduce length and improve readability
-                float_part = [3] + [g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+                float_part = [3] + [g[56]]+g[58:60]+[g[61]]+[g[-1]]
+
+                # Win identifiers
+                away_win = [1]
+                home_win = [0]
 
                 # Add win identifiers
-                away_team = calculation_base + float_part 
+                home_team = home_calculation_base + float_part + home_win
+                away_team = away_calculation_base + float_part + away_win
             
-
-    ################################################ START HERE ######################################################
-            # CONVERT THIS
-            # ADD IT TO THE IF ELSE STATEMENT JUST ABOVE THIS
-            home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
-
-
+            
             # Convert all strings to ints so the data consists of only numbers
-            away_team[26] = (1 if away_team[26]=='Outdoors' else 0)
-            home_team[26] = (1 if home_team[26]=='Outdoors' else 0)
-            away_team[27] = (1 if away_team[27]=='Grass' else 0)
-            home_team[27] = (1 if home_team[27]=='Grass' else 0)
-
-            # CONVERT THIS 
-            # CHANGE THIS TO AN IF ELSE STATEMENT LIKE ABOVE
-            away_team[28] = (int(away_team[28].split(":")[0])+12 if away_team[28].split(":")[1][2:4]=="pm" else int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
-            home_team[28]=  (int(home_team[28].split(":")[0])+12 if home_team[28].split(":")[1][2:4]=="pm" else int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
+            if away_team[26]=='Outdoors' :
+                away_team[26] = 1
+                home_team[26] = 1
+            else:
+                away_team[26] = 0
+                home_team[26] = 0
+                
+            if away_team[27]=='Grass' :
+                away_team[27] = 1
+                home_team[27] = 1
+            else:
+                away_team[27] = 0
+                home_team[27] = 0
 
             
-            # WHAT IS NAN? CLARIFY THIS A LITTLE MORE IF YOU CAN
-            # Break up weather into it's component values, dealing with nan 
-            # by replacing them with averages calculated from some year
-            weather=[]
-            if isinstance(away_team[29],float):
-                weather=[55,0.5,9]
-            elif len(away_team[29].split(" "))>6:
-                # SEE IF YOU CAN REFACTOR THIS SIMILAR TO HOW I DID IT ABOVE
-                if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind':
-                    weather=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, 0]
-                else:
-                    weather=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, int(away_team[29].split(" ")[6])]
-            else: 
-                if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind': 
-                    weather=[int(away_team[29].split(" ")[0]),.50, 0]
-                else:
-                    weather=[int(away_team[29].split(" ")[0]),.50, int(away_team[29].split(" ")[3])]
+            if away_team[28].split(":")[1][2:4]=="pm":
+                away_team[28] = (int(away_team[28].split(":")[0])+12) / 60
+                home_team[28] = (int(home_team[28].split(":")[0])+12) / 60
+            else:
+                away_team[28] = (int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
+                home_team[28] = (int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
+                
 
+            # Break up weather into it's component values, dealing with nan, a float constant that is provided if there is a missing value 
+            # by replacing them with averages calculated from some year
+            if isinstance(away_team[29],float):
+                temp=55
+                humidity=0.5
+                wind=9
+            elif len(away_team[29].split(" "))>6:
+                temp = int(away_team[29].split(" ")[0])
+                humidity = float(away_team[29].split(" ")[4][0:-2])/100
+                if away_team[29].split(" ")[6] == 'wind,' or away_team[29].split(" ")[6] == 'wind':
+                    wind = 0
+                else:
+                    wind = int(away_team[29].split(" ")[6])
+            else: 
+                temp = int(away_team[29].split(" ")[0])
+                humidity = 0.5
+                if away_team[29].split(" ")[3] == 'wind,' or away_team[29].split(" ")[3]=='wind':
+                    wind = 0
+                else:
+                    wind = int(away_team[29].split(" ")[3])
+
+            
+            weather = [temp, humidity, wind]
 
             away_team = away_team[0:29] + weather + away_team[30:32]
             home_team = home_team[0:29] + weather + home_team[30:32]
 
             teamdata[TEAMS.index(g[63])][1].append(away_team)
             teamdata[TEAMS.index(g[53])][0].append(home_team)
-        else:
-            
-            away_team=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[0]
-            home_team=[g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]+([int(g[28].split(":")[0])+float(g[28].split(":")[1])/60] if not isinstance(g[28],float) else [3])+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
+        # Do the opposite if the home team won
+        elif winner == 'home':
+            # Base for next calculation. Put here, it doesn't have to be defined
+            # twice. 
+            away_calculation_base = g[1:20] + [int(g[20][0:2]) + float(g[20][3:5])/60] + g[21:26]
+            home_calculation_base = [g[1]]+g[29:47]+[int(g[47][0:2])+float(g[47][3:5])/60]+g[48:53]
 
+            # Perform conversions if game duration is not a float
+            if not isinstance(g[28], float):
+                # Calculation including float conversion.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
+                conv_part2 = g[58:60] + [g[61]] + [g[-1]]
 
-
-            away_team[26] = (1 if away_team[26]=='Outdoors' else 0)
-            home_team[26]=  (1 if home_team[26]=='Outdoors' else 0)
-            away_team[27]=  (1 if away_team[27]=='Grass' else 0)
-            home_team[27]=  (1 if home_team[27]=='Grass' else 0)
-            away_team[28]=  (int(away_team[28].split(":")[0])+12 if away_team[28].split(":")[1][2:4]=="pm" else int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
-            home_team[28]=  (int(home_team[28].split(":")[0])+12 if home_team[28].split(":")[1][2:4]=="pm" else int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
-
-            
-            
-            weather1=[]
-            if isinstance(away_team[29],float):
-                weather1=[55,0.5,9]
-            elif len(away_team[29].split(" "))>6:
-                weather1=[int(away_team[29].split(" ")[0]),float(away_team[29].split(" ")[4][0:-2])/100, (0 if away_team[29].split(" ")[6]=='wind,' or away_team[29].split(" ")[6]=='wind' else  int(away_team[29].split(" ")[6]))]
-            else: 
-                weather1=[int(away_team[29].split(" ")[0]),.50, (0 if away_team[29].split(" ")[3]=='wind,' or away_team[29].split(" ")[3]=='wind' else  int(away_team[29].split(" ")[3]))]
-
-
-            weather2=[]
-            if isinstance(home_team[29],float):
-                weather2=[55,0.5,9]
-            elif len(home_team[29].split(" "))>6:
-                weather2=[int(home_team[29].split(" ")[0]),float(home_team[29].split(" ")[4][0:-2])/100, (0 if home_team[29].split(" ")[6]=='wind,' or home_team[29].split(" ")[6]=='wind' else  int(home_team[29].split(" ")[6]))]
-            else: 
-                weather2=[int(home_team[29].split(" ")[0]),.50, (0 if home_team[29].split(" ")[3]=='wind,' or home_team[29].split(" ")[3]=='wind' else  int(home_team[29].split(" ")[3]))]
-
-    
+                # Win identifiers
+                away_win = [0]
+                home_win = [1]
                 
-            away_team=away_team[0:29]+weather1+away_team[30:32]
-            home_team=home_team[0:29]+weather2+home_team[30:32]
+                # Add win identifiers
+                home_team =  home_calculation_base + conv_part1 + conv_part2 + home_win
+                away_team =  away_calculation_base + conv_part1 + conv_part2 + away_win
+                
+            else:
+                # Calculation for if game duration is a float.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                float_part = [3] + [g[56]]+g[58:60]+[g[61]]+[g[-1]]
 
+                # Win identifiers
+                away_win = [0]
+                home_win = [1]
+
+                # Add win identifiers
+                home_team = home_calculation_base + float_part + home_win
+                away_team = away_calculation_base + float_part + away_win
+            
+
+            # Convert all strings to ints so the data consists of only numbers
+            if away_team[26]=='Outdoors' :
+                away_team[26] = 1
+                home_team[26] = 1
+            else:
+                away_team[26] = 0
+                home_team[26] = 0
+                
+            if away_team[27]=='Grass' :
+                away_team[27] = 1
+                home_team[27] = 1
+            else:
+                away_team[27] = 0
+                home_team[27] = 0
+
+            if away_team[28].split(":")[1][2:4]=="pm":
+                away_team[28] = (int(away_team[28].split(":")[0])+12) / 60
+                home_team[28] = (int(home_team[28].split(":")[0])+12) / 60
+            else:
+                away_team[28] = (int(away_team[28].split(":")[0])) + float(away_team[28].split(":")[1][0:2])/60
+                home_team[28] = (int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2])/60
+                
+
+            # Break up weather into it's component values, dealing with nan, a float constant that is provided if there is a missing value 
+            # by replacing them with averages calculated from some year
+            if isinstance(away_team[29],float):
+                temp=55
+                humidity=0.5
+                wind=9
+            elif len(away_team[29].split(" "))>6:
+                temp = int(away_team[29].split(" ")[0])
+                humidity = float(away_team[29].split(" ")[4][0:-2])/100
+                if away_team[29].split(" ")[6] == 'wind,' or away_team[29].split(" ")[6] == 'wind':
+                    wind = 0
+                else:
+                    wind = int(away_team[29].split(" ")[6])
+            else: 
+                temp = int(away_team[29].split(" ")[0])
+                humidity = 0.5
+                if away_team[29].split(" ")[3] == 'wind,' or away_team[29].split(" ")[3]=='wind':
+                    wind = 0
+                else:
+                    wind = int(away_team[29].split(" ")[3])
+
+            
+            weather = [temp, humidity, wind]
+
+
+            away_team = away_team[0:29] + weather + away_team[30:32]
+            home_team = home_team[0:29] + weather + home_team[30:32]
 
 
             teamdata[TEAMS.index(g[63])][0].append(home_team)
@@ -338,128 +408,184 @@ def clean_data(game_data):
     return teamdata
 
 
-
-
-def getTraining(data2014,data2015,games):
-    """ADD MAIN DESCRIPTION HERE
+def get_training(previous_year,current_year,games,year):
+    """Gets data to be trained on by the models
         
-    PUT ANY EXTRA INFORMATION HERE WHERE THIS IS
-    Takes data from games and calculates the averages for the games before that game for each team in that 
-    season + 3 games from the previous season, taking into account
-    #home vs away, and also takes the stats about the game that we could know about the game before it happens like
-    #the weather and location
+    Takes data from games and calculates the totals for the games before that game for each team in that 
+    season + 3 games from the previous season, taking into account home vs away, and also takes the stats about the
+    game that we could know about the game before it happens like the weather and location
 
     These are the columns produced:
-    MAKE SURE TO UPDATE THESE AS WE ARENT TAKING AVERAGES ANYMORE RIGHT?
-    -----------------------------------------------------------------------------------------------------------------
-        | attendance      | first_downs    | fourth_down_attempts | fourth_down_conversions | fumbles               |         
-        | fumbles_lost    | interceptions  | net_pass_yards       | pass_attempts           | pass_completions      |   
-        | pass_touchdowns | pass_yards     | penalties            | points                  | rush_attempts         |
-        | rush_touchdowns | rush_yards     | third_down_attempts  | third_down_conversions  | time_of_possession    | 
-        | times_sacked    | total_yards    | turnovers            | yards_from_penalties    | yards_lost_from_sacks |
-        | duration        | roof           | surface              | time                    | temperature           |  
-        | humidity        | wind           | week                 | win                     |                       |
-        -------------------------------------------------------------------------------------------------------------
-
-        SO ADD ANYTHING FROM THIS THAT ISN'T IN THE TABLE TO THE TABLE ABOVE
-        | away_average_attendance | away_average_first_downs | away_average_fourth_down_attempts | 'away_average_fourth_down_conversions', 'away_average_fumbles', 'away_average_fumbles_lost', 'away_average_interceptions', 'away_average_net_pass_yards', 'away_average_pass_attempts', 'away_average_pass_completions', 'away_average_pass_touchdowns', 'away_average_pass_yards', 'away_average_penalties', 'away_average_points', 'away_average_rush_attempts', 'away_average_rush_touchdowns', 'away_average_rush_yards', 'away_average_third_down_attempts', 'away_average_third_down_conversions', 'away_average_time_of_possession', 'away_average_times_sacked', 'away_average_total_yards', 'away_average_turnovers', 'away_average_yards_from_penalties', 'away_average_yards_lost_from_sacks', 'away_average_duration', 'away_average_roof', 'away_average_surface', 'away_average_time', 'away_average_temperature', 'away_average_humidity', 'away_average_wind', 'away_average_week', 'away_average_win'
-        #'home_average_attendance', 'home_average_first_downs', 'home_average_fourth_down_attempts', 'home_average_fourth_down_conversions', 'home_average_fumbles', 'home_average_fumbles_lost', 'home_average_interceptions', 'home_average_net_pass_yards', 'home_average_pass_attempts', 'home_average_pass_completions', 'home_average_pass_touchdowns', 'home_average_pass_yards', 'home_average_penalties', 'home_average_points', 'home_average_rush_attempts', 'home_average_rush_touchdowns', 'home_average_rush_yards', 'home_average_third_down_attempts', 'home_average_third_down_conversions', 'home_average_time_of_possession', 'home_average_times_sacked', 'home_average_total_yards', 'home_average_turnovers', 'home_average_yards_from_penalties', 'home_average_yards_lost_from_sacks', 'home_average_duration', 'home_average_roof', 'home_average_surface', 'home_average_time', 'home_average_temperature', 'home_average_humidity', 'home_average_wind', 'home_average_week', 'home_average_win'
-        #'roof', 'surface', 'time', 'temperature', 'humidity', 'wind'
+    ---------------------------------------------------------------------------------------------------------------------------------------------------
+        | away_attendance            | away_first_downs     | away_fourth_down_attempts | away_fourth_down_conversions | away_fumbles                 |         
+        | away_fumbles_lost          | away_interceptions   | away_net_pass_yards       | away_pass_attempts           | away_pass_completions        |   
+        | away_pass_touchdowns       | away_pass_yards      | away_penalties            | away_points                  | away_rush_attempts           |
+        | away_rush_touchdowns       | away_rush_yards      | away_third_down_attempts  | away_third_down_conversions  | away_time_of_possession      | 
+        | away_times_sacked          | away_total_yards     | away_turnovers            | away_yards_from_penalties    | away_yards_lost_from_sacks   |
+        | away_duration              | away_roof            | away_surface              | away_time                    | away_temperature             |  
+        | away_humidity              | away_wind            | away_week                 | away_win                     | away_games_played            |
+        | away_made_playoffs         | home_attendance      | home_first_downs          | home_fourth_down_attempts    | home_fourth_down_conversions |
+        | home_fumbles               | home_fumbles_lost    | home_interceptions        | home_net_pass_yards          | home_pass_attempts           |
+        | home_pass_completions      | home_pass_touchdowns | home_pass_yards           | home_penalties               | home_points                  |
+        | home_rush_attempts         | home_rush_touchdowns | home_rush_yards           | home_third_down_attempts     | home_third_down_conversions  |
+        | home_time_of_possession    | home_times_sacked    | home_total_yards          | home_turnovers               | home_yards_from_penalties    |
+        | home_yards_lost_from_sacks | home_duration        | home_roof                 | home_surface                 | home_time                    |
+        | home_temperature           | home_humidity        | home_wind                 | home_week                    | home_win                     |
+        | home_games_played          | home_made_playoffs   | roof                      | surface                      | time                         |
+        | temperature                | humidtity            | wind                      |                              |                              |
+        -----------------------------------------------------------------------------------------------------------------------------------------------
 
         Parameters
         ----------
-        data2014 : CHANGE_DATATYPE
+        previous_year : List of lists of lists
             data for the previous year, gotten from clean_data
-        data2015 : CHANGE_DATATYPE
+        current_year : List of lists of lists
             data for the year in question, gotten from clean_data
-        games : CHANGE_DATATYPE
+        games : np array
             The raw data for the year in question
 
         Returns
         ------- 
         list, list
             x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
-
-        TODO: EDIT THIS TO MAKE SURE IT IS ACCURATE
-              PUT ALL THE COMMENT STUFF ABOUT THE COLUMNS PRODUCED IN HERE TOO SIMILAR
-              TO HOW I DID IT ABOVE
     """
-    counters=[[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
-    trainingX=[]
-    trainingY=[]
+    counters = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+    trainingX = []
+    trainingY = []
+
+    
+    # Figure out which teams made the playoffs
+    made_playoffs = []
+    for i in TEAMS:
+        made_playoffs.append(0)
+        
+    for i in range(len(TEAMS)):
+        for j in range(2):
+            for g in previous_year[i][j]:
+                if g[-2] >= 18:
+                    made_playoffs[i] = 1
+        
+    # Next we cycle through the games for a specific year
     for game in range(len(games)):
-        g=list(games[game])
-        if g[62]=='Away':
-            awayabbr=g[63]
-            homeabbr=g[53]
-            win=0
-        else:
-            awayabbr=g[53]
-            homeabbr=g[63]
-            win=1
+        g = list(games[game])
+        
+        if(int(g[-1])<17):
+            # Get the teams playing for that game
+            if g[62] == 'Away':
+                awayabbr = g[63]
+                homeabbr = g[53]
+                win=0
+            else:
+                awayabbr = g[53]
+                homeabbr = g[63]
+                win = 1
+
+            
+            Ai = TEAMS.index(awayabbr)
+            Hi = TEAMS.index(homeabbr)
 
 
+            # Get the sum of the three games from the end of the last season, keeping attention to home vs away
+            totals_A = [] + previous_year[Ai][1][-3]
+            for i in range(len(totals_A)):
+                totals_A[i] += previous_year[Ai][1][-2][i] + previous_year[Ai][1][-1][i]
 
-        averagesA=[]+data2014[TEAMS.index(awayabbr)][1][-3]
-        for i in range(len(averagesA)):
-            averagesA[i]+=data2014[TEAMS.index(awayabbr)][1][-2][i]+data2014[TEAMS.index(awayabbr)][1][-1][i]
-        for i in range(counters[TEAMS.index(awayabbr)][1]):
-            for j in range(len(data2015[TEAMS.index(awayabbr)][1][i])):
-                averagesA[i]+=data2015[TEAMS.index(awayabbr)][1][i][j]
-        for i in range(len(averagesA)):
-            averagesA[i] = averagesA[i]/float(counters[TEAMS.index(awayabbr)][1]+3)
+            # Add the totals for this season up to this game, keeping attention to home vs away.
+            # This is where the counter play in since they keep us from going to the current game info and future game infos
+            for i in range(counters[Ai][1]):
+                for j in range(len(current_year[Ai][1][i])):
+                    totals_A[i] += current_year[Ai][1][i][j]
+
+            # Same for the home team
+            totals_H = [] + previous_year[Hi][0][-3]
+            for i in range(len(totals_H)):
+                totals_H[i] += previous_year[Hi][0][-2][i] + previous_year[Hi][0][-1][i]
+            for i in range(counters[Hi][0]):
+                for j in range(len(current_year[Hi][0][i])):
+                    totals_H[i] += current_year[Hi][0][i][j]
+
+            # Update counters for these teams
+            counters[Ai][1] += 1
+            counters[Hi][0] += 1
+
+            # Get the info about the game we could know before hand by getting the info for the game as we did in cleaned data
+            home_calculation_base = [g[1]] + g[29:47] + [int(g[47][0:2]) + float(g[47][3:5])/60] + g[48:53]
+
+            # Perform conversions if game duration is not a float
+            if not isinstance(g[28], float):
+                # Calculation including float conversion.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                conv_part1 = [int(g[28].split(":")[0]) + float(g[28].split(":")[1])/60] + [g[56]]
+                conv_part2 = g[58:60] + [g[61]] + [g[-1]]
+
+                # Win identifiers
+                home_win = [1]
+                
+                # Add win identifiers
+                home_team =  home_calculation_base + conv_part1 + conv_part2 + home_win
+            else:
+                # Calculation for if game duration is a float.
+                # Broken up into arbitrary parts to reduce length and improve readability
+                float_part = [3] + [g[56]] + g[58:60] + [g[61]] + [g[-1]]
+
+                # Win identifiers
+                home_win = [1]
+
+                # Add win identifiers
+                home_team = home_calculation_base + float_part + home_win
+            
+
+            # Convert all strings to ints so the data consists of only numbers
+            if home_team[26]=='Outdoors' :
+                venue = 1
+            else:
+                venue = 0
+                
+            if home_team[27]=='Grass' :
+                field = 1
+            else:
+                field = 0
+
+            
+            if home_team[28].split(":")[1][2:4]=="pm":
+                time = (int(home_team[28].split(":")[0])+12) / 60
+            else:
+                time = (int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2]) / 60
+                
+
+            # Break up weather into it's component values, dealing with nan, a float constant that is provided if there is a missing value 
+            # by replacing them with averages calculated from some year
+            if isinstance(home_team[29],float):
+                temp=55
+                humidity=0.5
+                wind=9
+            elif len(home_team[29].split(" "))>6:
+                temp = int(home_team[29].split(" ")[0])
+                humidity = float(home_team[29].split(" ")[4][0:-2])/100
+                if home_team[29].split(" ")[6] == 'wind,' or home_team[29].split(" ")[6] == 'wind':
+                    wind = 0
+                else:
+                    wind = int(home_team[29].split(" ")[6])
+            else: 
+                temp = int(home_team[29].split(" ")[0])
+                humidity = 0.5
+                if home_team[29].split(" ")[3] == 'wind,' or home_team[29].split(" ")[3]=='wind':
+                    wind = 0
+                else:
+                    wind = int(home_team[29].split(" ")[3])
+
+            
+            weather = [temp, humidity, wind]
+
+            # Add everything to the list of training datas
+            trainingX.append(totals_H + [counters[Hi][0]] + [made_playoffs[Hi]] + totals_A + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year])
+            trainingY.append(win)
+
+    return trainingX, trainingY
 
 
-
-        averagesH=[]+data2014[TEAMS.index(homeabbr)][0][-3]
-        for i in range(len(averagesH)):
-            averagesH[i]+=data2014[TEAMS.index(homeabbr)][0][-2][i]+data2014[TEAMS.index(homeabbr)][0][-1][i]
-        for i in range(counters[TEAMS.index(homeabbr)][0]):
-            for j in range(len(data2015[TEAMS.index(homeabbr)][0][i])):
-                averagesH[i]+=data2015[TEAMS.index(homeabbr)][0][i][j]
-        for i in range(len(averagesH)):
-            averagesH[i] = averagesH[i]/float(counters[TEAMS.index(homeabbr)][0]+3)
-
-
-        Ai=TEAMS.index(awayabbr)
-        Hi=TEAMS.index(homeabbr)
-        counters[Ai][1]+=1
-        counters[Hi][0]+=1
-
-
-        team1=g[1:20]+[int(g[20][0:2])+float(g[20][3:5])/60]+g[21:26]+[g[28]]+[g[56]]+g[58:60]+[g[61]]+[g[-1]]+[1]
-
-
-
-        venue=  (1 if team1[26]=='Outdoors' else 0)
-        field=  (1 if team1[27]=='Grass' else 0)
-        time=  (int(team1[28].split(":")[0])+12 if team1[28].split(":")[1][2:4]=="pm" else int(team1[28].split(":")[0])) + float(team1[28].split(":")[1][0:2])/60
-
-
-
-        weather1=[]
-        if isinstance(team1[29],float):
-            weather1=[55,0.5,9]
-        elif len(team1[29].split(" "))>6:
-            weather1=[int(team1[29].split(" ")[0]),float(team1[29].split(" ")[4][0:-2])/100, (0 if team1[29].split(" ")[6]=='wind,' or team1[29].split(" ")[6]=='wind' else  int(team1[29].split(" ")[6]))]
-        else: 
-            weather1=[int(team1[29].split(" ")[0]),.50, (0 if team1[29].split(" ")[3]=='wind,' or team1[29].split(" ")[3]=='wind' else  int(team1[29].split(" ")[3]))]
-
-
-
-        trainingX.append(averagesH+averagesA+[venue]+[field]+[time]+weather1)
-        trainingY.append(win)
-
-    return trainingX,trainingY
-
-
-
-# I CAN'T TELL IF THIS IS AN EXAMPLE FOR LOADING THE DATA OR
-# IF THIS CODE SHOULD BE IMPORTED INTO THE CLASSIFIERS. IF IT
-# IS JUST AN EXAMPLE, LEAVE IT IN THE DOCSTRINGS. IF IT SHOULD
-# BE IMPORTED, CREATE A METHOD LIKE I DID ABOVE
 """
-Example for loading the data:
+Example for loading the data and getting training set:
 
 xtraining=[]
 ytraining=[]
@@ -468,17 +594,16 @@ aveHome=[]
 columns=[]
 for i in range(1,10):
     try:
-        xtraintemp,ytraintemp=getTraining(clean_data(np.array(data201[i-1])),clean_data(np.array(data201[i])),np.array(data201[i]))
+        xtraintemp,ytraintemp=get_training(clean_data(np.array(data201[i-1])),clean_data(np.array(data201[i])),np.array(data201[i]))
         xtraining+=xtraintemp
         ytraining+=ytraintemp
     except:
         print(i)
         
     try:
-        xtraintemp,ytraintemp=getTraining(clean_data(np.array(data200[i-1])),clean_data(np.array(data200[i])),np.array(data200[i]))
+        xtraintemp,ytraintemp=get_training(clean_data(np.array(data200[i-1])),clean_data(np.array(data200[i])),np.array(data200[i]))
         xtraining+=xtraintemp
         ytraining+=ytraintemp
     except:
         print(i)
 """
-############################################## END HERE ################################################################
