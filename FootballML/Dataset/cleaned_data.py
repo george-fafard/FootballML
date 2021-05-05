@@ -256,7 +256,6 @@ def clean_data(game_data):
                 away_team = away_calculation_base + float_part + away_win
             
 
-    ################################################ START HERE ######################################################
             
 
 
