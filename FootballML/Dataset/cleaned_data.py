@@ -316,7 +316,7 @@ def clean_data(game_data):
             teamdata[TEAMS.index(g[63])][1].append(away_team)
             teamdata[TEAMS.index(g[53])][0].append(home_team)
         # Do the opposite if the home team won
-        elif winner == 'home':
+        elif winner == 'Home':
             # Base for next calculation. Put here, it doesn't have to be defined
             # twice. 
             away_calculation_base = g[1:20] + [int(g[20][0:2]) + float(g[20][3:5])/60] + g[21:26]
