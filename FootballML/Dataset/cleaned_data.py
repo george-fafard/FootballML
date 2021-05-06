@@ -18,6 +18,9 @@ import numpy as np
 import pandas as pd
 import pathlib
 
+# Path to saved data
+from FootballML import DATA_PATH
+
 # Stats from dataset
 from sportsipy.nfl.boxscore import Boxscores, Boxscore
 
@@ -78,7 +81,7 @@ def game_data_from_year(year):
         return game_data
 
 
-def save_game_data_to_files(directory, start_year, end_year=None):
+def save_game_data_to_files(start_year, end_year=None):
     """Save the game data for a range of years to files.
 
     This method serves as a general purpose method for both saving
@@ -135,7 +138,7 @@ def save_game_data_to_files(directory, start_year, end_year=None):
                 print('Saving year {}'.format(year))
 
                 # Filename to write
-                data_filename = str(pathlib.Path(directory + 'data{}.csv'.format(year)))
+                data_filename = str(pathlib.Path(DATA_PATH + '/data{}.csv'.format(year)))
 
                 # Write data
                 game_data.to_csv(data_filename)
@@ -148,7 +151,7 @@ def save_game_data_to_files(directory, start_year, end_year=None):
     print('Done...')
 
 
-def read_game_data_from_files(directory, start_year, end_year=None):
+def read_game_data_from_files(start_year, end_year=None):
     """Read the game data for a range of years from files.
 
     This method serves as a general purpose method for both reading
@@ -187,7 +190,7 @@ def read_game_data_from_files(directory, start_year, end_year=None):
     for year in range(start_year, end_year + 1):
         try:
             # Filename to read
-            year_filename = str(pathlib.Path(directory + 'data{}.csv'.format(year)))
+            year_filename = str(pathlib.Path(DATA_PATH + '/data{}.csv'.format(year)))
 
             # Extract game data from file
             year_file = pd.read_csv(year_filename, header=0)

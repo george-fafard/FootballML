@@ -14,13 +14,14 @@ PATH = str(pathlib.Path('../'))
 sys.path.insert(0, PATH)
 
 # Imports
+from FootballML import DATA_PATH
 from FootballML.Dataset.cleaned_data import save_game_data_to_files
 
 
 # Settings
-DIRECTORY  = '../FootballML/Dataset/Loaded_Raw_Data/'  # Data directory
-START_YEAR = 2003
-END_YEAR   = 2005
+DIRECTORY  = DATA_PATH + '/'#'../FootballML/Dataset/Loaded_Raw_Data/'  # Data directory
+START_YEAR = 2009
+END_YEAR   = None
 
 # Save the data
-save_game_data_to_files(DIRECTORY, START_YEAR, END_YEAR)
+save_game_data_to_files(START_YEAR, END_YEAR)
