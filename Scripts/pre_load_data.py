@@ -20,8 +20,8 @@ from FootballML.Dataset.cleaned_data import save_game_data_to_files
 
 # Settings
 DIRECTORY  = DATA_PATH + '/'#'../FootballML/Dataset/Loaded_Raw_Data/'  # Data directory
-START_YEAR = 2009
-END_YEAR   = None
+START_YEAR = 2010
+END_YEAR   = 2019
 
 # Save the data
 save_game_data_to_files(START_YEAR, END_YEAR)
