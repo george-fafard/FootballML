@@ -147,7 +147,11 @@ def read_game_data_from_files(start_year, end_year=None):
 
     Returns
     -------
-    None
+    list 
+        List of game data for each year. Since the data for each year are all
+        stored in a list, make sure to index the year in the list before feeding it 
+        into clean_data. This can be done with a loop through the list and calling 
+        clean_data on each item in the loop.
     """
     # If it is desired to read data for only one year,
     # set the end year to the start year so the loop
@@ -155,22 +159,26 @@ def read_game_data_from_files(start_year, end_year=None):
     if end_year is None:
         end_year = start_year
 
+    # Game data for each year
+    game_data = []
+
     # Read data
     for year in range(start_year, end_year + 1):
         try:
-            # Game data for next year
-            game_data = []
-
             # Filename to read
             year_filename = os.getcwd() + '/data{}.csv'.format(year)
 
             # Extract game data from file
             year_file = pd.read_csv(year_filename, header=0)
+
+            # Add the game data from the year to the data list
             game_data.append(year_file)
         except FileNotFoundError:
             print('ERROR: Cannot find file for year {}'.format(year))
         except:
             print('ERROR: Other error occurred')
+
+    return game_data
 
 
 def clean_data(game_data):
