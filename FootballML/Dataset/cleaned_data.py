@@ -411,29 +411,34 @@ def clean_data(game_data):
 def get_training(previous_year,current_year,games,year):
     """Gets data to be trained on by the models
         
-    Takes data from games and calculates the totals for the games before that game for each team in that 
-    season + 3 games from the previous season, taking into account home vs away, and also takes the stats about the
-    game that we could know about the game before it happens like the weather and location
+    Takes data from games and calculates the totals for the games before that game for each
+    team in that season + 3 games from the previous season, taking into account home vs away,
+    and also takes the stats about the game that we could know about the game before it happens
+    like the weather and location.
 
     These are the columns produced:
-    ---------------------------------------------------------------------------------------------------------------------------------------------------
-        | away_attendance            | away_first_downs     | away_fourth_down_attempts | away_fourth_down_conversions | away_fumbles                 |         
-        | away_fumbles_lost          | away_interceptions   | away_net_pass_yards       | away_pass_attempts           | away_pass_completions        |   
-        | away_pass_touchdowns       | away_pass_yards      | away_penalties            | away_points                  | away_rush_attempts           |
-        | away_rush_touchdowns       | away_rush_yards      | away_third_down_attempts  | away_third_down_conversions  | away_time_of_possession      | 
-        | away_times_sacked          | away_total_yards     | away_turnovers            | away_yards_from_penalties    | away_yards_lost_from_sacks   |
-        | away_duration              | away_roof            | away_surface              | away_time                    | away_temperature             |  
-        | away_humidity              | away_wind            | away_week                 | away_win                     | away_games_played            |
-        | away_made_playoffs         | home_attendance      | home_first_downs          | home_fourth_down_attempts    | home_fourth_down_conversions |
-        | home_fumbles               | home_fumbles_lost    | home_interceptions        | home_net_pass_yards          | home_pass_attempts           |
-        | home_pass_completions      | home_pass_touchdowns | home_pass_yards           | home_penalties               | home_points                  |
-        | home_rush_attempts         | home_rush_touchdowns | home_rush_yards           | home_third_down_attempts     | home_third_down_conversions  |
-        | home_time_of_possession    | home_times_sacked    | home_total_yards          | home_turnovers               | home_yards_from_penalties    |
-        | home_yards_lost_from_sacks | home_duration        | home_roof                 | home_surface                 | home_time                    |
-        | home_temperature           | home_humidity        | home_wind                 | home_week                    | home_win                     |
-        | home_games_played          | home_made_playoffs   | roof                      | surface                      | time                         |
-        | temperature                | humidtity            | wind                      |                              |                              |
-        -----------------------------------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------------
+        | away_attendance            | away_first_downs         | away_fourth_down_attempts   | away_fourth_down_conversions |
+        | away_fumbles               | away_fumbles_lost        | away_interceptions          | away_net_pass_yards          |
+        | away_pass_attempts         | away_pass_completions    | away_pass_touchdowns        | away_pass_yards              | 
+        | away_penalties             | away_points              | away_rush_attempts          | away_rush_touchdowns         |
+        | away_rush_yards            | away_third_down_attempts | away_third_down_conversions | away_time_of_possession      | 
+        | away_times_sacked          | away_total_yards         | away_turnovers              | away_yards_from_penalties    |
+        | away_yards_lost_from_sacks | away_duration            | away_roof                   | away_surface                 | 
+        | away_time                  | away_temperature         | away_humidity               | away_wind                    | 
+        | away_week                  | away_win                 | away_games_played           | away_made_playoffs           |
+        | home_attendance            | home_first_downs         | home_fourth_down_attempts   | home_fourth_down_conversions |
+        | home_fumbles               | home_fumbles_lost        | home_interceptions          | home_net_pass_yards          |
+        | home_pass_attempts         | home_pass_completions    | home_pass_touchdowns        | home_pass_yards              |
+        | home_penalties             | home_points              | home_rush_attempts          | home_rush_touchdowns         |
+        | home_rush_yards            | home_third_down_attempts | home_third_down_conversions | home_time_of_possession      |
+        | home_times_sacked          | home_total_yards         | home_turnovers              | home_yards_from_penalties    |
+        | home_yards_lost_from_sacks | home_duration            | home_roof                   | home_surface                 | 
+        | home_time                  | home_temperature         | home_humidity               | home_wind                    |
+        | home_week                  | home_win                 | home_games_played           | home_made_playoffs           | 
+        | roof                       | surface                  | time                        | temperature                  |
+        | humidtity                  | wind                     |                             |                              |
+        ----------------------------------------------------------------------------------------------------------------------
 
         Parameters
         ----------
@@ -447,9 +452,14 @@ def get_training(previous_year,current_year,games,year):
         Returns
         ------- 
         list, list
-            x,y where x has the columns listed above and y has 1 for home team win and 0 for away team win.
+            x, y where x has the columns listed above and y has 1 for home team win and 0 for
+            away team win.
     """
-    counters = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+    counters = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],
+                [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],
+                [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],
+                [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]]
+
     trainingX = []
     trainingY = []
 
@@ -570,8 +580,8 @@ def get_training(previous_year,current_year,games,year):
                 time = (int(home_team[28].split(":")[0])) + float(home_team[28].split(":")[1][0:2]) / 60
                 
 
-            # Break up weather into it's component values, dealing with nan, a float constant that is provided if there is a missing value 
-            # by replacing them with averages calculated from some year
+            # Break up weather into it's component values, dealing with nan, a float constant that
+            # is provided if there is a missing value by replacing them with averages calculated from some year
             if isinstance(home_team[29],float):
                 temp=55
                 humidity=0.5
