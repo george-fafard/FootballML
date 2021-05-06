@@ -1,9 +1,7 @@
 """ 
     This will be where the actual code for the neural network classifier goes
 """
-# Insert top level directory into the system path so 
-# parent and sibling modules can be imported
-# import sys
-# sys.path.insert(0, '../../../../')
-
-# Imports
+# THIS IS JUST HERE AS AN EXAMPLE. YOU CAN REMOVE THIS WHEN YOU START
+# WORKING ON IT
+def test():
+    print('It worked for neural network')
