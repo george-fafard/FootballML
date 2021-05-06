@@ -1,7 +1,9 @@
 """ 
     This will be where the actual code for the svm classifier goes
 """
-# THIS IS JUST HERE AS AN EXAMPLE. YOU CAN REMOVE THIS WHEN YOU START
-# WORKING ON IT
-def test():
-    print('It worked for svm')
+# THIS IS AN EXAMPLE YOU CAN DELETE THIS WHEN YOU START WORKING ON IT.
+from FootballML.Dataset.cleaned_data import read_game_data_from_files
+
+# Get test data to import in the notebook
+def test_data():
+    return read_game_data_from_files(2010)
