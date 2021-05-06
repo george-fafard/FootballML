@@ -131,6 +131,9 @@ def save_game_data_to_files(directory, start_year, end_year=None):
             print('ERROR: Loading the data for year {} failed'.format(year))
         else:
             try:
+                # Out log
+                print('Saving year {}'.format(year))
+
                 # Filename to write
                 data_filename = str(pathlib.Path(directory + 'data{}.csv'.format(year)))
 
@@ -138,6 +141,8 @@ def save_game_data_to_files(directory, start_year, end_year=None):
                 game_data.to_csv(data_filename)
             except:
                 print('ERROR: Saving the data for year {} failed'.format(year))
+            else:
+                print('Done...')
 
     # Out log
     print('Done...')
