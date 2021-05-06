@@ -15,8 +15,8 @@
 """
 # Required libraries
 import numpy as np
-import os
 import pandas as pd
+import pathlib
 
 # Stats from dataset
 from sportsipy.nfl.boxscore import Boxscores, Boxscore
@@ -78,7 +78,7 @@ def game_data_from_year(year):
         return game_data
 
 
-def save_game_data_to_files(start_year, end_year=None):
+def save_game_data_to_files(directory, start_year, end_year=None):
     """Save the game data for a range of years to files.
 
     This method serves as a general purpose method for both saving
@@ -93,6 +93,8 @@ def save_game_data_to_files(start_year, end_year=None):
 
     Parameters
     ----------
+    directory : str
+        Forward slash separated path to directory to save the files to
     start_year : int
         The start year to be used as the lower bound for the range [Included]
     end_year : int, optional
@@ -112,24 +114,36 @@ def save_game_data_to_files(start_year, end_year=None):
     if end_year is None:
         end_year = start_year
 
+    # Out log
+    print('Running...')
+
     # Save data
     for year in range(start_year, end_year + 1):
+        # Out log
+        print('Loading year {}'.format(year))
+
         # Game data for next year
         game_data = game_data_from_year(year)
 
         # Safety check to ensure data is loaded correctly before writing
         # to file
-        if game_data == DATA_ERROR:
+        if game_data is DATA_ERROR:
             print('ERROR: Loading the data for year {} failed'.format(year))
         else:
-            # Filename to write
-            data_filename = 'data{}.csv'.format(year)
+            try:
+                # Filename to write
+                data_filename = str(pathlib.Path(directory + 'data{}.csv'.format(year)))
 
-            # Write data
-            game_data.to_csv(data_filename)
+                # Write data
+                game_data.to_csv(data_filename)
+            except:
+                print('ERROR: Saving the data for year {} failed'.format(year))
+
+    # Out log
+    print('Done...')
 
 
-def read_game_data_from_files(start_year, end_year=None):
+def read_game_data_from_files(directory, start_year, end_year=None):
     """Read the game data for a range of years from files.
 
     This method serves as a general purpose method for both reading
@@ -139,6 +153,8 @@ def read_game_data_from_files(start_year, end_year=None):
 
     Parameters
     ----------
+    directory : str
+        Forward slash separated path to directory to read the files from
     start_year : int
         The start year to be used as the lower bound for the range [Included]
     end_year : int, optional
@@ -166,7 +182,7 @@ def read_game_data_from_files(start_year, end_year=None):
     for year in range(start_year, end_year + 1):
         try:
             # Filename to read
-            year_filename = os.getcwd() + '/data{}.csv'.format(year)
+            year_filename = str(pathlib.Path(directory + 'data{}.csv'.format(year)))
 
             # Extract game data from file
             year_file = pd.read_csv(year_filename, header=0)
