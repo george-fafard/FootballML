@@ -32,6 +32,7 @@ predictions = model.predict(x_test)
 print(classification_report(y_test, predictions))
 
 # n_jobs = -1 will maximize the use of your CPU, remove for slower but less taxing computations
+# cache_size is how much RAM to use in MB. Default is 200. Set as needed.
 grid = GridSearchCV(SVC(), param_grid, refit=True, verbose=3, n_jobs=-1)
 
 # fitting the model for grid search
@@ -41,4 +42,18 @@ print(grid.best_estimator_)
 grid_predictions = grid.predict(x_test)
 
 # print classification report
+data_best_params = grid.best_params_
+data_best_estimator_ = grid.best_estimator_
+data_classification_report = classification_report(y_test, grid_predictions)
 print(classification_report(y_test, grid_predictions))
+
+out_file = open("svm_params_results.txt", "w")
+out_file.write("params = " + str(data_best_params) + "\n")
+out_file.write("best estimator = " + str(data_best_estimator_) + "\n")
+out_file.write("classification report = " + str(data_classification_report) + "\n")
+out_file.close()
+out_file = open("svm_params_totals.txt", "a")
+out_file.write("params = " + str(data_best_params) + "\n")
+out_file.write("best estimator = " + str(data_best_estimator_) + "\n")
+out_file.write("classification report = " + str(data_classification_report) + "\n")
+out_file.close()
