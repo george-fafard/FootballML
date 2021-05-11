@@ -1,1000 +1,1020 @@
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.6139001349527666
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01)
-0.6354925775978408
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5935222672064777
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5941970310391362
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.6615384615384616
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
-0.6037786774628879
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5932523616734142
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
-0.5936572199730096
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6402159244264508
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5885290148448044
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.6101214574898786
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
-0.5889338731443995
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6619433198380567
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.6199730094466938
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+USING LINEARAND SVC(C=10, gamma=1, kernel='linear')
 0.6095816464237517
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.5890688259109311
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01)
-0.6195681511470985
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6255060728744939
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.5518218623481781
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.6102564102564102
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.6044534412955465
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+USING LINEARAND SVC(C=100, gamma=1, kernel='linear')
+0.5313090418353575
+USING LINEARAND SVC(C=0.1, gamma=1, kernel='linear')
+0.5620782726045884
+USING LINEARAND SVC(C=1, gamma=1, kernel='linear')
+0.5686909581646423
+USING LINEARAND SVC(C=100, gamma=1, kernel='linear')
+0.6252361673414305
+USING LINEARAND SVC(C=1000, gamma=1, kernel='linear')
+0.5256410256410257
+USING LINEARAND SVC(C=1, gamma=1, kernel='linear')
 0.6090418353576248
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
-0.6242914979757085
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6673414304993253
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6457489878542509
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5883940620782726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5889338731443995
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6144399460188934
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.5785425101214574
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
-0.6354925775978407
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001, kernel='sigmoid')
-0.6303643724696356
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6037786774628879
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6091767881241565
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.635357624831309
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
-0.5936572199730095
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01)
-0.5631578947368422
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6095816464237517
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.5931174089068826
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.5936572199730096
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5785425101214574
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+USING LINEARAND SVC(C=0.1, gamma=1, kernel='linear')
+0.5843454790823212
+USING LINEARAND SVC(C=10, gamma=1, kernel='linear')
+0.6205128205128205
+USING LINEARAND SVC(C=10, gamma=1, kernel='linear')
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
 0.5985155195681512
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
-0.6040485829959514
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.6251012145748989
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.620242914979757
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.6145748987854251
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.60944669365722
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.1, kernel='sigmoid')
-0.6506072874493927
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.6191632928475034
 USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6248313090418354
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
-0.624966261808367
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
+0.650472334682861
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
+0.5887989203778677
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6506072874493927
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01)
+0.6140350877192983
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
+0.5890688259109311
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5940620782726046
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.6406207827260458
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.6358974358974359
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6252361673414304
 USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.5885290148448042
+0.6040485829959514
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
 0.6408906882591093
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.631174089068826
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6364372469635627
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6614035087719298
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.1)
+0.5724696356275304
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6140350877192983
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=1, kernel='sigmoid')
+0.5574898785425101
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.634952766531714
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6087719298245614
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.60472334682861
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6246963562753037
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6089068825910932
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.6144399460188933
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5941970310391362
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6039136302294196
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
 0.60472334682861
 USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.578272604588394
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.635357624831309
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
-0.5728744939271254
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.6452091767881241
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6098515519568151
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5874493927125506
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6093117408906882
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
-0.5990553306342781
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.5156545209176788
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6352226720647773
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6461538461538462
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6820512820512821
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.6407557354925776
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01)
-0.5893387314439946
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
-0.6460188933873144
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6672064777327935
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6201079622132254
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.6356275303643726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.630229419703104
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6460188933873144
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6403508771929826
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
-0.5990553306342781
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6408906882591092
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6139001349527666
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.5935222672064777
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.6454790823211876
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
-0.6356275303643725
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.6410256410256411
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6145748987854251
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5677462887989204
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.5734143049932523
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6309041835357624
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.6408906882591092
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6713900134952767
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5935222672064777
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6044534412955465
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6147098515519568
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001, kernel='sigmoid')
-0.6149797570850202
+0.5673414304993252
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001, kernel='sigmoid')
+0.5939271255060729
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6503373819163293
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.582995951417004
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.598110661268556
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.5728744939271255
+0.6295546558704455
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.0001)
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6153846153846154
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.5937921727395411
 USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6147098515519569
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
-0.5879892037786775
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6090418353576248
 USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
 0.5784075573549259
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
-0.608502024291498
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6090418353576249
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
-0.6404858299595142
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.5883940620782726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001, kernel='sigmoid')
-0.5835357624831309
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
-0.6205128205128205
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
-0.5893387314439946
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
-0.5680161943319838
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.5724696356275304
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
-0.5936572199730095
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
 0.620242914979757
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5990553306342781
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6253711201079621
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1, kernel='sigmoid')
-0.6195681511470985
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.593387314439946
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.6245614035087719
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6252361673414304
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.6508771929824562
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
+0.6504723346828609
 USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.5831309041835357
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
-0.6095816464237516
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6043184885290148
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.6041835357624832
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
-0.6149797570850202
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6460188933873144
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
-0.5937921727395411
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6568151147098515
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6414304993252361
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.6251012145748989
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.6040485829959514
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.6251012145748988
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6203778677462888
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6357624831309042
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6192982456140351
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
-0.5885290148448042
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6043184885290149
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
-0.6564102564102564
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6350877192982456
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6147098515519568
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.5937921727395412
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6192982456140351
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.5875843454790824
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.5828609986504724
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.6041835357624832
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.5831309041835357
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.5887989203778677
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6201079622132253
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.66221322537112
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.6461538461538462
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6456140350877193
 USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5770580296896087
+0.641025641025641
 USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5836707152496625
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.645748987854251
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6616734143049933
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6623481781376517
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
 0.6201079622132253
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6462887989203778
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6622132253711202
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.6199730094466936
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.0001, kernel='sigmoid')
-0.6411605937921727
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
+0.583940620782726
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5889338731443995
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
+0.6190283400809716
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
+0.629689608636977
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6514170040485829
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6457489878542509
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+0.6410256410256411
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.624021592442645
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
+0.661808367071525
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6310391363022941
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.5987854251012147
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6400809716599191
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6502024291497975
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6454790823211877
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6723346828609986
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6348178137651821
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6093117408906883
 USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.666531713900135
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01)
+0.5983805668016193
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
+0.6724696356275304
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6241565452091767
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6720647773279352
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
+0.6187584345479082
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6306342780026991
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6715249662618084
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.6556005398110661
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6354925775978408
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.5572199730094467
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.608502024291498
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.5831309041835357
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6457489878542509
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
+0.5940620782726046
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
+0.6670715249662618
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6516869095816464
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='poly')
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6403508771929823
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6306342780026991
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6928475033738192
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
+0.6668016194331984
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.5838056680161944
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6507422402159244
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.645748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6246963562753037
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6345479082321187
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
+0.5616734143049933
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6462887989203778
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
 0.6152496626180837
 USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6248313090418354
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.573549257759784
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5777327935222673
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6310391363022942
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.61417004048583
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.583940620782726
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5946018893387315
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.5997300944669366
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.5728744939271255
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6450742240215924
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6357624831309042
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.6615384615384615
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6402159244264507
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.6769230769230768
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.6350877192982456
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.682591093117409
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6147098515519569
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
-0.6201079622132254
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
-0.5986504723346828
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6095816464237517
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
-0.6144399460188933
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.6873144399460189
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6614035087719298
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5983805668016194
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
-0.6354925775978407
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.5987854251012145
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
-0.6043184885290148
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6143049932523617
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
 0.620242914979757
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.6607287449392713
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.6712550607287449
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=1, kernel='sigmoid')
-0.6562753036437247
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6406207827260458
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
-0.5993252361673415
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6251012145748988
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.5991902834008098
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.6099865047233468
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.583940620782726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.1)
-0.5989203778677463
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
-0.5940620782726046
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6300944669365721
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6246963562753036
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5985155195681511
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.6140350877192983
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6611336032388665
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.5887989203778677
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
-0.6044534412955466
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5937921727395411
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6248313090418354
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.5987854251012146
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.60944669365722
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
-0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.0001)
-0.6149797570850202
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
 0.6195681511470985
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.5726045883940621
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6093117408906882
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6350877192982456
 USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.5941970310391362
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
+0.6195681511470986
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6865047233468287
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
+0.5897435897435896
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
+0.5676113360323887
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
+0.6144399460188933
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6408906882591092
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5939271255060729
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.5775978407557354
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.615114709851552
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.5890688259109311
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6408906882591092
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6349527665317138
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5827260458839406
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
+0.6507422402159244
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.0001)
+0.6663967611336032
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5879892037786775
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.5993252361673413
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6148448043184886
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6350877192982457
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.66221322537112
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6515519568151148
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.619838056680162
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.5731443994601889
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.593387314439946
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6766531713900135
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6456140350877193
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6404858299595142
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.635357624831309
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6044534412955466
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.5720647773279353
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.629689608636977
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6304993252361675
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.5774628879892039
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.5721997300944669
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.6139001349527666
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.5885290148448042
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6306342780026991
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.640080971659919
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.624561403508772
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6256410256410255
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6291497975708503
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6255060728744939
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6045883940620782
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6036437246963563
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6148448043184886
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01)
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
+0.5881241565452091
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
+0.631174089068826
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.5782726045883939
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6456140350877193
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.5889338731443994
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6452091767881242
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6253711201079621
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6717948717948719
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6255060728744939
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5784075573549258
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6457489878542509
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6456140350877193
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6456140350877193
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.634952766531714
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5981106612685559
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.7025641025641025
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.646693657219973
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6244264507422402
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.5677462887989203
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5990553306342781
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5985155195681512
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6564102564102564
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.5670715249662618
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6666666666666667
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.5936572199730094
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.5939271255060729
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6201079622132254
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6246963562753037
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.5724696356275303
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6446693657219973
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.6043184885290148
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='poly')
+0.5939271255060729
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.5893387314439945
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.598110661268556
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5724696356275304
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6153846153846154
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5993252361673415
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6506072874493927
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
+0.6048582995951416
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6099865047233468
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6095816464237516
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6406207827260458
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
+0.5993252361673415
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6406207827260458
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
+0.6140350877192982
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6151147098515519
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=1, kernel='sigmoid')
+0.5732793522267207
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.5931174089068826
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.5886639676113361
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5987854251012147
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+0.6307692307692306
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6415654520917679
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
+0.5516869095816465
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6358974358974357
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6252361673414304
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.624561403508772
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5780026990553307
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
+0.634952766531714
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+0.6566801619433198
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
+0.6357624831309042
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=1, kernel='sigmoid')
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.61417004048583
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6349527665317138
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
+0.5677462887989204
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6207827260458839
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6453441295546558
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.5893387314439945
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
+0.6206477732793523
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1)
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.5989203778677462
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6205128205128205
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.5886639676113361
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
+0.6349527665317141
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5825910931174089
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5940620782726047
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.5784075573549258
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6350877192982456
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6295546558704455
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6241565452091767
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.6817813765182186
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5885290148448042
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6348178137651822
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
+0.5771929824561404
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
+0.6404858299595142
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1)
+0.5520917678812417
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.5836707152496625
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6356275303643725
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.6553306342780026
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.61889338731444
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
+0.6402159244264507
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6303643724696355
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1, kernel='sigmoid')
+0.5894736842105263
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6453441295546558
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
+0.6152496626180837
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6454790823211877
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1)
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01)
+0.6102564102564102
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
+0.6615384615384615
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
 0.6256410256410256
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.6093117408906882
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.6201079622132254
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001)
-0.5834008097165991
 USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6612685560053981
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5941970310391363
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
 0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.594331983805668
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
-0.624966261808367
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6302294197031039
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001, kernel='sigmoid')
-0.634952766531714
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6357624831309041
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.5626180836707152
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.5838056680161943
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.5882591093117409
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.5985155195681511
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.5937921727395412
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.5991902834008097
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6148448043184886
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.5834008097165991
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5939271255060729
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.5997300944669366
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6139001349527666
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.6407557354925777
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.6244264507422402
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6558704453441295
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6354925775978407
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6623481781376518
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.624966261808367
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6399460188933872
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.6456140350877193
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6612685560053981
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6147098515519568
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.5983805668016193
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6147098515519568
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6255060728744939
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.5842105263157895
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
-0.6358974358974359
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.6145748987854251
 USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.6412955465587044
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5993252361673415
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
-0.60472334682861
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5780026990553306
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6408906882591092
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.5885290148448042
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.6252361673414305
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6407557354925776
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.5986504723346828
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6253711201079621
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=1, kernel='sigmoid')
-0.6248313090418354
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6360323886639676
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6400809716599191
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
-0.5680161943319838
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.5835357624831309
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.60944669365722
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
-0.6564102564102565
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.6255060728744939
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6241565452091768
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6199730094466938
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.582995951417004
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
-0.5935222672064777
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6044534412955466
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6302294197031039
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6090418353576248
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=1, kernel='sigmoid')
-0.6151147098515519
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5721997300944669
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6515519568151147
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5985155195681511
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.6408906882591092
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5937921727395412
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.6203778677462888
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.5728744939271255
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6093117408906882
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1)
-0.6091767881241565
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
-0.640620782726046
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.5836707152496626
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6615384615384615
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.5990553306342781
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
-0.6045883940620783
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6303643724696356
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
-0.6098515519568151
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5834008097165991
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01)
-0.6560053981106613
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6192982456140351
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.5985155195681512
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6352226720647773
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6091767881241565
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
-0.5881241565452091
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.5991902834008097
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6001349527665317
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6618083670715249
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6307692307692306
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6249662618083671
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.599055330634278
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.5885290148448044
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5986504723346828
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5678812415654522
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
-0.6615384615384615
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
-0.6560053981106613
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01)
-0.6251012145748989
+0.6350877192982457
 USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
-0.6194331983805668
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.1, kernel='sigmoid')
-0.6153846153846153
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.593387314439946
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.5835357624831309
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6300944669365722
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
-0.5831309041835357
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.6147098515519568
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001)
-0.6206477732793523
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6039136302294198
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.6300944669365723
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.5940620782726046
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
-0.6147098515519569
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001)
-0.6041835357624831
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.5728744939271254
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
-0.6205128205128205
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
-0.5989203778677463
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.6
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.6086369770580297
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.615114709851552
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6412955465587045
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
-0.5936572199730095
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.001)
-0.640080971659919
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.5882591093117409
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5622132253711201
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6041835357624832
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.630634278002699
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6512820512820513
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6449392712550608
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
-0.6522267206477732
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6661268556005397
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5890688259109311
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.6462887989203778
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.5939271255060727
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.60944669365722
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6149797570850202
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.614574898785425
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.6203778677462888
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5777327935222673
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5726045883940621
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
-0.5936572199730095
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5989203778677463
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=1, kernel='sigmoid')
-0.6045883940620782
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
-0.6356275303643726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.5883940620782726
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.6356275303643726
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='poly')
-0.5730094466936573
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
-0.5933873144399461
+0.6298245614035088
 USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001, kernel='sigmoid')
-0.5889338731443995
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6300944669365722
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.5986504723346828
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6257759784075574
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6396761133603238
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5728744939271255
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.0001)
-0.5937921727395412
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.1, kernel='sigmoid')
-0.5887989203778677
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5780026990553306
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6406207827260458
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6043184885290149
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6086369770580297
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6464237516869096
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.5937921727395412
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.0001)
-0.6456140350877193
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6049932523616735
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5940620782726046
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6721997300944669
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6090418353576249
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6095816464237517
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
-0.5939271255060729
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
-0.5937921727395411
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.5681511470985156
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6242914979757085
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6310391363022942
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6039136302294197
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6195681511470985
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
-0.5990553306342781
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.6041835357624832
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6040485829959514
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.599055330634278
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6199730094466936
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6502024291497975
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6043184885290149
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.5883940620782726
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6044534412955466
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.6194331983805668
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6299595141700405
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.5989203778677463
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6040485829959514
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.0001)
-0.6044534412955465
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.5727395411605938
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1)
-0.5677462887989204
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001)
-0.66221322537112
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1)
-0.5677462887989204
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01)
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.6252361673414304
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6821862348178138
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.615114709851552
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6097165991902834
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
-0.5786774628879893
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
-0.6403508771929826
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6192982456140351
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
-0.599055330634278
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.5785425101214574
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6195681511470985
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6033738191632929
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5939271255060729
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
-0.583940620782726
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01)
-0.5943319838056681
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.6354925775978407
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6653171390013495
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6095816464237517
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
-0.5885290148448044
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6199730094466936
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
-0.6568151147098515
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5730094466936573
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6512820512820513
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.1, kernel='sigmoid')
-0.5831309041835359
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5944669365721997
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.5936572199730096
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.5989203778677463
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
-0.6406207827260458
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.0001)
-0.5844804318488528
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001)
-0.6043184885290149
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6143049932523617
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.634952766531714
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6191632928475034
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
-0.6191632928475034
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
-0.613630229419703
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6407557354925777
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
-0.6248313090418354
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5778677462887989
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
-0.5878542510121457
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
-0.6155195681511471
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.6304993252361674
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.5932523616734143
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.593387314439946
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6093117408906883
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6040485829959514
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.5889338731443994
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.640080971659919
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6148448043184886
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.01)
-0.6149797570850202
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
-0.6354925775978407
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.001)
-0.6192982456140351
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.0001)
-0.6197031039136303
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
-0.6194331983805668
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1, kernel='poly')
-0.61417004048583
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
-0.6091767881241565
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
-0.6151147098515519
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.5943319838056681
+0.6148448043184885
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='poly')
-0.6618083670715249
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
-0.6404858299595142
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
-0.6350877192982456
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
-0.5993252361673413
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01)
-0.6251012145748988
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.5991902834008098
-USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=1)
-0.6201079622132253
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.6048582995951417
+0.6155195681511472
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=1)
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.6302294197031039
 USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
-0.5983805668016193
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01)
-0.6201079622132253
-USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001)
-0.6777327935222672
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6719298245614036
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001)
+0.6043184885290148
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6403508771929824
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01)
+0.6403508771929826
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6663967611336032
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.5832658569500675
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.5577597840755735
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
+0.6358974358974359
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6152496626180837
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.5933873144399461
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.640620782726046
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6309041835357625
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
+0.7086369770580296
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6412955465587045
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1, gamma=0.1)
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01)
+0.6565452091767882
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.001, kernel='sigmoid')
+0.619838056680162
 USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
-0.6251012145748988
-USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001, kernel='sigmoid')
-0.6510121457489879
-USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
-0.6306342780026991
-USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1, gamma=0.01, kernel='sigmoid')
-0.5887989203778677
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=1, kernel='sigmoid')
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1, gamma=0.1)
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.6093117408906882
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001, kernel='sigmoid')
+0.5785425101214575
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=1000, gamma=0.001)
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=10, gamma=0.001)
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.001)
+0.599055330634278
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01)
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='poly')
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=10, gamma=0.1)
+0.5994601889338732
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=10, gamma=0.001)
+0.630634278002699
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.001)
-0.6361673414304992
+0.656545209176788
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.01)
+0.6304993252361675
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.0001)
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01)
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6454790823211877
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6558704453441295
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001)
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.6205128205128206
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1, gamma=0.01)
+0.6456140350877192
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1)
+0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.001)
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='poly')
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.1, kernel='sigmoid')
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=10, gamma=0.1, kernel='sigmoid')
+0.5985155195681512
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.583535762483131
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=0.1, gamma=1, kernel='sigmoid')
+0.61417004048583
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=10, gamma=0.01, kernel='sigmoid')
+0.6099865047233468
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.5941970310391362
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=0.1, gamma=0.1, kernel='sigmoid')
+0.5838056680161944
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.6242914979757085
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.01, kernel='sigmoid')
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=100, gamma=0.0001)
+0.5944669365721997
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND SVC(C=100, gamma=0.001, kernel='sigmoid')
+0.5574898785425101
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND SVC(C=100, gamma=0.001)
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND SVC(C=1000, gamma=0.01, kernel='sigmoid')
+0.5784075573549258
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND SVC(C=100, gamma=0.0001)
+0.656545209176788
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND SVC(C=1000, gamma=0.0001)
+0.6412955465587045
