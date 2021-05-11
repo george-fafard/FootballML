@@ -36,7 +36,8 @@ if MODE == "write":
             elif i == 1:
                 scaler = p.RobustScaler()
             elif i == 2:
-                scaler = p.QuantileTransformer()
+                # set param normal for gaussian dist- should be good for RBF
+                scaler = p.QuantileTransformer(output_distribution='normal')
             elif i == 3:
                 scaler = p.PowerTransformer()
             else:
@@ -84,7 +85,7 @@ if MODE == "write":
             out_file.close()
 
             out_file = open("svm_acc_totals.txt", "a")
-            out_file.write("USING THE: " + str(type(scaler)) + "AND " + str(data_best_estimator_) + "\n")
+            out_file.write("USING THE: " + str(type(scaler)) + "AND " + str(data_best_params) + "\n")
             out_file.write(str(grid.best_score_) + "\n")
         j += 1
 elif MODE == "read":
