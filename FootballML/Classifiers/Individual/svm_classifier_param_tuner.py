@@ -9,6 +9,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+
 
 # read in the data and split
 data_read_2009 = cd.read_game_data_from_files(2009)
@@ -16,7 +18,10 @@ data_read_2010 = cd.read_game_data_from_files(2010)
 data2010clean = cd.clean_data(np.array(data_read_2010[0]))
 data2009clean = cd.clean_data(np.array(data_read_2009[0]))
 X, Y = cd.get_training(data2009clean, data2010clean, np.array(data_read_2010[0]), 2010)
+
 X_train, x_test, y_train, y_test = train_test_split(X, Y, test_size = 0.20)
+
+
 
 # params to "search"
 param_grid = {'C': [0.1, 1, 10, 100, 1000],
@@ -32,7 +37,6 @@ predictions = model.predict(x_test)
 print(classification_report(y_test, predictions))
 
 # n_jobs = -1 will maximize the use of your CPU, remove for slower but less taxing computations
-# cache_size is how much RAM to use in MB. Default is 200. Set as needed.
 grid = GridSearchCV(SVC(), param_grid, refit=True, verbose=3, n_jobs=-1)
 
 # fitting the model for grid search
@@ -45,13 +49,16 @@ grid_predictions = grid.predict(x_test)
 data_best_params = grid.best_params_
 data_best_estimator_ = grid.best_estimator_
 data_classification_report = classification_report(y_test, grid_predictions)
-print(classification_report(y_test, grid_predictions))
+print(data_classification_report)
 
+# single run file
 out_file = open("svm_params_results.txt", "w")
 out_file.write("params = " + str(data_best_params) + "\n")
 out_file.write("best estimator = " + str(data_best_estimator_) + "\n")
 out_file.write("classification report = " + str(data_classification_report) + "\n")
 out_file.close()
+
+# totals file
 out_file = open("svm_params_totals.txt", "a")
 out_file.write("params = " + str(data_best_params) + "\n")
 out_file.write("best estimator = " + str(data_best_estimator_) + "\n")
