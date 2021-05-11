@@ -1,5 +1,8 @@
 """ 
-    This will be where the actual code for the svm classifier goes
+    This file tests HyperParameters using 5 fold cross validation. After several runs and ~1000 entries, the final
+    results can be viewed by running this file in "read" MODE. Chang the value of the Variable to "write" to write more
+    tests using scaled data and non-linear decision boundaries, or change to "linear" to go through an excruciatingly
+    slow run with non-scaled data and a linear decision boundary.
 """
 from FootballML.Dataset import cleaned_data as cd
 import pandas as pd
