@@ -2,8 +2,10 @@
     This will be where the actual code for the logistic regression classifier goes
 """
 # Library imports
-import numpy as np
+import numpy  as np
 import pandas as pd
+from sklearn.linear_model    import LogisticRegression
+from sklearn.model_selection import train_test_split
 
 # FootballML imports
 from FootballML.Dataset import cleaned_data as cd
@@ -40,9 +42,20 @@ def run_logistic_regression():
         CURRENT_YEAR_RAW   = game_data[prev_year + 1]
         CURRENT_YEAR_DIGIT = START_YEAR + (prev_year + 1)
 
-        # Extract training labels for year
+        # Extract training labels for current year
         X_YEAR, Y_YEAR = cd.get_training(PREVOUS_YEAR_CLEAN, CURRENT_YEAR_CLEAN, CURRENT_YEAR_RAW, CURRENT_YEAR_DIGIT)
         
         # Add training labels to those for the previous years
         X.extend(X_YEAR)
         Y.extend(Y_YEAR)
+
+    # Training and testing data
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, shuffle=False)
+
+    # Fit classifier
+    log_reg_classifier = LogisticRegression()
+    log_reg_classifier.fit(X_train, Y_train)
+
+    # Get score
+    score = log_reg_classifier.score(X_test, Y_test)
+    print("Score:", score)
