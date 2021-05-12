@@ -15,7 +15,7 @@ END_YEAR = 2019
 # change the QuantileTransformer data output normalization
 # True for Gaussian (Normal) PDF,
 # False for the stricter [0, 1] normalization
-GAUSSIAN = False
+GAUSSIAN = True
 
 
 def custom_precision_recall(conf_matrix):
@@ -79,7 +79,6 @@ def main():
     data_read = cd.read_game_data_from_files(START_YEAR, END_YEAR)
     # create big X and big Y
     for i in range(0, (END_YEAR - START_YEAR)):
-        print(i)
         if i == 0:
             X, Y = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
                                    np.array(data_read[i]), START_YEAR+i)
