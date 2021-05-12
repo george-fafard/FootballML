@@ -53,7 +53,7 @@ def run_logistic_regression():
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, shuffle=False)
 
     # Fit classifier
-    log_reg_classifier = LogisticRegression()
+    log_reg_classifier = LogisticRegression(max_iter=1000000)
     log_reg_classifier.fit(X_train, Y_train)
 
     # Get score
