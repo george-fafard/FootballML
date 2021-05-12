@@ -6,6 +6,16 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing as p
 import matplotlib.pyplot as plt
+plt.set_cmap("Oranges")
+
+
+START_YEAR = 2016
+END_YEAR = 2019
+
+# change the QuantileTransformer data output normalization
+# False for Gaussian (Normal) PDF,
+# True for the stricter [0, 1] normalization
+GAUSSIAN = True
 
 
 def custom_precision_recall(conf_matrix):
@@ -66,29 +76,33 @@ def f1_score(conf_matrix):
 
 def main():
     # read in data
-    data_read = cd.read_game_data_from_files(2009, 2018)
+    data_read = cd.read_game_data_from_files(START_YEAR, END_YEAR)
     # create big X and big Y
-    for i in range(0, 9):
+    for i in range(0, (END_YEAR - START_YEAR)):
         print(i)
         if i == 0:
             X, Y = cd.get_training(cd.clean_data(np.array(data_read[i+1])), cd.clean_data(np.array(data_read[i])),
-                                   np.array(data_read[i]), 2009+i)
+                                   np.array(data_read[i]), START_YEAR+i)
         else:
             X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i+1])), cd.clean_data(np.array(data_read[i])),
-                                   np.array(data_read[i]), 2009+i)
+                                   np.array(data_read[i]), START_YEAR+i)
             X += X_temp
             Y += Y_temp
-
 
     # apply scaling
     # From HypeParam testing, we will use this scaler:
     # QuantileTransformer with normalized Gaussian output
-    scaler = p.QuantileTransformer(output_distribution='normal')
-    X_scaled = scaler.fit_transform(X, Y)
+    # however, we will allow the option to use the stricter scaler.
+    if GAUSSIAN:
+        scaler = p.QuantileTransformer(output_distribution='normal')
+        X_scaled = scaler.fit_transform(X, Y)
+    elif not GAUSSIAN:
+        scaler = p.QuantileTransformer()
+        X_scaled = scaler.fit_transform(X, Y)
 
 
     # train test split
-    X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y, test_size=0.30)
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
 
 
     # make the SVC object using our tested for HyperParams
