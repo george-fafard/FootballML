@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 plt.set_cmap("Oranges")
 
 
-START_YEAR = 2016
+START_YEAR = 2003
 END_YEAR = 2019
 
 # change the QuantileTransformer data output normalization
@@ -81,10 +81,10 @@ def main():
     for i in range(0, (END_YEAR - START_YEAR)):
         print(i)
         if i == 0:
-            X, Y = cd.get_training(cd.clean_data(np.array(data_read[i+1])), cd.clean_data(np.array(data_read[i])),
+            X, Y = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
                                    np.array(data_read[i]), START_YEAR+i)
         else:
-            X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i+1])), cd.clean_data(np.array(data_read[i])),
+            X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
                                    np.array(data_read[i]), START_YEAR+i)
             X += X_temp
             Y += Y_temp
