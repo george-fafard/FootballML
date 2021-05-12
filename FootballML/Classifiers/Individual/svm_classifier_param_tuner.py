@@ -114,6 +114,7 @@ def main():
             print("Average accuracy: " + str(total / float(num_counted)))
             print("Highest accuracy: " + str(highest))
             print("Achieved with: " + store_me)
+            in_file.close()
 
         except FileNotFoundError:
             print("Could not find the file")
