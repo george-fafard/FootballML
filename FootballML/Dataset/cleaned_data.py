@@ -440,7 +440,7 @@ def clean_data(game_data):
     return teamdata
 
 
-def get_training(previous_year,current_year,games,year):
+def get_training(previous_year,current_year,games,year_num):
     """Gets data to be trained on by the models
         
     Takes data from games and calculates the totals for the games before that game for each
@@ -480,6 +480,8 @@ def get_training(previous_year,current_year,games,year):
             data for the year in question, gotten from clean_data
         games : np array
             The raw data for the year in question
+        year_num : int
+            The number of the current year (ex: 2018)
 
         Returns
         ------- 
@@ -637,7 +639,7 @@ def get_training(previous_year,current_year,games,year):
             weather = [temp, humidity, wind]
 
             # Add everything to the list of training datas
-            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year])
+            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year_num])
             trainingY.append(win)
 
     return trainingX, trainingY
