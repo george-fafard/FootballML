@@ -2018,3 +2018,2003 @@ USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 
 0.6510121457489879
 USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
 0.6465587044534412
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5831309041835357
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6139001349527666
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6035087719298246
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6609986504723346
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5983805668016193
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6360323886639676
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5780026990553305
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5935222672064777
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6039136302294196
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6663967611336032
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'poly'}
+0.5626180836707153
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6356275303643725
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5678812415654522
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.651417004048583
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5728744939271255
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6094466936572199
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6043184885290148
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6191632928475034
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6502024291497976
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6304993252361675
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6350877192982456
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6197031039136301
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6358974358974359
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6464237516869096
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6152496626180837
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6668016194331984
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'rbf'}
+0.5677462887989204
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6618083670715249
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5986504723346829
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6723346828609986
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5994601889338732
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6244264507422403
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6400809716599191
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6557354925775979
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6662618083670715
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.640620782726046
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5885290148448044
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6460188933873144
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6770580296896087
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6205128205128205
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6460188933873144
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6620782726045885
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6560053981106613
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5991902834008096
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5940620782726047
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6360323886639676
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5979757085020243
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5522267206477733
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6462887989203778
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5993252361673413
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5982456140350878
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6357624831309041
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6406207827260458
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6295546558704452
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5881241565452091
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5887989203778676
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5882591093117409
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5832658569500675
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6099865047233468
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 0.01, 'kernel': 'poly'}
+0.6137651821862348
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6771929824561405
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6356275303643725
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5728744939271254
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5568151147098516
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6101214574898786
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5993252361673413
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5836707152496626
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6205128205128205
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6303643724696357
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.635897435897436
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6670715249662618
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5939271255060727
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6356275303643725
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5780026990553307
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6556005398110661
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6085020242914979
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5987854251012145
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6035087719298246
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5986504723346828
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5885290148448042
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5931174089068826
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6765182186234818
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5835357624831309
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5832658569500675
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5678812415654522
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6403508771929824
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6148448043184886
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6719298245614035
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6871794871794872
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6255060728744939
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6506072874493926
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6205128205128205
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5727395411605938
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6663967611336032
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5674763832658569
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6044534412955465
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6144399460188933
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5879892037786774
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6307692307692309
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5828609986504724
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5789473684210527
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6195681511470984
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5993252361673415
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6240215924426451
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6151147098515519
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6147098515519569
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6240215924426451
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5836707152496625
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6356275303643725
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6093117408906882
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6105263157894736
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6255060728744939
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.640620782726046
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6560053981106613
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5939271255060729
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6666666666666667
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6036437246963563
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.610391363022942
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6564102564102564
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.608502024291498
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6041835357624831
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6453441295546558
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6087719298245614
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6101214574898786
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6560053981106613
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6253711201079621
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6502024291497975
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.599055330634278
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6350877192982456
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5881241565452091
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6394062078272604
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.660863697705803
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6357624831309041
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6816464237516868
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5985155195681512
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.599055330634278
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5935222672064777
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6242914979757085
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6350877192982457
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6261808367071525
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6572199730094467
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.599055330634278
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6506072874493927
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6155195681511472
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5775978407557355
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6465587044534413
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6035087719298244
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6197031039136301
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5780026990553306
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5982456140350877
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5932523616734142
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6045883940620783
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5885290148448042
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6878542510121457
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6303643724696357
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5831309041835357
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6402159244264507
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5991902834008098
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6044534412955466
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6507422402159244
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6298245614035087
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5840755735492578
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6153846153846154
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5885290148448042
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6303643724696355
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6352226720647774
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6033738191632929
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6460188933873144
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6568151147098515
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 1, 'kernel': 'sigmoid'}
+0.593927125506073
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5979757085020243
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.660863697705803
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5881241565452091
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5935222672064777
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6411605937921727
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6206477732793522
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6157894736842106
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6041835357624831
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5835357624831309
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6089068825910932
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5836707152496625
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6403508771929824
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6511470985155196
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6048582995951417
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5882591093117409
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6515519568151147
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6666666666666667
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6668016194331984
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6619433198380568
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6398110661268556
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.6089068825910932
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.61417004048583
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.579217273954116
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6516869095816464
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6454790823211877
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6515519568151148
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6558704453441295
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6249662618083671
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6043184885290148
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6153846153846154
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5936572199730096
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6041835357624831
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6410256410256411
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6557354925775977
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6035087719298246
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'poly'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6087719298245614
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5836707152496626
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.645748987854251
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6564102564102564
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6190283400809717
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6458839406207827
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.645748987854251
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6306342780026991
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.634952766531714
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6307692307692307
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5836707152496626
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5731443994601889
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6824561403508772
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6456140350877193
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6662618083670715
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.593387314439946
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6039136302294198
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5778677462887989
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.635357624831309
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6406207827260457
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6458839406207827
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6151147098515519
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6507422402159244
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6464237516869096
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6500674763832659
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.61417004048583
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'rbf'}
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6402159244264507
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6298245614035088
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5835357624831309
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6614035087719298
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5936572199730094
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6560053981106613
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5941970310391362
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5990553306342781
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.66693657219973
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'rbf'}
+0.5677462887989204
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6187584345479082
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6140350877192982
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5778677462887989
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6348178137651822
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.589203778677463
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6558704453441295
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 0.01, 'kernel': 'poly'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5947368421052632
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6514170040485829
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6255060728744939
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6568151147098515
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5889338731443996
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5882591093117409
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6570850202429149
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5982456140350878
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5727395411605938
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6357624831309042
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.60472334682861
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5832658569500675
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6511470985155194
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6464237516869096
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5939271255060727
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6616734143049932
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6406207827260458
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6770580296896086
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6349527665317138
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6097165991902833
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6925775978407558
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5993252361673415
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5939271255060727
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6300944669365722
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6573549257759784
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6140350877192983
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.593387314439946
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6510121457489879
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+0.672199730094467
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5932523616734142
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5932523616734142
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5836707152496625
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6151147098515519
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6296896086369771
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6412955465587045
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5674763832658569
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5574898785425101
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6307692307692307
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6147098515519569
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6097165991902833
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6510121457489879
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6043184885290148
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6298245614035087
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6403508771929826
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5935222672064777
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5887989203778677
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6256410256410256
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5682860998650473
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6153846153846153
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.598110661268556
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5719298245614035
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6396761133603239
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6139001349527666
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6248313090418354
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5985155195681511
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.631174089068826
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6663967611336032
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6615384615384616
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6252361673414304
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6510121457489878
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6348178137651821
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6404858299595142
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5890688259109311
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5887989203778677
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5726045883940621
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5982456140350878
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6404858299595142
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5615384615384615
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.608906882591093
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5885290148448044
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5569500674763833
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5780026990553305
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6407557354925776
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6618083670715249
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5670715249662618
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6309041835357625
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5678812415654522
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6349527665317138
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6609986504723346
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6244264507422402
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6770580296896086
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5828609986504725
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6720647773279352
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6403508771929824
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6566801619433198
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6354925775978408
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6615384615384616
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.640080971659919
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6364372469635627
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.5732793522267208
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5994601889338732
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.67165991902834
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6249662618083671
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6518218623481781
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6206477732793523
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5778677462887989
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6514170040485829
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6303643724696355
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5987854251012146
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6408906882591093
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6515519568151147
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'poly'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6089068825910932
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6252361673414304
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6612685560053981
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5677462887989204
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5944669365721997
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6620782726045885
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5991902834008096
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5784075573549258
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'rbf'}
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6195681511470986
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6199730094466936
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6410256410256411
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6309041835357625
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5676113360323887
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6360323886639676
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6612685560053981
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5932523616734142
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.614574898785425
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5839406207827261
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6622132253711202
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6348178137651821
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6350877192982457
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6244264507422402
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6044534412955466
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6241565452091768
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6511470985155196
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6457489878542509
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5993252361673413
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6398110661268556
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6721997300944669
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6144399460188933
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.635357624831309
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5986504723346828
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6140350877192983
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6095816464237516
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6511470985155196
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6503373819163294
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6303643724696355
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6348178137651821
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.573549257759784
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6460188933873143
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.603778677462888
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6043184885290149
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.640620782726046
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6141700404858299
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6044534412955466
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6259109311740891
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.593387314439946
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.5893387314439946
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.593387314439946
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5831309041835357
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6313090418353576
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6361673414304994
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.661808367071525
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.634952766531714
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6242914979757085
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6925775978407558
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6398110661268557
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6201079622132254
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5893387314439946
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5940620782726047
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5932523616734143
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5937921727395411
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.619838056680162
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6147098515519569
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5516869095816465
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6314439946018894
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5983805668016194
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6097165991902834
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.650877192982456
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6511470985155196
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6354925775978406
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6246963562753037
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5940620782726046
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6035087719298246
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5892037786774628
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6093117408906883
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6097165991902833
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5875843454790823
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5991902834008097
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 1, 'kernel': 'rbf'}
+0.5835357624831309
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6720647773279351
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5890688259109311
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5889338731443994
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6194331983805668
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6614035087719299
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6400809716599191
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6403508771929826
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6668016194331983
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6045883940620782
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6304993252361673
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6036437246963562
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6309041835357625
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6462887989203778
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5615384615384615
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6611336032388664
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.656140350877193
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6203778677462888
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5727395411605938
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5932523616734142
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.619838056680162
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6614035087719299
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6410256410256411
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6452091767881242
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5893387314439946
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6819163292847504
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.620242914979757
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6148448043184885
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6041835357624831
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6304993252361675
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6403508771929824
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5682860998650472
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6245614035087719
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5993252361673415
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6415654520917679
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.615114709851552
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6458839406207828
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6515519568151147
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'poly'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6407557354925777
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5982456140350877
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5941970310391363
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6089068825910932
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6353576248313091
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'poly'}
+0.5941970310391362
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6186234817813766
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6417004048582996
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5936572199730094
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.629689608636977
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6454790823211877
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6402159244264507
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5736842105263158
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6093117408906882
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5878542510121457
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6719298245614035
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.594331983805668
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5881241565452091
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5994601889338732
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5985155195681511
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6144399460188933
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6666666666666667
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6139001349527666
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6037786774628879
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6349527665317138
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6039136302294198
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5990553306342781
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6294197031039136
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6098515519568151
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.588663967611336
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6402159244264507
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5941970310391362
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6358974358974359
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5995951417004048
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6041835357624831
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6399460188933873
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5882591093117409
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6090418353576249
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5887989203778677
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6090418353576248
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5986504723346828
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6349527665317141
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+0.624966261808367
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6558704453441295
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6197031039136303
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6403508771929826
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6045883940620782
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.60472334682861
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.635897435897436
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5883940620782726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6145748987854251
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5885290148448044
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6300944669365721
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6032388663967612
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5618083670715249
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6195681511470984
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6410256410256411
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6568151147098515
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6197031039136301
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6295546558704453
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5681511470985157
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.630229419703104
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6352226720647774
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6460188933873144
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.61417004048583
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6302294197031039
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6303643724696356
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6452091767881242
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5997300944669366
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5886639676113361
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5723346828609986
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6198380566801619
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6354925775978407
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5935222672064777
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5887989203778677
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6039136302294197
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6147098515519568
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5940620782726046
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6252361673414305
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5834008097165991
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5879892037786774
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.676923076923077
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6144399460188934
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6199730094466938
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6296896086369771
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6095816464237517
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6770580296896087
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'poly'}
+0.5889338731443994
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6719298245614036
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6823211875843456
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6719298245614036
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5939271255060727
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5781376518218624
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5940620782726045
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6192982456140352
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.5991902834008096
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+0.5990553306342781
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.630634278002699
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6669365721997302
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6566801619433198
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6149797570850202
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.645748987854251
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.5990553306342781
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6352226720647773
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6140350877192983
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6192982456140351
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6195681511470985
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6562753036437247
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.5774628879892039
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6352226720647774
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.5836707152496627
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6673414304993253
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6309041835357625
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6041835357624832
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 1, 'kernel': 'rbf'}
+0.5937921727395412
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5989203778677463
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1000, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6464237516869096
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6356275303643726
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.578272604588394
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'rbf'}
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.6099865047233468
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6253711201079623
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6310391363022942
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6348178137651822
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'poly'}
+0.6251012145748988
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6452091767881241
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'rbf'}
+0.666531713900135
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6304993252361674
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.6091767881241565
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.5730094466936573
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.599055330634278
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 10, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6462887989203778
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6605937921727395
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1000, 'gamma': 0.01, 'kernel': 'sigmoid'}
+0.60472334682861
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6040485829959514
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6032388663967612
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6251012145748989
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5836707152496626
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.60472334682861
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'}
+0.6766531713900135
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.60944669365722
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.6143049932523617
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6512820512820513
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 1, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'}
+0.6246963562753036
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6201079622132253
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'sigmoid'}
+0.6510121457489878
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 10, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.6299595141700405
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 100, 'gamma': 0.0001, 'kernel': 'rbf'}
+0.5835357624831309
+USING THE: <class 'sklearn.preprocessing._data.MinMaxScaler'>AND {'C': 1000, 'gamma': 0.001, 'kernel': 'sigmoid'}
+0.5786774628879892
+USING THE: <class 'sklearn.preprocessing._data.RobustScaler'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'sigmoid'}
+0.6507422402159244
+USING THE: <class 'sklearn.preprocessing._data.QuantileTransformer'>AND {'C': 1, 'gamma': 0.01, 'kernel': 'rbf'}
+0.6461538461538462
+USING THE: <class 'sklearn.preprocessing._data.PowerTransformer'>AND {'C': 0.1, 'gamma': 1, 'kernel': 'poly'}
+0.5936572199730095
+USING THE: <class 'sklearn.preprocessing._data.StandardScaler'>AND {'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'}
+0.60472334682861
