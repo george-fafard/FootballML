@@ -100,10 +100,8 @@ def main():
         scaler = p.QuantileTransformer()
         X_scaled = scaler.fit_transform(X, Y)
 
-
     # train test split
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
-
 
     # make the SVC object using our tested for HyperParams
     svc_obj = SVC(kernel='rbf', gamma=0.01, C=10)
