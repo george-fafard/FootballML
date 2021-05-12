@@ -108,13 +108,13 @@ def main():
     clf_2 = svc_obj.fit(X_train, y_train)
     predicted_2 = clf_2.predict(X_test)
     # do some predictions
-    print(str(svc_obj.score(X_test, y_test)))
+    print("SVC accuracy:" + str(svc_obj.score(X_test, y_test)))
     cm_2 = confusion_matrix(y_test, predicted_2)
     cm_df_2 = pd.DataFrame(cm_2)
     plt.imshow(cm_df_2)
-    print(cm_df_2)
+    print("SVC confusion matrix\n" + str(cm_df_2))
     plt.show()
-    print("SVC\n" + str(f1_score(cm_2)))
+    print("SVC Metrics\n" + str(f1_score(cm_2)))
     print(custom_precision_recall(cm_2))
 
 main()
