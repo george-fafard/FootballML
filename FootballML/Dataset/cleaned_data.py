@@ -481,8 +481,7 @@ def get_training(previous_year,current_year,games,year_num):
         games : np array
             The raw data for the year in question
         year_num : int
-            The number of the year with respect to the range of years being 
-            trained on
+            The number of the current year (ex: 2018)
 
         Returns
         ------- 
