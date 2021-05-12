@@ -15,7 +15,7 @@ END_YEAR = 2019
 # change the QuantileTransformer data output normalization
 # False for Gaussian (Normal) PDF,
 # True for the stricter [0, 1] normalization
-GAUSSIAN = True
+GAUSSIAN = False
 
 
 def custom_precision_recall(conf_matrix):
