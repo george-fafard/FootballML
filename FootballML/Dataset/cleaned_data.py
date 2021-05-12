@@ -440,7 +440,7 @@ def clean_data(game_data):
     return teamdata
 
 
-def get_training(previous_year, current_year, games, year_num):
+def get_training(previous_year,current_year,games,year):
     """Gets data to be trained on by the models
         
     Takes data from games and calculates the totals for the games before that game for each
@@ -480,8 +480,6 @@ def get_training(previous_year, current_year, games, year_num):
             data for the year in question, gotten from clean_data
         games : np array
             The raw data for the year in question
-        year_num : int
-            The number of the current year (ex: 2018)
 
         Returns
         ------- 
@@ -530,17 +528,17 @@ def get_training(previous_year, current_year, games, year_num):
 
 
             # Get the averages of the three games before the game
-            if counters[Ai][1] <= 3:
+            if counters[Ai][1] <= 5:
                 averages_away = previous_year[Ai][1][-1]
-                for i in range(counters[Ai][1]-3,-1):
+                for i in range(counters[Ai][1]-5,-1):
                     for j in range(len(previous_year[Ai][1][i])):
                         averages_away[j] += previous_year[Ai][1][i][j]
                 for i in range(counters[Ai][1]):
                     for j in range(len(current_year[Ai][1][i])):
                         averages_away[j] += current_year[Ai][1][i][j]
             else:
-                averages_away = current_year[Ai][1][counters[Ai][1]-3]
-                for i in range(counters[Ai][1]-2,counters[Ai][1]):
+                averages_away = current_year[Ai][1][counters[Ai][1]-5]
+                for i in range(counters[Ai][1]-4,counters[Ai][1]):
                     for j in range(len(current_year[Ai][1][i])):
                         averages_away[j] += current_year[Ai][1][i][j]
             
@@ -639,7 +637,7 @@ def get_training(previous_year, current_year, games, year_num):
             weather = [temp, humidity, wind]
 
             # Add everything to the list of training datas
-            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year_num])
+            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year])
             trainingY.append(win)
 
     return trainingX, trainingY
