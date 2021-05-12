@@ -13,8 +13,8 @@ START_YEAR = 2016
 END_YEAR = 2019
 
 # change the QuantileTransformer data output normalization
-# False for Gaussian (Normal) PDF,
-# True for the stricter [0, 1] normalization
+# True for Gaussian (Normal) PDF,
+# False for the stricter [0, 1] normalization
 GAUSSIAN = False
 
 
