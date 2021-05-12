@@ -23,8 +23,6 @@ G_VAL = 'quantile'
 
 # sets the SVM kernel
 SVM_KERNEL = 'rbf'
-# only use this if kernel is set to poly
-# SVM_DEGREE = 4
 
 # sets the C and gamma value
 SVM_C = 10
@@ -125,7 +123,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = SVC(kernel=SVM_KERNEL, gamma=SVM_GAMMA, C=SVM_C) #, degree=SVM_DEGREE)
+    svc_obj = SVC(kernel=SVM_KERNEL, gamma=SVM_GAMMA, C=SVM_C)
 
     clf_2 = svc_obj.fit(X_train, y_train)
     predicted_2 = clf_2.predict(X_test)
