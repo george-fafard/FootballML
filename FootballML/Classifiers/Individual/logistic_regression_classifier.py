@@ -4,6 +4,7 @@
 # Library imports
 import numpy  as np
 import pandas as pd
+from sklearn                 import preprocessing as p
 from sklearn.linear_model    import LogisticRegression
 from sklearn.model_selection import train_test_split
 
@@ -19,7 +20,7 @@ def run_logistic_regression():
     none
     """
     # Year range
-    START_YEAR = 2013
+    START_YEAR = 2003
     END_YEAR   = 2019
 
     # List of game data with each index containing the game data
@@ -49,8 +50,13 @@ def run_logistic_regression():
         X.extend(X_YEAR)
         Y.extend(Y_YEAR)
 
+    # Scale data
+    scaler = p.MinMaxScaler()
+    scaler.fit(X)
+    X2 = scaler.transform(X)
+
     # Training and testing data
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, shuffle=False)
+    X_train, X_test, Y_train, Y_test = train_test_split(X2, Y, test_size=30, shuffle=False)
 
     # Fit classifier
     log_reg_classifier = LogisticRegression(max_iter=1000000)
