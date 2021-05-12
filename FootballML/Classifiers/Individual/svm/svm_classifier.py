@@ -15,7 +15,7 @@ END_YEAR = 2019
 # change the QuantileTransformer data output normalization
 # True for Gaussian (Normal) PDF,
 # False for the stricter [0, 1] normalization
-GAUSSIAN = True
+GAUSSIAN = False
 
 
 def custom_precision_recall(conf_matrix):
@@ -103,7 +103,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = SVC(kernel='rbf', gamma=0.01, C=10)
+    svc_obj = SVC(kernel='rbf', gamma=0.001, C=10)
 
     clf_2 = svc_obj.fit(X_train, y_train)
     predicted_2 = clf_2.predict(X_test)
