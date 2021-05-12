@@ -12,10 +12,23 @@ plt.set_cmap("Oranges")
 START_YEAR = 2003
 END_YEAR = 2019
 
-# change the QuantileTransformer data output normalization
-# True for Gaussian (Normal) PDF,
-# False for the stricter [0, 1] normalization
-GAUSSIAN = True
+# G VAL Sets the scaler.
+# valid scalers:
+# quantile
+# robust
+# gaussian
+# minmax
+# standard (or any invalid value will give you this)
+G_VAL = 'quantile'
+
+# sets the SVM kernel
+SVM_KERNEL = 'rbf'
+# only use this if kernel is set to poly
+# SVM_DEGREE = 4
+
+# sets the C and gamma value
+SVM_C = 10
+SVM_GAMMA = 0.001
 
 
 def custom_precision_recall(conf_matrix):
@@ -81,10 +94,10 @@ def main():
     for i in range(0, (END_YEAR - START_YEAR)):
         if i == 0:
             X, Y = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
-                                   np.array(data_read[i]), START_YEAR+i)
+                                   np.array(data_read[i+1]), START_YEAR+i+1)
         else:
             X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
-                                   np.array(data_read[i]), START_YEAR+i)
+                                   np.array(data_read[i+1]), START_YEAR+i+1)
             X += X_temp
             Y += Y_temp
 
@@ -92,18 +105,27 @@ def main():
     # From HypeParam testing, we will use this scaler:
     # QuantileTransformer with normalized Gaussian output
     # however, we will allow the option to use the stricter scaler.
-    if GAUSSIAN:
+    if G_VAL == 'gaussian':
         scaler = p.QuantileTransformer(output_distribution='normal')
         X_scaled = scaler.fit_transform(X, Y)
-    elif not GAUSSIAN:
+    elif G_VAL == "quantile":
         scaler = p.QuantileTransformer()
+        X_scaled = scaler.fit_transform(X, Y)
+    elif G_VAL == 'robust':
+        scaler = p.RobustScaler()
+        X_scaled = scaler.fit_transform(X, Y)
+    elif G_VAL == 'minmax':
+        scaler = p.MinMaxScaler()
+        X_scaled = scaler.fit_transform(X, Y)
+    else:
+        scaler = p.StandardScaler()
         X_scaled = scaler.fit_transform(X, Y)
 
     # train test split
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = SVC(kernel='rbf', gamma=0.001, C=10)
+    svc_obj = SVC(kernel=SVM_KERNEL, gamma=SVM_GAMMA, C=SVM_C) #, degree=SVM_DEGREE)
 
     clf_2 = svc_obj.fit(X_train, y_train)
     predicted_2 = clf_2.predict(X_test)
