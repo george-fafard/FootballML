@@ -440,7 +440,7 @@ def clean_data(game_data):
     return teamdata
 
 
-def get_training(previous_year,current_year,games,year_num):
+def get_training(previous_year, current_year, games,year_num):
     """Gets data to be trained on by the models
         
     Takes data from games and calculates the totals for the games before that game for each
