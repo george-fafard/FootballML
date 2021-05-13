@@ -21,6 +21,41 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing as p
 
 
+def hyperparam_tuned_neural_network():
+    """Neural network classifier with custom hyperparameters.
+
+    This is to be imported and implemented in the ensemble
+    classifier.
+
+    Returns
+    -------
+    sklearn Sequential object
+        The neural network classifier with custom hyperparameters
+    """
+    # Hyperparams for the model
+    l=0.0001
+    b=128
+    d=0.5
+    s=128
+
+    # Model layers
+    model = Sequential(
+        [
+            layers.Dense(2*s),
+            layers.LeakyReLU(alpha=0.25),
+            layers.Dropout(d),
+            layers.Dense(s, activation='relu'),
+            layers.Dense(2, activation='softmax')
+        ]
+    )
+
+    # Compiled model
+    model.compile(optimizer=optimizers.Adam(learning_rate=l),
+                          loss='categorical_crossentropy', 
+                          metrics=['accuracy'])
+    
+    return model
+
 
 #helper function to get the data
 def test_data(y1,y2):
@@ -82,31 +117,7 @@ def prep_data(x,y,lastx,lasty):
 #runs the neural network for 100 epochs, the number of epochs that results in the best accuracy
 #param : year the year we are predicting for.
 def run_neural_network(year):
-    
-    #hyperparams for model
-    l=0.0001
-    b=128
-    d=0.5
-    s=128
-
-    #model
-    model = Sequential(
-        [
-
-            layers.Dense(2*s),
-            layers.LeakyReLU(alpha=0.25),
-
-            layers.Dropout(d),
-
-            layers.Dense(s, activation='relu'),
-
-            layers.Dense(2, activation='softmax')
-        ]
-    )
-
-    model.compile(optimizer=optimizers.Adam(learning_rate=l),
-                          loss='categorical_crossentropy', 
-                          metrics=['accuracy'])
+    model = hyperparam_tuned_neural_network() 
 
     x,y,xl,yl = test_data(year-9,year) 
     xtrain, xvalid, xtest, ytrain, yvalid, ytest = prep_data(x,y,xl,yl)
@@ -122,6 +133,7 @@ def run_neural_network(year):
     print('Test accuracy:',test_results[1])
     '''
     return model
+
     
 #function to evaluate the model on predicting some set that is passed in
 #params: x:np array of data equivalent to what would be gotten from get_training
