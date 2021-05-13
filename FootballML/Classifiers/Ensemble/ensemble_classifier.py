@@ -14,9 +14,9 @@ import sklearn.metrics       as metrics
 from sklearn.ensemble import StackingClassifier
 
 # FootballML imports
-from FootballML.Dataset.cleaned_data import read_game_data_from_files 
 from FootballML.Classifiers.Individual.logistic_regression_classifier import hyperparam_tuned_log_reg_classifier
-from FootballML.Classifiers.Individual.svm.svm_classifier import hyperparam_tuned_svm_classifier
+from FootballML.Classifiers.Individual.random_forest_classifier       import hyperparam_tuned_random_forest
+from FootballML.Classifiers.Individual.svm.svm_classifier             import hyperparam_tuned_svm_classifier
 
 
 # Example 
@@ -27,6 +27,7 @@ from FootballML.Classifiers.Individual.svm.svm_classifier import hyperparam_tune
 
 # 2) Load our classifiers
 log_reg_classifier = hyperparam_tuned_log_reg_classifier()
+ran_fst_classifier = hyperparam_tuned_random_forest()
 svm_classifier     = hyperparam_tuned_svm_classifier()
 # other classifiers...
 
