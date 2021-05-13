@@ -19,7 +19,7 @@ END_YEAR = 2019
 # gaussian
 # minmax
 # standard (or any invalid value will give you this)
-G_VAL = 'standard'
+G_VAL = 'quantile'
 
 # sets the SVM kernel
 SVM_KERNEL = 'rbf'
@@ -87,7 +87,7 @@ def f1_score(conf_matrix):
 
 
 def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=SVM_KERNEL, svm_c=SVM_C,
-              svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE, display_output=False):
+              svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE, display_output=True):
     """
     Parameters
     @param start_year -- int start_year [DEFAULT = 2003]
@@ -155,4 +155,4 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
         print(custom_precision_recall(cm_2))
     return clf_2
 
-# svm_tuned()
+svm_tuned()
