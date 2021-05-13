@@ -54,6 +54,8 @@ def hyperparam_tuned_neural_network():
                           loss='categorical_crossentropy', 
                           metrics=['accuracy'])
     
+    model.load_weights("nnc_weights.h5")
+    
     return model
 
 
@@ -117,13 +119,33 @@ def prep_data(x,y,lastx,lasty):
 #runs the neural network for 100 epochs, the number of epochs that results in the best accuracy
 #param : year the year we are predicting for.
 def run_neural_network(year):
-    model = hyperparam_tuned_neural_network() 
+    # Hyperparams for the model
+    l=0.0001
+    b=128
+    d=0.5
+    s=128
+
+    # Model layers
+    model = Sequential(
+        [
+            layers.Dense(2*s),
+            layers.LeakyReLU(alpha=0.25),
+            layers.Dropout(d),
+            layers.Dense(s, activation='relu'),
+            layers.Dense(2, activation='softmax')
+        ]
+    )
+
+    # Compiled model
+    model.compile(optimizer=optimizers.Adam(learning_rate=l),
+                          loss='categorical_crossentropy', 
+                          metrics=['accuracy'])
 
     x,y,xl,yl = test_data(year-9,year) 
     xtrain, xvalid, xtest, ytrain, yvalid, ytest = prep_data(x,y,xl,yl)
     
-    results=model.fit(xtrain, ytrain, validation_data=(xvalid,yvalid), batch_size=b, epochs=100, verbose=0)
-    '''
+    results=model.fit(xtrain, ytrain, validation_data=(xvalid,yvalid), batch_size=128, epochs=100, verbose=0)
+    
     plt.plot(results.history['accuracy'])
     plt.plot(results.history['val_accuracy'])
     plt.legend(['train', 'valid'], loc='upper left')
@@ -131,7 +153,9 @@ def run_neural_network(year):
 
     test_results=model.evaluate(xtest,ytest)
     print('Test accuracy:',test_results[1])
-    '''
+    
+    model.save_weights("nnc_weights.h5")
+    
     return model
 
     
