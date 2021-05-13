@@ -20,5 +20,5 @@ Run the .ipynb notebook files Found in FootballML/Individual Results to see indi
 
 # Reproduction
 The classifiers are defined in FootballML/Classifiers/Individual or for ensemble, in FootballML/Classifiers/Ensemble.
-There, the code is stored in .py values and the necessary HyperParams are available for reproduction. Data was split and tuned using
+There, the code is stored in .py files and the necessary HyperParams are available for reproduction. Data was split and tuned using
 the file found in FootballML/Dataset/cleaned_data.py.
