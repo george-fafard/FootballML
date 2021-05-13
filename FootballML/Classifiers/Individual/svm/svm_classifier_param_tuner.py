@@ -19,7 +19,7 @@ from sklearn import preprocessing as p
 # LIST OF VALID MODES
 # write - (100 iterations) writes entries for 5 scalers and RBF/polynomial/sigmoid kernels ## MODERATE SPEED
 # read - reads in all data stored and finds highest accuracy, average, displays some info about it ## VERY FAST
-MODE = "write"
+MODE = "read"
 
 
 def main():
@@ -99,6 +99,7 @@ def main():
             total = 0
             num_counted = 0
             highest = 0
+
             for line in in_file:
                 count += 1
                 if count == 1:
@@ -113,6 +114,7 @@ def main():
             print("Average accuracy: " + str(total / float(num_counted)))
             print("Highest accuracy: " + str(highest))
             print("Achieved with: " + store_me)
+            print("Total trials indexed: " + str(count/2))
             in_file.close()
 
         except FileNotFoundError:
