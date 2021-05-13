@@ -27,6 +27,7 @@ SVM_KERNEL = 'rbf'
 # sets the C and gamma value
 SVM_C = 10
 SVM_GAMMA = 0.001
+SVM_TEST_SIZE = 0.25
 
 
 def custom_precision_recall(conf_matrix):
@@ -85,17 +86,19 @@ def f1_score(conf_matrix):
     return pd.DataFrame(f1_array, columns=["F1 Score"])
 
 
-def svm_tuned():
+def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=SVM_KERNEL, svm_c=SVM_C,
+              svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE):
+
     # read in data
-    data_read = cd.read_game_data_from_files(START_YEAR, END_YEAR)
+    data_read = cd.read_game_data_from_files(start_year, end_year)
     # create big X and big Y
-    for i in range(0, (END_YEAR - START_YEAR)):
+    for i in range(0, (end_year - start_year)):
         if i == 0:
             X, Y = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
-                                   np.array(data_read[i+1]), START_YEAR+i+1)
+                                   np.array(data_read[i+1]), start_year+i+1)
         else:
             X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i+1])),
-                                   np.array(data_read[i+1]), START_YEAR+i+1)
+                                   np.array(data_read[i+1]), start_year+i+1)
             X += X_temp
             Y += Y_temp
 
@@ -103,16 +106,16 @@ def svm_tuned():
     # From HypeParam testing, we will use this scaler:
     # QuantileTransformer with normalized Gaussian output
     # however, we will allow the option to use the stricter scaler.
-    if G_VAL == 'gaussian':
+    if g_val == 'gaussian':
         scaler = p.QuantileTransformer(output_distribution='normal')
         X_scaled = scaler.fit_transform(X, Y)
-    elif G_VAL == "quantile":
+    elif g_val == "quantile":
         scaler = p.QuantileTransformer()
         X_scaled = scaler.fit_transform(X, Y)
-    elif G_VAL == 'robust':
+    elif g_val == 'robust':
         scaler = p.RobustScaler()
         X_scaled = scaler.fit_transform(X, Y)
-    elif G_VAL == 'minmax':
+    elif g_val == 'minmax':
         scaler = p.MinMaxScaler()
         X_scaled = scaler.fit_transform(X, Y)
     else:
@@ -120,10 +123,10 @@ def svm_tuned():
         X_scaled = scaler.fit_transform(X, Y)
 
     # train test split
-    X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=0.25)
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=svm_test_size)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = SVC(kernel=SVM_KERNEL, gamma=SVM_GAMMA, C=SVM_C)
+    svc_obj = SVC(kernel=svm_kernel, gamma=svm_gamma, C=svm_c)
 
     clf_2 = svc_obj.fit(X_train, y_train)
     predicted_2 = clf_2.predict(X_test)
