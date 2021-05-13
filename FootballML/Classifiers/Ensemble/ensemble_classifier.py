@@ -12,10 +12,8 @@ import pandas as pd
 import sklearn.preprocessing as scalers
 import sklearn.metrics       as metrics
 from sklearn.ensemble import StackingClassifier
-from FootballML.Classifiers.Individual import logistic_regression_classifier
 
 # FootballML imports
-from FootballML.Dataset.cleaned_data import read_game_data_from_files 
 from FootballML.Classifiers.Individual.logistic_regression_classifier import hyperparam_tuned_log_reg_classifier
 from FootballML.Classifiers.Individual.random_forest_classifier       import hyperparam_tuned_random_forest
 from FootballML.Classifiers.Individual.svm.svm_classifier             import hyperparam_tuned_svm_classifier
