@@ -52,7 +52,7 @@ def logistic_regression_classifier():
         # Extract training labels for current year
         X_YEAR, Y_YEAR = cd.get_training(PREVOUS_YEAR_CLEAN, CURRENT_YEAR_CLEAN, CURRENT_YEAR_RAW, CURRENT_YEAR_DIGIT)
         
-        # Add training labels to those for the previous years
+        # Add training labels to those from the previous years
         X.extend(X_YEAR)
         Y.extend(Y_YEAR)
 
@@ -77,11 +77,9 @@ def logistic_regression_classifier():
     log_reg_classifier = LogisticRegression(max_iter=1000000)
     log_reg_classifier.fit(X_train, Y_train)
 
-    # Testing accuracy score
-    score = log_reg_classifier.score(X_test, Y_test)
-
-    # Predictions for testing data by trained model
+    # Testing predictions and accuracy score
     Y_pred = log_reg_classifier.predict(X_test)
+    score  = log_reg_classifier.score(X_test, Y_test)
 
     # Confusion matrix
     conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
