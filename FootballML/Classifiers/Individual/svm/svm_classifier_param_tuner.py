@@ -21,7 +21,7 @@ from sklearn import preprocessing as p
 # read - reads in all data stored and finds highest accuracy, average, displays some info about it ## VERY FAST
 
 
-def param_tuner(mode='read'):
+def param_tuner(mode='read', j=10):
     if mode == "write":
         # read in the data and split
         data_read_2009 = cd.read_game_data_from_files(2009)
@@ -29,8 +29,8 @@ def param_tuner(mode='read'):
         data2010clean = cd.clean_data(np.array(data_read_2010[0]))
         data2009clean = cd.clean_data(np.array(data_read_2009[0]))
         X, Y = cd.get_training(data2009clean, data2010clean, np.array(data_read_2010[0]), 2010)
-        j = 0
-        while j < 10:
+        q = 0
+        while q < j:
             # # scaling for RBF kernel
             for i in range(0, 5):
                 if i == 0:
