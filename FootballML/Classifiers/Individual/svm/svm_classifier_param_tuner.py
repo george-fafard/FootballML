@@ -29,7 +29,8 @@ def param_tuner(mode='read', j=10):
         data2010clean = cd.clean_data(np.array(data_read_2010[0]))
         data2009clean = cd.clean_data(np.array(data_read_2009[0]))
         X, Y = cd.get_training(data2009clean, data2010clean, np.array(data_read_2010[0]), 2010)
-        while j < 10:
+        q = 0
+        while q < j:
             # # scaling for RBF kernel
             for i in range(0, 5):
                 if i == 0:
