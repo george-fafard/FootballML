@@ -138,6 +138,7 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
     @param svm_test_size -- float < 1 for the test split size [DEFAULT = 0.25]
     @param display_output -- set to True to display some output metrics and a heatmap [DEFAULT = False]
 
+    Returns
     @return clf2 -- returns the classifier fit to the training data
     """
     # read in data
