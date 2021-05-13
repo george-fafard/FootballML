@@ -123,18 +123,21 @@ def display_metrics(classifier, X_test, Y_test):
     -------
     none
     """
-    # Test data predictions and accuracy score
-    Y_pred = classifier.predict(X_test)
+    # Test data accuracy score
     score  = classifier.score(X_test, Y_test)
+    print('Score:', score)
+    print()
+
+    # Test data f1 score
+    Y_pred   = classifier.predict(X_test)
+    f1_score = metrics.f1_score(Y_test, Y_pred)
+    print('F1 score:', f1_score)
+    print()
 
     # Test data confusion matrix
     conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
-
-    # Display metrics
-    print('Score:', score)
-    print()
-    print('Confusion matrix:')
-    print(conf_matrix)
+    matrix_plot = metrics.ConfusionMatrixDisplay(conf_matrix)
+    matrix_plot.plot()
 
     # Precision-Recall curve
     curve = metrics.plot_precision_recall_curve(classifier, X_test, Y_test)
