@@ -18,25 +18,25 @@ from FootballML.Dataset.cleaned_data import read_game_data_from_files
 from FootballML.Classifiers.Individual.logistic_regression_classifier import logistic_regression_classifier
 
 
-# Test 
+# Example 
+# ------------------------
+# 1) Load data in this file and split it here and do any necessary
+#    scaling
+#X_train, X_test, Y_train, Y_test = train_test_split()
+
+# 2) Load our classifiers
 log_reg_classifier = logistic_regression_classifier()
-def test():
-    print('Test importing ensemble classifier stuff')
+# other classifiers...
 
-"""
-from sklearn.ensemble import StackingClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
+# 3) Add the classifiers to be used in the ensemble model
+estimators = [('Log Reg', log_reg_classifier)] # Once other classifiers added: --> 
+                                               #      [('Log Reg', log_reg_classifier), ('others'..., others...)]
 
-test1 = LogisticRegression()
-test2 = SVC()
+# 4) Create the ensemble model using our classifiers list we created
+ensemble = StackingClassifier(estimators=estimators)
 
-X_train, X_test, Y_train, Y_test = get_labels_test()
+# 5) Fit the data
+# Call ensemble.fit(X, Y)
 
-estimators = [('test1', test1), ('test2', test2)]
-
-stack = StackingClassifier(estimators=estimators)
-stack.fit(X_train, Y_train)
-
-stack.score(X_test, Y_test)
-"""
+# 6) Test on the testing data
+# Test ensemble on test data and get results
