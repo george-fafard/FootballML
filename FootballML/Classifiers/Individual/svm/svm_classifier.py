@@ -177,7 +177,7 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=svm_test_size)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = hyperparam_tuned_svm_classifier() 
+    svc_obj = SVC(kernel=svm_kernel, gamma=svm_gamma, C=svm_c)
 
     clf_2 = svc_obj.fit(X_train, y_train)
     if display_output:
