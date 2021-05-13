@@ -4,12 +4,14 @@
     This is to be imported in the testing notebook for logistic 
     regression and used as part of the ensemble classifier.
 """
-# Library imports
+# Data structures and manipulation
 import numpy  as np
 import pandas as pd
-from sklearn                 import preprocessing as p
+
+# Model and learning operations
+import sklearn.preprocessing as scalers
+import sklearn.metrics       as metrics
 from sklearn.linear_model    import LogisticRegression
-from sklearn.metrics         import confusion_matrix
 from sklearn.model_selection import train_test_split
 
 # FootballML imports
@@ -55,11 +57,11 @@ def logistic_regression_classifier():
         Y.extend(Y_YEAR)
 
     # Feature scaler (uncomment scaler to use)
-    scaler = p.MinMaxScaler()
-    #scaler = p.RobustScaler()
-    #scaler = p.QuantileTransformer()
-    #scaler = p.PowerTransformer()
-    #scaler = p.StandardScaler()
+    scaler = scalers.MinMaxScaler()
+    #scaler = scalers.RobustScaler()
+    #scaler = scalers.QuantileTransformer()
+    #scaler = scalers.PowerTransformer()
+    #scaler = scalers.StandardScaler()
 
     # Scale features
     X_scaled = scaler.fit_transform(X, Y)
@@ -75,14 +77,14 @@ def logistic_regression_classifier():
     log_reg_classifier = LogisticRegression(max_iter=1000000)
     log_reg_classifier.fit(X_train, Y_train)
 
-    # Get score
+    # Testing accuracy score
     score = log_reg_classifier.score(X_test, Y_test)
 
     # Predictions for testing data by trained model
     Y_pred = log_reg_classifier.predict(X_test)
 
     # Confusion matrix
-    conf_matrix = confusion_matrix(Y_test, Y_pred)
+    conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
 
     # Display metrics
     print("Score:", score)
