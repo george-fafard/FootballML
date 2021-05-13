@@ -20,30 +20,9 @@ import matplotlib.pyplot as plt
 
 from sklearn import preprocessing as p
 
-l=0.0001
-b=128
-d=0.5
-s=128
 
-model = Sequential(
-    [
 
-        layers.Dense(2*s),
-        layers.LeakyReLU(alpha=0.25),
-
-        layers.Dropout(d),
-
-        layers.Dense(s, activation='relu'),
-
-        layers.Dense(2, activation='softmax')
-    ]
-)
-
-model.compile(optimizer=optimizers.Adam(learning_rate=l),
-                      loss='categorical_crossentropy', 
-                      metrics=['accuracy'])
-
-# Get test data to import in the notebook
+#helper function to get the data
 def test_data(y1,y2):
     gamedata = cd.read_game_data_from_files(y1,y2)
     
@@ -58,18 +37,9 @@ def test_data(y1,y2):
     lastx,lasty=cd.get_training(cd.clean_data(np.array(gamedata[-2])),cd.clean_data(np.array(gamedata[-1])),np.array(gamedata[-1]),y2)
     return x,y,lastx,lasty
 
+
+#helper function to prep the data for the neural network
 def prep_data(x,y,lastx,lasty):
-    '''
-    newx=[]
-    newlx=[]
-    for t in x:
-        newx.append([t[0]]+[t[1]]+[t[4]]+[t[6]]+[t[7]]+[t[12]]+[t[13]]+[t[16]]+[t[19]]+[t[21]]+[t[22]]+t[26:36]+[t[36+0]]+[t[36+1]]+[t[36+4]]+[t[36+6]]+[t[36+7]]+[t[36+12]]+[t[36+13]]+[t[36+16]]+[t[36+19]]+[t[36+21]]+[t[36+22]]+t[36+26:36+36]+t[-6:-1]+[t[-1]])
-    for t in lastx:
-        newlx.append([t[0]]+[t[1]]+[t[4]]+[t[6]]+[t[7]]+[t[12]]+[t[13]]+[t[16]]+[t[19]]+[t[21]]+[t[22]]+t[26:36]+[t[36+0]]+[t[36+1]]+[t[36+4]]+[t[36+6]]+[t[36+7]]+[t[36+12]]+[t[36+13]]+[t[36+16]]+[t[36+19]]+[t[36+21]]+[t[36+22]]+t[36+26:36+36]+t[-6:-1]+[t[-1]])
-    
-    #xtrain,xtestA,ytrain,ytestB= train_test_split(x,y, test_size=0.3)
-    #xtest,xvalid,ytest,yvalid=train_test_split(xtestA,ytestB, test_size=0.75)
-    '''
     xtrain=x
     ytrain=y
     
@@ -99,9 +69,6 @@ def prep_data(x,y,lastx,lasty):
     
     
     scaler = p.MinMaxScaler()
-    #scaler = p.QuantileTransformer()
-    #scaler = p.PowerTransformer()
-    #scaler = p.StandardScaler()
     
     scaler.fit(xtrain)
     xtest=scaler.transform(xtest)
@@ -112,7 +79,17 @@ def prep_data(x,y,lastx,lasty):
     
     return xtrain, xvalid, xtest, ytrain_1hot, yvalid_1hot, ytest_1hot
 
-def reset():
+#runs the neural network for 100 epochs, the number of epochs that results in the best accuracy
+#param : year the year we are predicting for.
+def run_neural_network(year):
+    
+    #hyperparams for model
+    l=0.0001
+    b=128
+    d=0.5
+    s=128
+
+    #model
     model = Sequential(
         [
 
@@ -130,18 +107,12 @@ def reset():
     model.compile(optimizer=optimizers.Adam(learning_rate=l),
                           loss='categorical_crossentropy', 
                           metrics=['accuracy'])
-    
 
-def run_neural_network(year):
-    reset()
-    
-    
-    
     x,y,xl,yl = test_data(year-9,year) 
     xtrain, xvalid, xtest, ytrain, yvalid, ytest = prep_data(x,y,xl,yl)
     
     results=model.fit(xtrain, ytrain, validation_data=(xvalid,yvalid), batch_size=b, epochs=100, verbose=0)
-    
+    '''
     plt.plot(results.history['accuracy'])
     plt.plot(results.history['val_accuracy'])
     plt.legend(['train', 'valid'], loc='upper left')
@@ -149,29 +120,19 @@ def run_neural_network(year):
 
     test_results=model.evaluate(xtest,ytest)
     print('Test accuracy:',test_results[1])
+    '''
+    return model
     
-    
-    
-    
-def predict(x,y):
-    #x,trasha,trashb,y,trashc,trashd = prep_data(x,y,x,y)
+#function to evaluate the model on predicting some set that is passed in
+#params: x:np array of data equivalent to what would be gotten from get_training
+def predict(x,model):
     
     y_pred=model.predict(x)
     
-    yold=[]
     ynew=[]
-    for i in y:
-        if i[0]>i[1]:
-            yold.append([0])
-        else:
-            yold.append([1])
             
     for i in y_pred:
-        if i[0]>i[1]:
-            ynew.append([0])
-        else:
-            ynew.append([1])
+        ynew.append(i[1])
     
-    conf_matrix = confusion_matrix(yold, ynew)
     
-    print(conf_matrix)
+    return np.array(ynew)
