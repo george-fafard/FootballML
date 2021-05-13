@@ -22,6 +22,22 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_val_predict
 from sklearn import metrics
 
+
+def hyperparam_tuned_random_forest():
+    """Random forest classifier with custom hyperparameters.
+
+    This is to be imported and implemented in the ensemble
+    classifier.
+
+    Returns
+    -------
+    sklearn RandomForestClassifier object
+        The random forest classifier with custom hyperparameters
+    """
+    return RandomForestClassifier(bootstrap=False   , max_depth=900       , max_features='sqrt', 
+                                  min_samples_leaf=7, min_samples_split=11, n_estimators=800)
+
+
 # Get test data to import in the notebook
 def test_data():
     return read_game_data_from_files(2009)
