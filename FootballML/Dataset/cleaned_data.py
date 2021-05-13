@@ -639,8 +639,8 @@ def get_training(previous_year, current_year, games, year_num):
             weather = [temp, humidity, wind]
 
             # Add everything to the list of training datas
-            # trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year_num])
-            trainingX.append(list(np.array(averages_home)-np.array(averages_away)) + list(np.array([counters[Hi][0]])-np.array([counters[Ai][1]])) + list(np.array([made_playoffs[Hi]])-np.array([made_playoffs[Ai]])) + [venue] + [field] + [time] + weather + [year_num])
+            trainingX.append(averages_home + [counters[Hi][0]] + [made_playoffs[Hi]] + averages_away + [counters[Ai][1]] + [made_playoffs[Ai]] + [venue] + [field] + [time] + weather + [year_num])
+            #trainingX.append(list(np.array(averages_home)-np.array(averages_away)) + list(np.array([counters[Hi][0]])-np.array([counters[Ai][1]])) + list(np.array([made_playoffs[Hi]])-np.array([made_playoffs[Ai]])) + [venue] + [field] + [time] + weather + [year_num])
             trainingY.append(win)
 
     return trainingX, trainingY

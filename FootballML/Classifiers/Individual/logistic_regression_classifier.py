@@ -1,9 +1,13 @@
 """ 
-    This will be where the actual code for the logistic regression classifier goes
+    Individual logistic regression model.
+
+    This is to be imported in the testing notebook for logistic 
+    regression and used as part of the ensemble classifier.
 """
 # Library imports
 import numpy  as np
 import pandas as pd
+from sklearn                 import preprocessing as p
 from sklearn.linear_model    import LogisticRegression
 from sklearn.model_selection import train_test_split
 
@@ -19,7 +23,7 @@ def run_logistic_regression():
     none
     """
     # Year range
-    START_YEAR = 2013
+    START_YEAR = 2003
     END_YEAR   = 2019
 
     # List of game data with each index containing the game data
@@ -49,8 +53,23 @@ def run_logistic_regression():
         X.extend(X_YEAR)
         Y.extend(Y_YEAR)
 
-    # Training and testing data
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25, shuffle=False)
+    # Fearure scale (uncomment scale to use)
+    scaler = p.MinMaxScaler()
+    #scaler = p.RobustScaler()
+    #scaler = p.QuantileTransformer()
+    #scaler = p.PowerTransformer()
+    #scaler = p.StandardScaler()
+
+    # Scale the features
+    scaler.fit(X)
+    X_scaled = scaler.transform(X)
+
+    # Training and testing data. Test size is the number of games in the test
+    # sample. Setting the split to not be shuffled will cause the test sample
+    # to be taken from the end of data. Thus, in this case the integer value 
+    # for test size will be the number of games at the end of the data (with 15
+    # games being used for each season). Here, I have it set to the last two seasons.
+    X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=30, shuffle=False)
 
     # Fit classifier
     log_reg_classifier = LogisticRegression(max_iter=1000000)
