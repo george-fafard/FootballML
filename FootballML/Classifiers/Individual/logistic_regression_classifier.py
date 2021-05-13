@@ -55,7 +55,10 @@ def run_logistic_regression():
 
     # Fearure scale (uncomment scale to use)
     scaler = p.MinMaxScaler()
-    #scaler = pass
+    #scaler = p.RobustScaler()
+    #scaler = p.QuantileTransformer()
+    #scaler = p.PowerTransformer()
+    #scaler = p.StandardScaler()
 
     # Scale the features
     scaler.fit(X)
