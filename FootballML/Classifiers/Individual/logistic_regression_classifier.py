@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from FootballML.Dataset import cleaned_data as cd
 
 
-def hyperparam_tuned_log_reg_classifier():
+def hyperparam_tuned_log_regression():
     """Logistic regression classifier with custom hyperparameters.
 
     This is to be imported and implemented in the ensemble
@@ -87,7 +87,7 @@ def run_logistic_regression():
     X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=30, shuffle=False)
 
     # Fit classifier
-    log_reg_classifier = hyperparam_tuned_log_reg_classifier()
+    log_reg_classifier = hyperparam_tuned_logistic_regression()
     log_reg_classifier.fit(X_train, Y_train)
 
     # Test data predictions and accuracy score

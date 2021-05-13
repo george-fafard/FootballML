@@ -30,7 +30,7 @@ SVM_GAMMA = 0.001
 SVM_TEST_SIZE = 0.25
 
 
-def hyperparam_tuned_svm_classifier():
+def hyperparam_tuned_support_vector():
     """SVM classifier with custom hyperparameters.
 
     This is to be imported and implemented in the ensemble
