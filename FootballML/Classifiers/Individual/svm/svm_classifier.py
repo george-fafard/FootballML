@@ -87,7 +87,7 @@ def f1_score(conf_matrix):
 
 
 def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=SVM_KERNEL, svm_c=SVM_C,
-              svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE):
+              svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE, display_output=False):
     """
     Parameters
     @param start_year -- int start_year [DEFAULT = 2003]
@@ -98,6 +98,9 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
     @param svm_c -- int for the C value [DEFAULT = 10]
     @param svm_gamma -- int for the gamma value [DEFAULT = 0.001]
     @param svm_test_size -- float < 1 for the test split size [DEFAULT = 0.25]
+    @param display_output -- set to True to display some output metrics and a heatmap [DEFAULT = False]
+
+    @return clf2 -- returns the classifier fit to the training data
     """
     # read in data
     data_read = cd.read_game_data_from_files(start_year, end_year)
@@ -139,15 +142,17 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
     svc_obj = SVC(kernel=svm_kernel, gamma=svm_gamma, C=svm_c)
 
     clf_2 = svc_obj.fit(X_train, y_train)
-    predicted_2 = clf_2.predict(X_test)
-    # do some predictions
-    print("SVC accuracy:" + str(svc_obj.score(X_test, y_test)))
-    cm_2 = confusion_matrix(y_test, predicted_2)
-    cm_df_2 = pd.DataFrame(cm_2)
-    plt.imshow(cm_df_2)
-    print("SVC confusion matrix\n" + str(cm_df_2))
-    plt.show()
-    print("SVC Metrics\n" + str(f1_score(cm_2)))
-    print(custom_precision_recall(cm_2))
+    if display_output:
+        predicted_2 = clf_2.predict(X_test)
+        # do some predictions
+        print("SVC accuracy:" + str(svc_obj.score(X_test, y_test)))
+        cm_2 = confusion_matrix(y_test, predicted_2)
+        cm_df_2 = pd.DataFrame(cm_2)
+        plt.imshow(cm_df_2)
+        print("SVC confusion matrix\n" + str(cm_df_2))
+        plt.show()
+        print("SVC Metrics\n" + str(f1_score(cm_2)))
+        print(custom_precision_recall(cm_2))
+    return clf_2
 
 # svm_tuned()
