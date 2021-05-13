@@ -102,3 +102,7 @@ def run_logistic_regression():
     print()
     print('Confusion matrix:')
     print(conf_matrix)
+
+    # Precision-Recall curve
+    curve = metrics.plot_precision_recall_curve(log_reg_classifier, X_test, Y_test)
+    curve.ax_.set_title('Game winner prediction Precision-Recall curve')
