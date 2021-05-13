@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 from FootballML.Dataset import cleaned_data as cd
 
 
-def run_logistic_regression():
-    """To be imported in the testing notebook.
+def logistic_regression_classifier():
+    """To be imported in the testing notebook and ensemble classifier.
 
     Returns
     -------
@@ -54,16 +54,15 @@ def run_logistic_regression():
         X.extend(X_YEAR)
         Y.extend(Y_YEAR)
 
-    # Fearure scale (uncomment scale to use)
+    # Feature scaler (uncomment scaler to use)
     scaler = p.MinMaxScaler()
     #scaler = p.RobustScaler()
     #scaler = p.QuantileTransformer()
     #scaler = p.PowerTransformer()
     #scaler = p.StandardScaler()
 
-    # Scale the features
-    scaler.fit(X)
-    X_scaled = scaler.transform(X)
+    # Scale features
+    X_scaled = scaler.fit_transform(X, Y)
 
     # Training and testing data. Test size is the number of games in the test
     # sample. Setting the split to not be shuffled will cause the test sample
