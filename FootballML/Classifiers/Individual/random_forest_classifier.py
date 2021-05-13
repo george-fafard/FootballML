@@ -4,7 +4,6 @@
 # THIS IS AN EXAMPLE YOU CAN DELETE THIS WHEN YOU START WORKING ON IT.
 from FootballML.Dataset.cleaned_data import read_game_data_from_files
 from FootballML.Dataset.cleaned_data import get_training
-from FootballML.Dataset.cleaned_data import getTrain
 from FootballML.Dataset import cleaned_data as cd
 
 from sklearn.model_selection import train_test_split
@@ -126,7 +125,7 @@ def get_params():
                    'bootstrap': bootstrap}
     model = RandomForestRegressor()
 
-    model_random = RandomizedSearchCV(estimator = model, param_distributions = grid, n_iter = [50,100,150], cv = 3, verbose=2, random_state=42, n_jobs = -1)
+    model_random = RandomizedSearchCV(estimator = model, param_distributions = grid, n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
     model_random.fit(xtrain, ytrain)
     return model_random.best_params_
