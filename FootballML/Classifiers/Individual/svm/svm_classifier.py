@@ -86,6 +86,30 @@ def f1_score(conf_matrix):
     return pd.DataFrame(f1_array, columns=["F1 Score"])
 
 
+def return_training_data():
+    """
+    Returns
+    -------
+    X,Y -- lists of data to play with
+    """
+    start_year = 2018
+    end_year = 2019
+    data_read = cd.read_game_data_from_files(start_year, end_year)
+    # create big X and big Y
+    for i in range(0, (end_year - start_year)):
+        if i == 0:
+            X, Y = cd.get_training(cd.clean_data(np.array(data_read[i])), cd.clean_data(np.array(data_read[i + 1])),
+                                   np.array(data_read[i + 1]), start_year + i + 1)
+        else:
+            X_temp, Y_temp = cd.get_training(cd.clean_data(np.array(data_read[i])),
+                                             cd.clean_data(np.array(data_read[i + 1])),
+                                             np.array(data_read[i + 1]), start_year + i + 1)
+            X += X_temp
+            Y += Y_temp
+
+    return X, Y
+
+
 def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=SVM_KERNEL, svm_c=SVM_C,
               svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE, display_output=False):
     """
