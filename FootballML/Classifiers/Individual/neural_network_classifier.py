@@ -32,6 +32,8 @@ def hyperparam_tuned_neural_network():
     sklearn Sequential object
         The neural network classifier with custom hyperparameters
     """
+    
+    """
     # Hyperparams for the model
     l=0.0001
     b=128
@@ -48,13 +50,17 @@ def hyperparam_tuned_neural_network():
             layers.Dense(2, activation='softmax')
         ]
     )
-
+    
     # Compiled model
     model.compile(optimizer=optimizers.Adam(learning_rate=l),
                           loss='categorical_crossentropy', 
                           metrics=['accuracy'])
     
+    
     model.load_weights("nnc_weights.h5")
+
+    """
+    model = keras.models.load_model("nnc_model")
     
     return model
 
@@ -154,7 +160,7 @@ def run_neural_network(year):
     test_results=model.evaluate(xtest,ytest)
     print('Test accuracy:',test_results[1])
     
-    model.save_weights("nnc_weights.h5")
+    model.save("nnc_model")
     
     return model
 
