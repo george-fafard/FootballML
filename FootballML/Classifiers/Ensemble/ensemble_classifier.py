@@ -25,7 +25,7 @@ from FootballML.Classifiers.Individual.logistic_regression_classifier import hyp
 #X_train, X_test, Y_train, Y_test = train_test_split()
 
 # 2) Load our classifiers
-log_reg_classifier = hyperparam_tuned_log_reg_classifier()()
+log_reg_classifier = hyperparam_tuned_log_reg_classifier()
 # other classifiers...
 
 # 3) Add the classifiers to be used in the ensemble model
