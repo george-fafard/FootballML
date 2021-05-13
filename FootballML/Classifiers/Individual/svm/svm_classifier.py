@@ -85,7 +85,7 @@ def f1_score(conf_matrix):
     return pd.DataFrame(f1_array, columns=["F1 Score"])
 
 
-def main():
+def svm_tuned():
     # read in data
     data_read = cd.read_game_data_from_files(START_YEAR, END_YEAR)
     # create big X and big Y
@@ -137,4 +137,4 @@ def main():
     print("SVC Metrics\n" + str(f1_score(cm_2)))
     print(custom_precision_recall(cm_2))
 
-main()
+# svm_tuned()
