@@ -14,3 +14,6 @@ Sportsipy https://sportsipy.readthedocs.io/en/stable/
 | Alexander Townsend | Neural Network classifier      |
 | George Fafard      | SVM classifier                 |
 | Alex Farrell       | Logistic Regression classifier |
+
+# Invidividual Results
+Run the .ipynb notebook files Found in FootballML/Individual Results to see individual results
