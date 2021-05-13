@@ -9,10 +9,10 @@ from sklearn.ensemble        import StackingClassifier
 from sklearn.model_selection import train_test_split
 
 # FootballML imports
-from FootballML.Classifiers.Individual.logistic_regression_classifier import get_training_labels
-from FootballML.Classifiers.Individual.logistic_regression_classifier import scale_features
-from FootballML.Classifiers.Individual.logistic_regression_classifier import hyperparam_tuned_log_regression
 from FootballML.Classifiers.Individual.logistic_regression_classifier import display_metrics
+from FootballML.Classifiers.Individual.logistic_regression_classifier import get_training_labels
+from FootballML.Classifiers.Individual.logistic_regression_classifier import hyperparam_tuned_log_regression
+from FootballML.Classifiers.Individual.logistic_regression_classifier import scale_features
 from FootballML.Classifiers.Individual.random_forest_classifier       import hyperparam_tuned_random_forest
 from FootballML.Classifiers.Individual.svm.svm_classifier             import hyperparam_tuned_support_vector
 
