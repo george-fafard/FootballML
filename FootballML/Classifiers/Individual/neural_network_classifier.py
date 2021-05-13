@@ -13,11 +13,16 @@ from tensorflow.keras import layers
 from tensorflow.keras import optimizers
 
 # Helper libraries
+from sklearn.metrics         import confusion_matrix
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 
-# Get test data to import in the notebook
+from sklearn import preprocessing as p
+
+
+
+#helper function to get the data
 def test_data(y1,y2):
     gamedata = cd.read_game_data_from_files(y1,y2)
     
@@ -25,21 +30,24 @@ def test_data(y1,y2):
     
     x=[]
     y=[]
-    for i in range(len(gamedata)-1):
-        xtemp,ytemp=cd.get_training(cd.clean_data(np.array(gamedata[i])),cd.clean_data(np.array(gamedata[i+1])),np.array(gamedata[i+1]),2000+i)
+    for i in range(len(gamedata)-2):
+        xtemp,ytemp=cd.get_training(cd.clean_data(np.array(gamedata[i])),cd.clean_data(np.array(gamedata[i+1])),np.array(gamedata[i+1]),y1+i)
         x+=xtemp
         y+=ytemp
-    return x,y
+    lastx,lasty=cd.get_training(cd.clean_data(np.array(gamedata[-2])),cd.clean_data(np.array(gamedata[-1])),np.array(gamedata[-1]),y2)
+    return x,y,lastx,lasty
 
-def prep_data(x,y):
-    
-    newx=[]
-    for t in x:
-        newx.append([t[0]]+[t[1]]+[t[4]]+[t[6]]+[t[7]]+[t[12]]+[t[13]]+[t[16]]+[t[19]]+[t[21]]+[t[22]]+t[26:36]+[t[36+0]]+[t[36+1]]+[t[36+4]]+[t[36+6]]+[t[36+7]]+[t[36+12]]+[t[36+13]]+[t[36+16]]+[t[36+19]]+[t[36+21]]+[t[36+22]]+t[36+26:36+36]+t[-6:-1]+[t[-1]])
-    
-    xtrain,xtestA,ytrain,ytestB= train_test_split(x,y, test_size=0.3)
-    xtest,xvalid,ytest,yvalid=train_test_split(xtestA,ytestB, test_size=0.75)
 
+#helper function to prep the data for the neural network
+def prep_data(x,y,lastx,lasty):
+    xtrain=x
+    ytrain=y
+    
+    xvalid=lastx
+    xtest=lastx
+    
+    yvalid=lasty
+    ytest=lasty
     
     ytest_1hot=np.zeros((len(ytest),2))
     for i in range(len(ytest)):
@@ -55,45 +63,76 @@ def prep_data(x,y):
         
     
     
-    averages = xtest[1]
-    for g in xtrain:
-        for i in range(len(g)):
-            averages[i]=averages[i]+g[i]
-
-    for g in xvalid:
-        for i in range(len(g)):
-            averages[i]+=g[i]
-
-    for g in xtest:
-        for i in range(len(g)):
-            averages[i]+=g[i]
-
-    for i in range(len(averages)):
-            averages[i]/=(len(xtrain)+len(xtest)+len(xvalid)+1)
-
-    for g in xtrain:
-        for i in range(len(g)):
-            g[i]/=averages[i]  
-
-    for g in xtest:
-        for i in range(len(g)):
-            g[i]/=averages[i]   
-
-    for g in xvalid:
-        for i in range(len(g)):
-            g[i]/=averages[i]
-            
-    
-    
-    
-            
     xtest=np.array(xtest)
     xtrain=np.array(xtrain)
     xvalid=np.array(xvalid)
-    '''
-    xtrain = np.vstack((xtrain,xtrain*(np.ones(xtrain.shape)-(np.random.rand(xtrain.shape[0],xtrain.shape[1])-np.ones(xtrain.shape)/2)*0.001)))
-    xtrain = np.vstack((xtrain,xtrain*(np.ones(xtrain.shape)-(np.random.rand(xtrain.shape[0],xtrain.shape[1])-np.ones(xtrain.shape)/2)*0.001)))
-    ytrain_1hot = np.vstack((ytrain_1hot,ytrain_1hot))
-    ytrain_1hot = np.vstack((ytrain_1hot,ytrain_1hot))
-    '''
+    
+    
+    scaler = p.MinMaxScaler()
+    
+    scaler.fit(xtrain)
+    xtest=scaler.transform(xtest)
+    xtrain=scaler.transform(xtrain)
+    xvalid=scaler.transform(xvalid)
+    
+    xtest,xvalid,ytest_1hot,yvalid_1hot=train_test_split(xtest,ytest_1hot, test_size=0.5)
+    
     return xtrain, xvalid, xtest, ytrain_1hot, yvalid_1hot, ytest_1hot
+
+#runs the neural network for 100 epochs, the number of epochs that results in the best accuracy
+#param : year the year we are predicting for.
+def run_neural_network(year):
+    
+    #hyperparams for model
+    l=0.0001
+    b=128
+    d=0.5
+    s=128
+
+    #model
+    model = Sequential(
+        [
+
+            layers.Dense(2*s),
+            layers.LeakyReLU(alpha=0.25),
+
+            layers.Dropout(d),
+
+            layers.Dense(s, activation='relu'),
+
+            layers.Dense(2, activation='softmax')
+        ]
+    )
+
+    model.compile(optimizer=optimizers.Adam(learning_rate=l),
+                          loss='categorical_crossentropy', 
+                          metrics=['accuracy'])
+
+    x,y,xl,yl = test_data(year-9,year) 
+    xtrain, xvalid, xtest, ytrain, yvalid, ytest = prep_data(x,y,xl,yl)
+    
+    results=model.fit(xtrain, ytrain, validation_data=(xvalid,yvalid), batch_size=b, epochs=100, verbose=0)
+    '''
+    plt.plot(results.history['accuracy'])
+    plt.plot(results.history['val_accuracy'])
+    plt.legend(['train', 'valid'], loc='upper left')
+    plt.show()
+
+    test_results=model.evaluate(xtest,ytest)
+    print('Test accuracy:',test_results[1])
+    '''
+    return model
+    
+#function to evaluate the model on predicting some set that is passed in
+#params: x:np array of data equivalent to what would be gotten from get_training
+def predict(x,model):
+    
+    y_pred=model.predict(x)
+    
+    ynew=[]
+            
+    for i in y_pred:
+        ynew.append(i[1])
+    
+    
+    return np.array(ynew)
