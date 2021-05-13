@@ -88,7 +88,17 @@ def f1_score(conf_matrix):
 
 def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=SVM_KERNEL, svm_c=SVM_C,
               svm_gamma=SVM_GAMMA,svm_test_size=SVM_TEST_SIZE):
-
+    """
+    Parameters
+    @param start_year -- int start_year [DEFAULT = 2003]
+    @param end_year -- int end_year [DEFAULT = 2019]
+    @param g_val -- string for the scaler type [DEFAULT = 'standard', ACCEPTS = ['gaussian', 'quantile', 'minmax',
+                                                                                'robust']]
+    @param svm_kernel -- string for kernel type [DEFAULT = 'rbf', ACCEPTS = valid SVM kernels supported by sklearn]
+    @param svm_c -- int for the C value [DEFAULT = 10]
+    @param svm_gamma -- int for the gamma value [DEFAULT = 0.001]
+    @param svm_test_size -- float < 1 for the test split size [DEFAULT = 0.25]
+    """
     # read in data
     data_read = cd.read_game_data_from_files(start_year, end_year)
     # create big X and big Y
