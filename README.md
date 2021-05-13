@@ -16,4 +16,4 @@ Sportsipy https://sportsipy.readthedocs.io/en/stable/
 | Alex Farrell       | Logistic Regression classifier |
 
 # Invidividual Results
-Run the .ipynb notebook files to see individual results
+Run the .ipynb notebook files Found in FootballML/Individual Results to see individual results
