@@ -1,8 +1,8 @@
 """ 
-    Individual logistic regression model.
+    Individual Logistic Regression model.
 
-    This is to be imported in the testing notebook for logistic 
-    regression and used as part of the ensemble classifier.
+    This is to be imported in the testing notebook for Logistic 
+    Regression and used as part of the ensemble classifier.
 """
 # Data structures and manipulation
 import numpy  as np
@@ -19,11 +19,24 @@ from FootballML.Dataset import cleaned_data as cd
 
 
 def logistic_regression_classifier():
-    """To be imported in the testing notebook and ensemble classifier.
+    """Logistic regression classifier with custom hyperparameters.
+
+    This is to be imported and implemented in the ensemble
+    classifier.
 
     Returns
     -------
-    none
+    sklearn LogisticRegression object
+        The logistic regression classifier with custom hyperparameters
+    """
+    return LogisticRegression(max_iter=1000000)
+
+
+def run_logistic_regression():
+    """To be imported in the testing notebook.
+
+    Returns
+    -------
     """
     # Year range
     START_YEAR = 2003
@@ -74,7 +87,7 @@ def logistic_regression_classifier():
     X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=30, shuffle=False)
 
     # Fit classifier
-    log_reg_classifier = LogisticRegression(max_iter=1000000)
+    log_reg_classifier = logistic_regression_classifier()
     log_reg_classifier.fit(X_train, Y_train)
 
     # Test data predictions and accuracy score
