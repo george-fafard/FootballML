@@ -15,5 +15,10 @@ Sportsipy https://sportsipy.readthedocs.io/en/stable/
 | George Fafard      | SVM classifier                 |
 | Alex Farrell       | Logistic Regression classifier |
 
-# Invidividual Results
+# Invidividual Classifier Results
 Run the .ipynb notebook files Found in FootballML/Individual Results to see individual results
+
+# Reproduction
+The classifiers are defined in FootballML/Classifiers/Individual or for ensemble, in FootballML/Classifiers/Ensemble.
+There, the code is stored in .py values and the necessary HyperParams are available for reproduction. Data was split and tuned using
+the file found in FootballML/Dataset/cleaned_data.py.
