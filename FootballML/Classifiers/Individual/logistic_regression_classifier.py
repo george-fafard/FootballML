@@ -77,11 +77,11 @@ def logistic_regression_classifier():
     log_reg_classifier = LogisticRegression(max_iter=1000000)
     log_reg_classifier.fit(X_train, Y_train)
 
-    # Testing predictions and accuracy score
+    # Test data predictions and accuracy score
     Y_pred = log_reg_classifier.predict(X_test)
     score  = log_reg_classifier.score(X_test, Y_test)
 
-    # Confusion matrix
+    # Test data confusion matrix
     conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
 
     # Display metrics
