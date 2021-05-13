@@ -19,7 +19,7 @@ from sklearn import preprocessing as p
 # LIST OF VALID MODES
 # write - (100 iterations) writes entries for 5 scalers and RBF/polynomial/sigmoid kernels ## MODERATE SPEED
 # read - reads in all data stored and finds highest accuracy, average, displays some info about it ## VERY FAST
-MODE = "read"
+MODE = "write"
 
 
 def main():

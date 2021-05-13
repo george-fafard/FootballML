@@ -19,7 +19,7 @@ END_YEAR = 2019
 # gaussian
 # minmax
 # standard (or any invalid value will give you this)
-G_VAL = 'quantile'
+G_VAL = 'standard'
 
 # sets the SVM kernel
 SVM_KERNEL = 'rbf'
