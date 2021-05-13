@@ -19,11 +19,10 @@ from sklearn import preprocessing as p
 # LIST OF VALID MODES
 # write - (100 iterations) writes entries for 5 scalers and RBF/polynomial/sigmoid kernels ## MODERATE SPEED
 # read - reads in all data stored and finds highest accuracy, average, displays some info about it ## VERY FAST
-MODE = "read"
 
 
-def main():
-    if MODE == "write":
+def param_tuner(mode='read'):
+    if mode == "write":
         # read in the data and split
         data_read_2009 = cd.read_game_data_from_files(2009)
         data_read_2010 = cd.read_game_data_from_files(2010)
@@ -91,7 +90,7 @@ def main():
                 out_file.write("USING THE: " + str(type(scaler)) + "AND " + str(data_best_params) + "\n")
                 out_file.write(str(grid.best_score_) + "\n")
             j += 1
-    elif MODE == "read":
+    elif mode == "read":
         try:
 
             in_file = open("svm_acc_totals.txt", "r")
@@ -174,4 +173,3 @@ def main():
     else:
         print("invalid mode")
 
-main()
