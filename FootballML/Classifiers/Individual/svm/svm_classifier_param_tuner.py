@@ -89,7 +89,7 @@ def param_tuner(mode='read', j=10):
                 out_file = open("svm_acc_totals.txt", "a")
                 out_file.write("USING THE: " + str(type(scaler)) + "AND " + str(data_best_params) + "\n")
                 out_file.write(str(grid.best_score_) + "\n")
-            j += 1
+            q += 1
     elif mode == "read":
         try:
 
