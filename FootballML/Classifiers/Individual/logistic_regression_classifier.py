@@ -78,10 +78,15 @@ def run_logistic_regression():
 
     # Get score
     score = log_reg_classifier.score(X_test, Y_test)
-    print("Score:", score)
+
+    # Predictions for testing data by trained model
+    Y_pred = log_reg_classifier.predict(X_test)
 
     # Confusion matrix
-    Y_pred = log_reg_classifier.predict(X_test)
-    log_conf_matrix = confusion_matrix(Y_test, Y_pred)
-    print('\nConfusion matrix:')
-    print(log_conf_matrix)
+    conf_matrix = confusion_matrix(Y_test, Y_pred)
+
+    # Display metrics
+    print("Score:", score)
+    print()
+    print('Confusion matrix:')
+    print(conf_matrix)
