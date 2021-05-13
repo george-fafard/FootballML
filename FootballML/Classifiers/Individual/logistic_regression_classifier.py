@@ -97,6 +97,7 @@ def scale_features(X, Y, name='Standard'):
     # Scale features
     return scaler.fit_transform(X, Y)
 
+
 def hyperparam_tuned_log_regression():
     """Logistic regression classifier with custom hyperparameters.
 
