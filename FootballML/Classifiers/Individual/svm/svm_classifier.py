@@ -30,6 +30,20 @@ SVM_GAMMA = 0.001
 SVM_TEST_SIZE = 0.25
 
 
+def hyperparam_tuned_svm_classifier():
+    """SVM classifier with custom hyperparameters.
+
+    This is to be imported and implemented in the ensemble
+    classifier.
+
+    Returns
+    -------
+    sklearn SVC object
+        The svm classifier with custom hyperparameters
+    """
+    return SVC(kernel=SVM_KERNEL, gamma=SVM_GAMMA, C=SVM_C)
+
+
 def custom_precision_recall(conf_matrix):
     # conf matrix composition:
     # by definition a confusion matrix C
@@ -163,7 +177,7 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, Y,shuffle=False, test_size=svm_test_size)
 
     # make the SVC object using our tested for HyperParams
-    svc_obj = SVC(kernel=svm_kernel, gamma=svm_gamma, C=svm_c)
+    svc_obj = hyperparam_tuned_svm_classifier() 
 
     clf_2 = svc_obj.fit(X_train, y_train)
     if display_output:
@@ -178,5 +192,6 @@ def svm_tuned(start_year=START_YEAR, end_year=END_YEAR, g_val=G_VAL, svm_kernel=
         print("SVC Metrics\n" + str(f1_score(cm_2)))
         print(custom_precision_recall(cm_2))
     return clf_2
+
 
 # svm_tuned()

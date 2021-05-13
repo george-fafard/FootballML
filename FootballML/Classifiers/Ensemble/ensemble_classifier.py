@@ -16,6 +16,7 @@ from sklearn.ensemble import StackingClassifier
 # FootballML imports
 from FootballML.Dataset.cleaned_data import read_game_data_from_files 
 from FootballML.Classifiers.Individual.logistic_regression_classifier import hyperparam_tuned_log_reg_classifier
+from FootballML.Classifiers.Individual.svm.svm_classifier import hyperparam_tuned_svm_classifier
 
 
 # Example 
@@ -26,6 +27,7 @@ from FootballML.Classifiers.Individual.logistic_regression_classifier import hyp
 
 # 2) Load our classifiers
 log_reg_classifier = hyperparam_tuned_log_reg_classifier()
+svm_classifier     = hyperparam_tuned_svm_classifier()
 # other classifiers...
 
 # 3) Add the classifiers to be used in the ensemble model
