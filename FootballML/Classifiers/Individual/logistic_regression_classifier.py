@@ -6,7 +6,6 @@
 """
 # Data structures and manipulation
 import numpy  as np
-import pandas as pd
 
 # Model and learning operations
 import sklearn.preprocessing as scalers
@@ -63,6 +62,41 @@ def get_training_labels(start_year, end_year):
     return X, Y
 
 
+def scale_features(X, Y, name='Standard'):
+    """Scale features for training and testing.
+
+    Parameters
+    ----------
+    X : list
+        Feature labels
+    Y : list
+        Target labels
+    name : str
+        Name of the scale to use
+
+    Returns
+    -------
+    list
+        Scaled feature labels
+    """
+    # Select feature scaler
+    if name == 'MinMax':
+        scaler = scalers.MinMaxScaler()
+    elif name == 'Robust':
+        scaler = scalers.RobustScaler()
+    elif name == 'Quantile':
+        scaler = scalers.QuantileTransformer()
+    elif name == 'Power':
+        scaler = scalers.PowerTransformer()
+    elif name == 'Standard':
+        scaler = scalers.StandardScaler()
+    else:
+        print('Invalid scale name, defaulting to Standard')
+        scaler = scalers.StandardScaler()
+
+    # Scale features
+    return scaler.fit_transform(X, Y)
+
 def hyperparam_tuned_log_regression():
     """Logistic regression classifier with custom hyperparameters.
 
@@ -77,6 +111,36 @@ def hyperparam_tuned_log_regression():
     return LogisticRegression(max_iter=1000000)
 
 
+def display_metrics(classifier, X_test, Y_test):
+    """Display results from running the classifier on testing data
+
+    Parameters
+    ----------
+    classifier : sklearn classifier object
+        Classifier to test
+
+    Returns
+    -------
+    none
+    """
+    # Test data predictions and accuracy score
+    Y_pred = classifier.predict(X_test)
+    score  = classifier.score(X_test, Y_test)
+
+    # Test data confusion matrix
+    conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
+
+    # Display metrics
+    print('Score:', score)
+    print()
+    print('Confusion matrix:')
+    print(conf_matrix)
+
+    # Precision-Recall curve
+    curve = metrics.plot_precision_recall_curve(classifier, X_test, Y_test)
+    curve.ax_.set_title('Game winner prediction Precision-Recall curve')
+
+
 def run_logistic_regression():
     """Run the logistic regression classifier on testing data to get the results.
 
@@ -89,40 +153,15 @@ def run_logistic_regression():
     # Training labels
     X, Y = get_training_labels(start_year=2003, end_year=2019)
 
-    # Feature scaler (uncomment scaler to use)
-    scaler = scalers.MinMaxScaler()
-    #scaler = scalers.RobustScaler()
-    #scaler = scalers.QuantileTransformer()
-    #scaler = scalers.PowerTransformer()
-    #scaler = scalers.StandardScaler()
+    # Scaled feature labels
+    X_scaled = scale_features(X, Y, name='Quantile')
 
-    # Scale features
-    X_scaled = scaler.fit_transform(X, Y)
-
-    # Training and testing data. Test size is the number of games in the test
-    # sample. Setting the split to not be shuffled will cause the test sample
-    # to be taken from the end of data. Thus, in this case the integer value 
-    # for test size will be the number of games at the end of the data (with 15
-    # games being used for each season). Here, I have it set to the last two seasons.
-    X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=30, shuffle=False)
+    # Training and testing split
+    X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=0.15, shuffle=False)
 
     # Fit classifier
     log_reg_classifier = hyperparam_tuned_log_regression()
     log_reg_classifier.fit(X_train, Y_train)
 
-    # Test data predictions and accuracy score
-    Y_pred = log_reg_classifier.predict(X_test)
-    score  = log_reg_classifier.score(X_test, Y_test)
-
-    # Test data confusion matrix
-    conf_matrix = metrics.confusion_matrix(Y_test, Y_pred)
-
-    # Display metrics
-    print('Score:', score)
-    print()
-    print('Confusion matrix:')
-    print(conf_matrix)
-
-    # Precision-Recall curve
-    curve = metrics.plot_precision_recall_curve(log_reg_classifier, X_test, Y_test)
-    curve.ax_.set_title('Game winner prediction Precision-Recall curve')
+    # Run the classifier on testing data and display the results
+    display_metrics(log_reg_classifier, X_test, Y_test)
