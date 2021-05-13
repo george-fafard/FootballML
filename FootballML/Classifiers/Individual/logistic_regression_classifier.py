@@ -5,7 +5,7 @@
     Regression and used as part of the ensemble classifier.
 """
 # Data structures and manipulation
-import numpy  as np
+import numpy as np
 
 # Model and learning operations
 import sklearn.preprocessing as scalers
