@@ -9,6 +9,7 @@ import numpy  as np
 import pandas as pd
 from sklearn                 import preprocessing as p
 from sklearn.linear_model    import LogisticRegression
+from sklearn.metrics         import confusion_matrix
 from sklearn.model_selection import train_test_split
 
 # FootballML imports
@@ -78,3 +79,9 @@ def run_logistic_regression():
     # Get score
     score = log_reg_classifier.score(X_test, Y_test)
     print("Score:", score)
+
+    # Confusion matrix
+    Y_pred = log_reg_classifier.predict(X_test)
+    log_conf_matrix = confusion_matrix(Y_test, Y_pred)
+    print('\nConfusion matrix:')
+    print(log_conf_matrix)
